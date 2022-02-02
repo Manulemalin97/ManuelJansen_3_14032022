@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/*
+ * style.css-mobile
+ * 
+ * définition des styles généraux à la page
+ * 
+ * @autor JANSEN Manuel
+ * @version 1.0
+ * @date 2022-01
+ */
+/*
+ * définition des polices de caractères
+ */
+body {
+  background-color: white;
+  margin: 0;
+}
+
+header > h1 {
+  font-size: 8vw;
+  margin: 0;
+  -webkit-box-shadow: 0 0 0 0.5vw #cfcfcf;
+          box-shadow: 0 0 0 0.5vw #cfcfcf;
+  padding: 0.2vw;
+}
+
+.bloc header > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 4vw;
+}
+
+.localisation > i {
+  margin-right: 4vw;
+  font-size: 4vw;
+}
+
+.bloc header > p {
+  font-size: 4vw;
+  margin: 0;
+  padding: 2.2vw;
+}
+
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 4vw;
+}
+
+/* Réservation, Explorer */
+.Réservez {
+  text-align: center;
+}
+
+.Réservez > h2 {
+  font-size: 6vw;
+  margin-right: 11vw;
+  margin-left: 11vw;
+  margin-bottom: 0;
+}
+
+.Réservez > p {
+  font-size: 4.5vw;
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+}
+
+/* Réservation, Button recherche */
+.Réservez > button {
+  font-size: 5.5vw;
+  padding: 5vw 5vw;
+  margin-top: 5vw;
+  -webkit-box-shadow: 1px 1px 16px -6px #000000;
+          box-shadow: 1px 1px 16px -6px #000000;
+  border-radius: 9vw;
+  margin-bottom: 15vw;
+}
+
+/* NAV*/
+.Nav > h2 {
+  margin-left: 4vw;
+  font-size: 6vw;
+}
+
+.Nav > ol {
+  width: 97%;
+}
+
+.Nav > ol > li {
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 5px 5px 5px 1px #e3e3e3;
+          box-shadow: 5px 5px 5px 1px #e3e3e3;
+  padding: 3vw 15vw 0vw 0vw;
+  border-radius: 4vw;
+  text-align: center;
+  width: 95%;
+  height: 13vw;
+  margin-bottom: 2vw;
+  font-size: 4vw;
+}
+
+.Nav > ol > li:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  cursor: pointer;
+}
+
+.fa-mobile-alt {
+  font-size: larger;
+  margin-right: 2vw;
+}
+
+.fa-list-ul {
+  margin-right: 2vw;
+}
+
+.fa-store {
+  margin-right: 2vw;
+}
+
+/* Menus*/
+.menus > h2 {
+  margin: 0;
+  font-size: 6vw;
+  margin-left: 5vw;
+  margin-top: 15vw;
+  margin-bottom: 3vw;
+  padding-top: 9vw;
+}
+
+.card_image {
+  width: 100%;
+  height: 73%;
+  border-radius: 2vw 2vw 0 0;
+}
+
+.card {
+  margin-bottom: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  border-radius: 1.5vw;
+  -webkit-box-shadow: 5px 5px 5px 1px #e3e3e3;
+          box-shadow: 5px 5px 5px 1px #e3e3e3;
+  height: 51vw;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.cards_menu {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-left: 6vw;
+  margin-bottom: 15vw;
+}
+
+.card_description {
+  width: 90%;
+  margin: 0;
+  font-size: 3.5vw;
+}
+
+.card_description > h3 {
+  margin: 0;
+  margin-top: 2vw;
+}
+
+.card_description > p {
+  margin: 0;
+  margin-top: 1vw;
+  font-size: 3vw;
+}
+
+/* Footer*/
+footer {
+  padding: 1vw 0vw 1vw 6vw;
+  height: 40vw;
+}
+
+footer > h2 {
+  font-size: 4.5vw;
+  margin: 0;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+footer > p {
+  font-size: 3.5vw;
+  margin: 0;
+  margin-top: 2vw;
+}
+
+footer > p > .fa-utensils {
+  margin-right: 3vw;
+}
+
+footer > p > .fa-hands-helping {
+  margin-right: 1vw;
+}
+/*# sourceMappingURL=style-mobile.css.map */

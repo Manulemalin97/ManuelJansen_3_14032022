@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/*
+ * style.css-desktop
+ * 
+ * définition des styles généraux à la page
+ * 
+ * @autor JANSEN Manuel
+ * @version 1.0
+ * @date 2022-01
+ */
+/*
+ * définition des polices de caractères
+ */
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+ * définition des polices de caractères
+ */
+@font-face {
+  font-family: 'Shrikhand';
+  src: url(fonts/Shrikhand-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+header {
+  background-color: #f6f6f6;
+}
+
+header > h1 {
+  font-family: 'Shrikhand', cursive;
+  text-align: center;
+  font-style: italic;
+  background-color: white;
+}
+
+.bloc header > div {
+  background-color: #eaeaea;
+}
+
+.bloc header > p {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.localisation {
+  background-color: #eaeaea;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Réservation, Explorer */
+.Réservez > button {
+  font-family: "Roboto", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e872da), to(#a65cdb));
+  background: linear-gradient(#e872da, #a65cdb);
+  color: white;
+  border: none;
+}
+
+/* Effet au survol du Button recherche */
+.Réservez > button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  cursor: pointer;
+}
+
+.Réservez > h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+.Réservez > p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* NAV*/
+.Nav > h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.Nav > ol > li {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.Nav li i.fas {
+  color: #8d8d8d;
+}
+
+.Nav li i.fas:hover {
+  color: #9356dc;
+}
+
+/* Menus*/
+.menus {
+  background-color: #f6f6f6;
+}
+
+.menus > h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.card_image {
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card_description {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+/* Footer*/
+footer {
+  background-color: #353535;
+}
+
+footer > h2 {
+  font-family: 'Shrikhand', cursive;
+  color: white;
+}
+
+footer > p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
