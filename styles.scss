@@ -16,7 +16,7 @@
  *,
  ::before,
  ::after {
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 /*
@@ -34,7 +34,7 @@
 }
 
 header{
-    background-color: #f6f6f6;
+    background-color: #f6f6f6; 
 }
 
 header > h1{
@@ -78,6 +78,7 @@ background-color: #eaeaea;
 
 .Réservez > p{
     font-family: "Roboto", sans-serif;
+    color: grey;
 }
 
 /* NAV*/

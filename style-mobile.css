@@ -24,7 +24,7 @@ header > h1 {
   padding: 0.2vw;
 }
 
-.bloc header > div {
+header > h1 .bloc header > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,7 +82,7 @@ header > h1 {
 /* Réservation, Button recherche */
 .Réservez > button {
   font-size: 5.5vw;
-  padding: 5vw 5vw;
+  padding: 4vw 5vw;
   margin-top: 5vw;
   -webkit-box-shadow: 1px 1px 16px -6px #000000;
           box-shadow: 1px 1px 16px -6px #000000;
@@ -164,7 +164,8 @@ header > h1 {
   border-radius: 1.5vw;
   -webkit-box-shadow: 5px 5px 5px 1px #e3e3e3;
           box-shadow: 5px 5px 5px 1px #e3e3e3;
-  height: 51vw;
+  height: 62vw;
+  margin-left: 5vw;
 }
 
 .card:hover {
@@ -176,7 +177,6 @@ header > h1 {
   width: 100%;
   padding: 0;
   margin: 0;
-  margin-left: 6vw;
   margin-bottom: 15vw;
 }
 
@@ -208,6 +208,7 @@ footer > h2 {
   margin: 0;
   margin-top: 2vw;
   margin-bottom: 2vw;
+  font-weight: 400;
 }
 
 footer > p {
