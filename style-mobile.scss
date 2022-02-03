@@ -20,7 +20,7 @@
 }
 
 header > h1{
-    font-size: 8vw;
+    font-size: 7vw;
     margin: 0;
     box-shadow: 0 0 0 0.5vw #cfcfcf;
     padding: 0.2vw;
@@ -48,6 +48,9 @@ font-size: 4vw;
     align-items: center;
     justify-content: center;
     font-size: 4vw;
+}
+.localisation > p {
+    margin-right: 3vw;
 }
 
 /* Réservation, Explorer */
@@ -118,6 +121,33 @@ font-size: 4vw;
 
 /* Menus*/
 
+.card_new{
+    margin-bottom: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    border-radius: 1.5vw;
+    box-shadow: 5px 5px 5px 1px #e3e3e3;
+    height: 60vw; 
+    margin-left: 5vw;
+    border: 5px red;
+    position: relative;
+}
+
+.card_new::before{
+    content: "Nouveau";
+    position: absolute;
+    background-color: #99e2d0;
+    right: 2vw;
+    padding: 1vw 3vw;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    color: #008766;
+    margin-top: 3vw;
+    border-radius: 0.5vw;
+}
 
 .menus > h2{
     margin: 0;
@@ -130,7 +160,7 @@ font-size: 4vw;
 
 .card_image {
     width: 100%;
-    height: 73%;
+    height: 72%;
     border-radius: 2vw 2vw 0 0;
 }
 
@@ -142,12 +172,12 @@ font-size: 4vw;
     width: 90%;
     border-radius: 1.5vw;
     box-shadow: 5px 5px 5px 1px #e3e3e3;
-    height: 62vw; 
+    height: 60vw; 
     margin-left: 5vw;
 }
 
 .card:hover {
-    transform: scale(1.05);  
+    transform: scale(1.02);  
 }
 
 .cards_menu {
@@ -161,17 +191,30 @@ font-size: 4vw;
    width: 90%;
    margin: 0;
    font-size: 3.5vw;
+   position: relative;
 }
 
 .card_description > h3{
     margin: 0;
-    margin-top: 2vw;
+    margin-top: 3vw;
+    font-size: 4.5vw;
  }
 
  .card_description >p{
     margin: 0;
     margin-top: 1vw;
-    font-size: 3vw;
+    font-size: 4vw;
+ }
+ .card_description >i{
+    font-size: 6vw;
+    position: absolute;
+    right: 1vw;
+    top: 50%;
+ }
+ .card_description >i:hover{
+    transform: scale(1.1);
+    color: #bd64db;
+    font-weight: 800;
  }
 
  /* Footer*/
