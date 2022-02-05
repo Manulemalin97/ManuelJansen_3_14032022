@@ -37,12 +37,7 @@ header > h1 .bloc header > div {
   font-size: 4vw;
 }
 
-.localisation > i {
-  margin-right: 4vw;
-  font-size: 4vw;
-}
-
-.bloc header > p {
+header > h1 .bloc header > div .bloc header > p {
   font-size: 4vw;
   margin: 0;
   padding: 2.2vw;
@@ -61,8 +56,17 @@ header > h1 .bloc header > div {
   font-size: 4vw;
 }
 
-.localisation > p {
+.localisation .localisation > i {
+  margin-right: 4vw;
+  font-size: 4vw;
+}
+
+.localisation .localisation > i .localisation > p {
   margin-right: 3vw;
+}
+
+.localisation > i.fas {
+  margin-right: 4vw;
 }
 
 /* Réservation, Explorer */
@@ -155,8 +159,12 @@ header > h1 .bloc header > div {
           box-shadow: 5px 5px 5px 1px #e3e3e3;
   height: 60vw;
   margin-left: 5vw;
-  border: 5px red;
   position: relative;
+}
+
+.card_new:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .card_new::before {
@@ -217,13 +225,11 @@ header > h1 .bloc header > div {
   width: 100%;
   padding: 0;
   margin: 0;
-  margin-bottom: 15vw;
 }
 
 .card_description {
   width: 90%;
   margin: 0;
-  font-size: 3.5vw;
   position: relative;
 }
 

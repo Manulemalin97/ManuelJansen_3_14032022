@@ -1,1 +1,46 @@
+ /*
+ * style.css-mobile
+ * 
+ * définition des styles généraux à la page
+ * 
+ * @autor JANSEN Manuel
+ * @version 1.0
+ * @date 2022-01
+ */
+
+
+/*
+ * définition des polices de caractères
+ */
+
+ .menus > h2 {
+    font-size: 9vw;
+    margin-left: 5vw;
+    padding-top: 3vw;
+}
+ .cards_menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    width: 42%;
+    height: 38vw;
  
+}
+.card_new{
+    width: 42%;
+    height: 38vw; 
+}
+
+.card_description > h3{
+    font-size: 3.5vw;
+    margin-top: 0.2vw;
+ }
+
+ .card_description >p{
+    font-size: 3vw;
+ }
+ .card_description >i{
+    font-size: 5vw;
+    top: 30%;
+ }
