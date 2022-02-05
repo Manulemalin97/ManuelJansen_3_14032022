@@ -11,6 +11,22 @@
 /*
  * définition des polices de caractères
  */
+/* NAV*/
+.Nav > h2 {
+  font-size: 4.5vw;
+}
+
+.Nav > ol > li {
+  width: 76%;
+  height: 10vw;
+  font-size: 3vw;
+}
+
+/* Menus*/
+.menus > h2 {
+  margin-top: 8vw;
+}
+
 .cards_menu {
   display: -webkit-box;
   display: -ms-flexbox;
