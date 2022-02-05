@@ -11,12 +11,6 @@
 /*
  * définition des polices de caractères
  */
-.menus > h2 {
-  font-size: 9vw;
-  margin-left: 5vw;
-  padding-top: 3vw;
-}
-
 .cards_menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,5 +41,18 @@
 .card_description > i {
   font-size: 5vw;
   top: 30%;
+}
+
+/* Footer*/
+footer {
+  text-align: center;
+}
+
+footer > h2 {
+  font-size: 7.5vw;
+}
+
+footer > p {
+  font-size: 3.5vw;
 }
 /*# sourceMappingURL=style-tablette.css.map */
