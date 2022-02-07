@@ -1,1 +1,27 @@
-/* No CSS *//*# sourceMappingURL=style-desktop.css.map */
+@charset "UTF-8";
+/* Header */
+header > h1 {
+  font-size: 3vw;
+}
+
+/* Réservation, Explorer */
+.localisation {
+  font-size: 1.5vw;
+}
+
+.Réservez > h2 {
+  font-size: 3vw;
+}
+
+.Réservez > p {
+  font-size: 2vw;
+}
+
+/* Réservation, Button recherche */
+.Réservez > button {
+  font-size: 2.5vw;
+  padding: 1vw 2vw;
+  margin-bottom: 5vw;
+  margin-top: 1vw;
+}
+/*# sourceMappingURL=style-desktop.css.map */

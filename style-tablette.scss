@@ -13,17 +13,14 @@
  * définition des polices de caractères
  */
 
+ 
+/* Header */
  header > h1{
     font-size: 5vw;
 }
 /* Réservation, Explorer */
 .localisation{
     font-size: 3vw;
-}
-
-
-.Réservez{
-    text-align: center;
 }
 
 .Réservez > h2{
@@ -84,16 +81,4 @@
  }
 
 /* Footer*/
- footer{
-    text-align: center;
- }
 
- footer > h2{
-    font-size: 7.5vw;
- 
-
-}
-footer > p{
-    font-size: 3.5vw;
-   
-}
