@@ -63,6 +63,10 @@ li:before {
   justify-content: space-between;
 }
 
+.fa-mobile-alt {
+    font-size: larger;
+  }
+
 /* Menus*/
 .menus > h2 {
   margin-top: 5vw;
@@ -102,7 +106,7 @@ li:before {
 /* Footer*/
 
 footer > a {
-  margin-top: 1vw;
+  margin-top: 0.5vw;
 }
 
 footer > a > .fa-utensils {
