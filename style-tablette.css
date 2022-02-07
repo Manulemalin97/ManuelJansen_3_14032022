@@ -66,6 +66,19 @@ li:before {
           justify-content: space-between;
 }
 
+.fa-mobile-alt {
+  padding: 0vw 1vw 2vw 2vw;
+  font-size: large;
+}
+
+.fa-list-ul {
+  padding: 0vw 1vw 2vw 2vw;
+}
+
+.fa-store {
+  padding: 0vw 1vw 2vw 2vw;
+}
+
 /* Menus*/
 .menus > h2 {
   margin-top: 1vw;

@@ -1,4 +1,4 @@
-  /*
+/*
  * style.css-mobile
  * 
  * définition des styles généraux à la page
@@ -8,107 +8,107 @@
  * @date 2022-01
  */
 
-
 /*
  * définition des polices de caractères
  */
- 
- /* Header */
- header > h1{
-    font-size: 3vw;
+
+/* Header */
+header > h1 {
+  font-size: 3vw;
 }
 /* Réservation, Explorer */
-.localisation{
-    font-size: 1.5vw;
+.localisation {
+  font-size: 1.5vw;
 }
 
-.Réservez > h2{
-    font-size: 3vw;
+.Réservez > h2 {
+  font-size: 3vw;
 }
 
-.Réservez > p{
-    font-size: 2vw;
+.Réservez > p {
+  font-size: 2vw;
 }
 
 /* Réservation, Button recherche */
-.Réservez > button{
-    font-size: 2.5vw;
-    padding: 1vw 2vw;
-    margin-bottom: 5vw;
-    margin-top: 1vw;
+.Réservez > button {
+  font-size: 2.5vw;
+  padding: 1vw 2vw;
+  margin-bottom: 5vw;
+  margin-top: 1vw;
 }
 
 /* NAV*/
-.Nav > h2{
-    font-size: 2.5vw;
+.Nav > h2 {
+  font-size: 2.5vw;
 }
 
-.Nav > ol > li{
-    width: 31%;
-    height: 5vw;
-    font-size: 2vw;
-    padding: 1vw 0vw 0vw 0vw;
+.Nav > ol > li {
+  width: 31%;
+  height: 5vw;
+  font-size: 2vw;
+  padding: 1vw 0vw 0vw 0vw;
 }
 
-li:before{
-    font-size: 2vw;
-    margin-left: 0.3vw;
-    width: 3vw;
-    height: 3vw;
-    left: -2vw;
+li:before {
+  font-size: 2vw;
+  margin-left: 0.3vw;
+  width: 3vw;
+  height: 3vw;
+  left: -2vw;
 }
 
-.Nav > ol{
-    width: 98%;
-    display: flex;
-    justify-content: space-between;
+.Nav > ol {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Menus*/
-.menus > h2{
-    margin-top: 5vw;
-    padding: 1vw 2vw;
-    font-size: 5vw;
+.menus > h2 {
+  margin-top: 5vw;
+  padding: 1vw 2vw;
+  font-size: 5vw;
 }
 
 .cards_menu {
-    width: 95%;
-    margin-left: 2vw;
+  width: 95%;
+  margin-left: 2vw;
 }
 
 .card {
-    width: 42%;
-    height: 28vw;
- 
+  width: 42%;
+  height: 28vw;
 }
-.card_new{
-    width: 42%;
-    height: 28vw;
+.card_new {
+  width: 42%;
+  height: 28vw;
 }
 
-.card_description > h3{
-    font-size: 2.5vw;
-    margin-top: 1vw;
- }
+.card_description > h3 {
+  font-size: 2.5vw;
+  margin-top: 1vw;
+}
 
- .card_description >p{
-    font-size: 2vw;
- }
- .card_description >i{
-    font-size: 4vw;
-    top: 30%;
- }
-
+.card_description > p {
+  font-size: 2vw;
+}
+.card_description > i {
+  font-size: 4vw;
+  top: 30%;
+}
+.card_new::before {
+  margin-top: 1.5vw;
+}
 /* Footer*/
 
 footer > a {
-    margin-top: 1vw;
+  margin-top: 1vw;
 }
 
-footer > a > .fa-utensils{
-   margin-right: 1vw;
+footer > a > .fa-utensils {
+  margin-right: 1vw;
 }
 
-footer > a > .fa-hands-helping{
-    margin-right: 0.5vw;
- }
+footer > a > .fa-hands-helping {
+  margin-right: 0.5vw;
+}

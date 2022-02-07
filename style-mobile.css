@@ -99,14 +99,21 @@ header > h1 .bloc header > div .bloc header > p {
 }
 
 /* NAV*/
+.Nav {
+  padding: 2vw;
+}
+
 .Nav > h2 {
-  margin-left: 4vw;
   font-size: 6vw;
+  text-align: start;
 }
 
 .Nav > ol {
   width: 97%;
+  margin: 0;
   counter-reset: steps;
+  padding: 0;
+  margin-left: 3vw;
 }
 
 li:before {
@@ -115,9 +122,7 @@ li:before {
   place-items: center;
   content: counter(steps);
   counter-increment: steps;
-  color: white;
   font-size: 3vw;
-  background-color: #9356dc;
   width: 5vw;
   height: 5vw;
   border-radius: 50%;
@@ -129,9 +134,9 @@ li:before {
   background-color: #f6f6f6;
   -webkit-box-shadow: 5px 5px 5px 1px #e3e3e3;
           box-shadow: 5px 5px 5px 1px #e3e3e3;
-  padding: 4vw 18vw 0vw 0vw;
+  padding: 4vw 0vw 0vw 0vw;
   border-radius: 4vw;
-  text-align: center;
+  text-align: start;
   width: 95%;
   height: 14vw;
   margin-bottom: 2vw;
@@ -147,16 +152,15 @@ li:before {
 }
 
 .fa-mobile-alt {
-  font-size: larger;
-  margin-right: 2vw;
+  padding: 0vw 6vw 2vw 7vw;
 }
 
 .fa-list-ul {
-  margin-right: 2vw;
+  padding: 0vw 6vw 2vw 6vw;
 }
 
 .fa-store {
-  margin-right: 2vw;
+  padding: 0vw 6vw 2vw 6vw;
 }
 
 /* Menus*/
@@ -195,7 +199,6 @@ li:before {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  color: #008766;
   margin-top: 3vw;
   border-radius: 0.5vw;
 }
@@ -274,7 +277,6 @@ li:before {
 .card_description > i:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: #bd64db;
   font-weight: 800;
 }
 

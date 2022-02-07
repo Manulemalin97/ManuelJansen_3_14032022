@@ -87,6 +87,11 @@ header > h1 {
 }
 
 /* NAV*/
+li:before {
+  color: white;
+  background-color: #9356dc;
+}
+
 .Nav > h2 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -108,6 +113,7 @@ header > h1 {
 /* Menus*/
 .card_new::before {
   font-family: "Roboto", sans-serif;
+  color: #008766;
 }
 
 .menus {
@@ -129,6 +135,10 @@ header > h1 {
 .card_description {
   font-family: "Roboto", sans-serif;
   color: black;
+}
+
+.card_description > i:hover {
+  color: #bd64db;
 }
 
 /* Footer*/

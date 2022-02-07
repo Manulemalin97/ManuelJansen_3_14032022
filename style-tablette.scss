@@ -13,10 +13,13 @@
  */
 
 /* Header */
+
 header > h1 {
   font-size: 5vw;
 }
+
 /* Réservation, Explorer */
+
 .localisation {
   font-size: 3vw;
 }
@@ -60,6 +63,18 @@ li:before {
   width: 98%;
   display: flex;
   justify-content: space-between;
+}
+.fa-mobile-alt {
+  padding: 0vw 1vw 2vw 2vw;
+  font-size: large;
+}
+
+.fa-list-ul {
+  padding: 0vw 1vw 2vw 2vw;
+}
+
+.fa-store {
+  padding: 0vw 1vw 2vw 2vw;
 }
 
 /* Menus*/

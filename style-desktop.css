@@ -12,7 +12,6 @@
  * définition des polices de caractères
  */
 /* Header */
-
 header > h1 {
   font-size: 3vw;
 }
@@ -64,8 +63,8 @@ li:before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* Menus*/
@@ -102,6 +101,10 @@ li:before {
 .card_description > i {
   font-size: 4vw;
   top: 30%;
+}
+
+.card_new::before {
+  margin-top: 1.5vw;
 }
 
 /* Footer*/
