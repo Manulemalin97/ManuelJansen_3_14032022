@@ -1,3 +1,18 @@
+  /*
+ * style.css-mobile
+ * 
+ * définition des styles généraux à la page
+ * 
+ * @autor JANSEN Manuel
+ * @version 1.0
+ * @date 2022-01
+ */
+
+
+/*
+ * définition des polices de caractères
+ */
+ 
  /* Header */
  header > h1{
     font-size: 3vw;
@@ -85,26 +100,15 @@ li:before{
  }
 
 /* Footer*/
-footer{
-    padding: 1vw 0vw 1vw 3vw;
-    height: auto;
- }
 
- footer > h2{
-    font-size: 2.5vw;
-    margin-top: 2vw;
+footer > a {
+    margin-top: 1vw;
 }
 
-footer > p{
-    font-size: 2vw;
-    margin: 0;
-    margin-top: 2vw;
+footer > a > .fa-utensils{
+   margin-right: 1vw;
 }
 
-footer > p > .fa-utensils{
-   margin-right: 3vw;
-}
-
-footer > p > .fa-hands-helping{
-    margin-right: 2vw;
+footer > a > .fa-hands-helping{
+    margin-right: 0.5vw;
  }

@@ -292,17 +292,20 @@ footer > h2 {
   font-weight: 400;
 }
 
-footer > p {
+footer > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 3.5vw;
   margin: 0;
   margin-top: 2vw;
 }
 
-footer > p > .fa-utensils {
+footer > a > .fa-utensils {
   margin-right: 3vw;
 }
 
-footer > p > .fa-hands-helping {
-  margin-right: 1vw;
+footer > a > .fa-hands-helping {
+  margin-right: 1.5vw;
 }
 /*# sourceMappingURL=style-mobile.css.map */

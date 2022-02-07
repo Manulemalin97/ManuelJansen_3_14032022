@@ -38,26 +38,37 @@ header > h1 {
 
 /* NAV*/
 .Nav > h2 {
-  font-size: 4.5vw;
+  font-size: 3.5vw;
 }
 
 .Nav > ol > li {
-  font-size: 3vw;
-  padding: 4vw 18vw 0vw 0vw;
-  width: 96%;
-  height: 12vw;
+  width: 31%;
+  height: 5vw;
+  font-size: 2vw;
+  padding: 1vw 0vw 0vw 0vw;
 }
 
 li:before {
-  font-size: 3vw;
-  width: 4vw;
-  height: 4vw;
+  font-size: 1.5vw;
+  margin-left: 0.3vw;
+  width: 2.5vw;
+  height: 2.5vw;
   left: -2vw;
+}
+
+.Nav > ol {
+  width: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* Menus*/
 .menus > h2 {
-  margin-top: 8vw;
+  margin-top: 1vw;
 }
 
 .cards_menu {
@@ -93,4 +104,27 @@ li:before {
 }
 
 /* Footer*/
+footer {
+  padding: 1vw 0vw 1vw 3vw;
+  height: auto;
+}
+
+footer > h2 {
+  font-size: 2.5vw;
+  margin-top: 2vw;
+}
+
+footer > a {
+  font-size: 2vw;
+  margin: 0;
+  margin-top: 2vw;
+}
+
+footer > a > .fa-utensils {
+  margin-right: 2vw;
+}
+
+footer > a > .fa-hands-helping {
+  margin-right: 1vw;
+}
 /*# sourceMappingURL=style-tablette.css.map */

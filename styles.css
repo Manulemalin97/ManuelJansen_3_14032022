@@ -16,18 +16,19 @@
 ::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
 }
 
 /*
  * définition des polices de caractères
  */
 @font-face {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   src: url(fonts/Shrikhand-Regular.ttf);
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: url(fonts/Roboto-Regular.ttf);
 }
 
@@ -36,7 +37,7 @@ header {
 }
 
 header > h1 {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   text-align: center;
   background-color: white;
   font-weight: 300;
@@ -136,11 +137,11 @@ footer {
 }
 
 footer > h2 {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   color: white;
 }
 
-footer > p {
+footer > a {
   font-family: "Roboto", sans-serif;
   color: white;
 }

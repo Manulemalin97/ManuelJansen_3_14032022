@@ -8,134 +8,134 @@
  * @date 2022-01
  */
 
-
 /*
  * définition des polices de caractères
  */
- 
- *,
- ::before,
- ::after {
-    box-sizing: border-box; 
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 /*
  * définition des polices de caractères
  */
 
- @font-face {
-    font-family: 'Shrikhand';
-    src: url(fonts/Shrikhand-Regular.ttf);
+@font-face {
+  font-family: "Shrikhand";
+  src: url(fonts/Shrikhand-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url(fonts/Roboto-Regular.ttf);
+  font-family: "Roboto";
+  src: url(fonts/Roboto-Regular.ttf);
 }
 
-header{
-    background-color: #f6f6f6; 
+header {
+  background-color: #f6f6f6;
 }
 
-header > h1{
-    font-family: 'Shrikhand', cursive;
-    text-align: center;
-    background-color: white;
-    font-weight: 300;
+header > h1 {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  background-color: white;
+  font-weight: 300;
 }
 
 .bloc header > div {
-background-color: #eaeaea;
+  background-color: #eaeaea;
 }
 
-.bloc header > p{
-    font-family: "Roboto", sans-serif;
-    text-align: center;
+.bloc header > p {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }
-.localisation{
-    background-color: #eaeaea;
-    font-family: "Roboto", sans-serif;
+.localisation {
+  background-color: #eaeaea;
+  font-family: "Roboto", sans-serif;
 }
-.localisation > i.fas{
-    color: grey;
+.localisation > i.fas {
+  color: grey;
 }
 /* Réservation, Explorer */
 
-.Réservez > button{
-    font-family: "Roboto", sans-serif;
-    background: linear-gradient(#e872da, #a65cdb);
-    color: white;
-    border: none;
+.Réservez > button {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(#e872da, #a65cdb);
+  color: white;
+  border: none;
 }
 
 /* Effet au survol du Button recherche */
-.Réservez > button:hover{
-    transform: scale(1.02);
-    cursor: pointer;
+.Réservez > button:hover {
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
-.Réservez > h2{
-    font-family: "Roboto", sans-serif;
+.Réservez > h2 {
+  font-family: "Roboto", sans-serif;
 }
 
-.Réservez > p{
-    font-family: "Roboto", sans-serif;
-    color: grey;
+.Réservez > p {
+  font-family: "Roboto", sans-serif;
+  color: grey;
 }
 
 /* NAV*/
 
-.Nav > h2{
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
+.Nav > h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
-.Nav > ol > li{
-    font-family: "Roboto", sans-serif; 
-    font-weight: bold;
+.Nav > ol > li {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
-.Nav li i.fas{
-    color: #8d8d8d;
+.Nav li i.fas {
+  color: #8d8d8d;
 }
 
-.Nav li i.fas:hover{
-    color: #9356dc;
+.Nav li i.fas:hover {
+  color: #9356dc;
 }
 
 /* Menus*/
-.card_new::before{
-    font-family: "Roboto", sans-serif; 
+.card_new::before {
+  font-family: "Roboto", sans-serif;
 }
 
-.menus{
-    background-color: #f6f6f6;
+.menus {
+  background-color: #f6f6f6;
 }
 
-.menus > h2{
-    font-family: "Roboto", sans-serif; 
-    font-weight: bold;
+.menus > h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
 .card_image {
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
 }
-.card_description{
-    font-family: "Roboto", sans-serif;
-    color: black;
+.card_description {
+  font-family: "Roboto", sans-serif;
+  color: black;
 }
 
 /* Footer*/
-footer{
-    background-color: #353535 ;
+footer {
+  background-color: #353535;
 }
-footer > h2{
-    font-family: 'Shrikhand', cursive;
-    color: white;
+footer > h2 {
+  font-family: "Shrikhand", cursive;
+  color: white;
 }
-footer > p{
-    font-family: "Roboto", sans-serif;
-    color: white;
+footer > a {
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
