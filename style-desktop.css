@@ -37,7 +37,16 @@ header > h1 {
   padding: 1vw 0vw 0vw 0vw;
 }
 
+li:before {
+  font-size: 2vw;
+  margin-left: 0.3vw;
+  width: 3vw;
+  height: 3vw;
+  left: -2vw;
+}
+
 .Nav > ol {
+  width: 98%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -85,23 +85,41 @@ font-size: 4vw;
     margin-bottom: 15vw;
 }
 /* NAV*/
+
 .Nav > h2{
     margin-left: 4vw;
     font-size: 6vw;
 }
 .Nav > ol{
     width: 97%;
+    counter-reset: steps;
+}
+li:before{
+    display: grid;
+    place-items: center;
+    content: counter(steps);
+    counter-increment: steps;
+    color: white;
+    font-size: 3vw;
+    background-color: #9356dc;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    left: -2vw;
+    position: absolute;
 }
 .Nav > ol > li{
     background-color: #f6f6f6;
     box-shadow: 5px 5px 5px 1px #e3e3e3;
-    padding: 3vw 15vw 0vw 0vw;
+    padding: 4vw 18vw 0vw 0vw;
     border-radius: 4vw;
     text-align: center;
     width: 95%;
-    height: 13vw;
+    height: 14vw;
     margin-bottom: 2vw;
     font-size: 4vw;
+    list-style-type: none;
+    position: relative;
 }
 
 .Nav > ol > li:hover{

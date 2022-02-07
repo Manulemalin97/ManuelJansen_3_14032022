@@ -44,24 +44,35 @@
 }
 
 .Nav > ol > li{
-    width: 76%;
-    height: 10vw;
     font-size: 3vw;
+    padding: 4vw 18vw 0vw 0vw;
+    width: 96%;
+    height: 12vw;
 }
+li:before{
+    font-size: 3vw;
+    width: 4vw;
+    height: 4vw;
+    left: -2vw;
+}
+
 
 /* Menus*/
 .menus > h2{
     margin-top: 8vw;
 }
+
  .cards_menu {
     display: flex;
     flex-wrap: wrap;
 }
+
 .card {
     width: 42%;
     height: 38vw;
  
 }
+
 .card_new{
     width: 42%;
     height: 38vw; 
@@ -75,6 +86,7 @@
  .card_description >p{
     font-size: 3vw;
  }
+
  .card_description >i{
     font-size: 5vw;
     top: 30%;

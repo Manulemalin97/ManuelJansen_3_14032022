@@ -42,9 +42,17 @@ header > h1 {
 }
 
 .Nav > ol > li {
-  width: 76%;
-  height: 10vw;
   font-size: 3vw;
+  padding: 4vw 18vw 0vw 0vw;
+  width: 96%;
+  height: 12vw;
+}
+
+li:before {
+  font-size: 3vw;
+  width: 4vw;
+  height: 4vw;
+  left: -2vw;
 }
 
 /* Menus*/
