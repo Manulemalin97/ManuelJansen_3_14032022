@@ -18,44 +18,57 @@ header > h1 {
 }
 /* Réservation, Explorer */
 .localisation {
-  font-size: 1.5vw;
+    padding: 1vw 0vw 1vw 0vw;
+
 }
 
 .Réservez > h2 {
-  font-size: 3vw;
+  font-size: 2.5vw;
+  padding: 0vw 30vw 0vw 30vw;
+  margin-bottom: 1vw;
 }
 
 .Réservez > p {
-  font-size: 2vw;
+  font-size: 1.5vw;
+  padding: 0vw 30vw 0vw 30vw;
+  margin: 0;
+  margin-bottom: 1vw;
 }
 
+.localisation > i.fas {
+    margin-right: 1vw;
+  }
 /* Réservation, Button recherche */
 .Réservez > button {
-  font-size: 2.5vw;
-  padding: 1vw 2vw;
-  margin-bottom: 5vw;
-  margin-top: 1vw;
+    font-size: 1.5vw;
+    padding: 1vw 1vw;
+    margin-bottom: 4vw;
+    margin-top: 1vw;
 }
 
 /* NAV*/
-
+.Nav > ol {
+    width: 80%;
+    margin-left: 10vw;
+}
 .fa-mobile-alt {
     font-size: larger;
   }
-
+  .Nav > h2 {
+    margin-left: 9.5vw;
+}
 /* Menus*/
 .menus > h2 {
     margin: 0;
     margin-top: 2vw;
     padding: 2vw 2vw;
     font-size: 3vw;
-    margin-left: 19vw;
+    margin-left: 17vw;
 }
 
 .cards_menu {
     justify-content: center;
   width: 95%;
-  margin-left: 2vw;
 }
 
 .card_image {
@@ -74,7 +87,7 @@ header > h1 {
 }
 
 .card_description > h3 {
-  font-size: 2.5vw;
+  font-size: 2vw;
   margin-top: 1vw;
 }
 
@@ -82,7 +95,7 @@ header > h1 {
   font-size: 2vw;
 }
 .card_description > i {
-  font-size: 4vw;
+  font-size: 3vw;
   top: 30%;
 }
 .card_new::before {

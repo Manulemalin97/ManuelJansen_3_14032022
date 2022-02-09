@@ -55,16 +55,11 @@ header > h1 .bloc header > div .bloc header > p {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 3.7vw;
-  padding: 1vw 6vw 1vw 1vw;
+  padding: 2vw 7vw 2vw 0vw;
 }
 
-.localisation .localisation > i {
-  margin-right: 4vw;
-  font-size: 4vw;
-}
-
-.localisation .localisation > i .localisation > p {
-  margin-right: 3vw;
+.localisation > p {
+  margin: 0;
 }
 
 .localisation > i.fas {
