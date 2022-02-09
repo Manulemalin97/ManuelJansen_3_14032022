@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
  * style.css-desktop
  * 
@@ -8,28 +7,30 @@
  * @version 1.0
  * @date 2022-01
  */
+
 /*
  * définition des polices de caractères
  */
+
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
 }
 
 /*
  * définition des polices de caractères
  */
+
 @font-face {
   font-family: "Shrikhand";
-  src: url(fonts/Shrikhand-Regular.ttf);
+  src: url(../fonts/Shrikhand-Regular.ttf);
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url(fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 
 header {
@@ -51,20 +52,17 @@ header > h1 {
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
-
 .localisation {
   background-color: #eaeaea;
   font-family: "Roboto", sans-serif;
 }
-
 .localisation > i.fas {
-  color: grey;
+  color: #353535;
 }
-
 /* Réservation, Explorer */
+
 .Réservez > button {
   font-family: "Roboto", sans-serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e872da), to(#a65cdb));
   background: linear-gradient(#e872da, #a65cdb);
   color: white;
   border: none;
@@ -72,8 +70,7 @@ header > h1 {
 
 /* Effet au survol du Button recherche */
 .Réservez > button:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
   cursor: pointer;
 }
 
@@ -83,10 +80,11 @@ header > h1 {
 
 .Réservez > p {
   font-family: "Roboto", sans-serif;
-  color: grey;
+  color: #656565;
 }
 
 /* NAV*/
+
 li:before {
   color: white;
   background-color: #9356dc;
@@ -101,6 +99,10 @@ li:before {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
+
+.Nav > ol > li:hover {
+    background-color:#f5edff ;
+  }
 
 .Nav li i.fas {
   color: #8d8d8d;
@@ -128,8 +130,7 @@ li:before {
 .card_image {
   background-size: cover;
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .card_description {
@@ -142,6 +143,7 @@ li:before {
 }
 
 /* Footer*/
+
 footer {
   background-color: #353535;
 }
@@ -155,4 +157,20 @@ footer > a {
   font-family: "Roboto", sans-serif;
   color: white;
 }
-/*# sourceMappingURL=styles.css.map */
+
+/* Restaurants*/
+.resto_1{
+    max-width: 100%;
+}
+main{
+    position: relative;
+}
+main h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 4vw;
+}
+main > i{
+    position: absolute;
+    left: 90vw;
+    top: 20%;
+}

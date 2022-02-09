@@ -41,28 +41,31 @@ header > h1 {
 
 /* NAV*/
 .Nav > h2 {
-  font-size: 3.5vw;
+    font-size: 2.5vw;
+    margin: 0;
+    margin-left: 3.5vw;
+    margin-bottom: 2vw;
 }
 
 .Nav > ol > li {
-  width: 31%;
-  height: 5vw;
-  font-size: 2vw;
-  padding: 1vw 0vw 0vw 0vw;
+    width: 30%;
+    height: 5vw;
+    font-size: 1.6vw;
+    padding: 1.5vw 0vw 0vw 0vw;
 }
 
 li:before {
-  font-size: 1.5vw;
-  margin-left: 0.3vw;
-  width: 2.5vw;
-  height: 2.5vw;
-  left: -2vw;
+    font-size: 1vw;
+    margin-left: 1.3vw;
+    width: 2vw;
+    height: 2vw;
 }
 
 .Nav > ol {
-  width: 98%;
-  display: flex;
-  justify-content: space-between;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 4vw;
 }
 .fa-mobile-alt {
   padding: 0vw 1vw 2vw 2vw;
@@ -80,6 +83,8 @@ li:before {
 /* Menus*/
 .menus > h2 {
   margin-top: 1vw;
+      font-size: 5vw;
+      padding-top: 3vw;
 }
 
 .cards_menu {
@@ -88,13 +93,13 @@ li:before {
 }
 
 .card {
-  width: 42%;
-  height: 38vw;
+    width: 42%;
+    height: 30vw;
 }
 
 .card_new {
-  width: 42%;
-  height: 38vw;
+    width: 42%;
+    height: 30vw;
 }
 
 .card_description > h3 {

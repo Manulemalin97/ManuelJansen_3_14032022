@@ -20,8 +20,9 @@ body {
 header > h1 {
   font-size: 7vw;
   margin: 0;
-  box-shadow: 0 0 0 0.5vw #cfcfcf;
+  box-shadow:0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
   padding: 0.2vw;
+  position: relative;
 
   .bloc header > div {
     display: flex;
@@ -40,7 +41,8 @@ header > h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4vw;
+  font-size: 3.7vw;
+  padding: 1vw 6vw 1vw 1vw;
 
   .localisation > i {
     margin-right: 4vw;
@@ -62,9 +64,8 @@ header > h1 {
 
 .Réservez > h2 {
   font-size: 6vw;
-  margin-right: 2vw;
-  margin-left: 2vw;
   margin-bottom: 0;
+  padding: 0vw 14vw 0vw 14vw;
 }
 
 .Réservez > p {
@@ -75,12 +76,13 @@ header > h1 {
 
 /* Réservation, Button recherche */
 .Réservez > button {
-  font-size: 5.5vw;
-  padding: 4vw 5vw;
-  margin-top: 5vw;
-  box-shadow: 1px 1px 16px -6px #000000;
-  border-radius: 9vw;
-  margin-bottom: 15vw;
+    font-size: 4.3vw;
+    padding: 4vw 4vw;
+    margin-top: 5vw;
+    -webkit-box-shadow: 1px 1px 16px -6px #000000;
+    box-shadow: 1px 1px 16px -6px #000000;
+    border-radius: 9vw;
+    margin-bottom: 15vw;
 }
 /* NAV*/
 
@@ -90,12 +92,16 @@ header > h1 {
 
 .Nav > h2 {
   font-size: 6vw;
-  text-align: start;
+  margin: 0;
+  margin-left: 3vw;
+  margin-top: 10vw;
+  margin-bottom: 4vw;
 }
 
 .Nav > ol {
-  width: 97%;
-  margin: 0;
+  width: 93%;
+  margin: auto;
+  margin-right: 1vw;
   counter-reset: steps;
   padding: 0;
   margin-left: 3vw;
@@ -107,25 +113,26 @@ li:before {
   content: counter(steps);
   counter-increment: steps;
   font-size: 3vw;
-  width: 5vw;
-  height: 5vw;
+  width: 6vw;
+  height: 6vw;
   border-radius: 50%;
   left: -2vw;
   position: absolute;
 }
 
 .Nav > ol > li {
-  background-color: #f6f6f6;
-  box-shadow: 5px 5px 5px 1px #e3e3e3;
-  padding: 4vw 0vw 0vw 0vw;
-  border-radius: 4vw;
-  text-align: start;
-  width: 95%;
-  height: 14vw;
-  margin-bottom: 2vw;
-  font-size: 4vw;
-  list-style-type: none;
-  position: relative;
+    background-color: #f6f6f6;
+    -webkit-box-shadow: 5px 5px 5px 1px #e3e3e3;
+    box-shadow: 5px 5px 5px 1px #e3e3e3;
+    padding: 6vw 0vw 0vw 0vw;
+    border-radius: 4vw;
+    text-align: start;
+    width: 100%;
+    height: 18vw;
+    margin-bottom: 2vw;
+    font-size: 5vw;
+    list-style-type: none;
+    position: relative;
 }
 
 .Nav > ol > li:hover {
@@ -153,7 +160,7 @@ li:before {
   flex-direction: column;
   align-items: center;
   width: 90%;
-  border-radius: 1.5vw;
+  border-radius: 4vw;
   box-shadow: 5px 5px 5px 1px #e3e3e3;
   height: 60vw;
   margin-left: 5vw;
@@ -178,18 +185,18 @@ li:before {
 }
 
 .menus > h2 {
-  margin: 0;
-  font-size: 6vw;
-  margin-left: 5vw;
-  margin-top: 15vw;
-  margin-bottom: 3vw;
-  padding-top: 9vw;
+    margin: 0;
+    font-size: 6vw;
+    margin-left: 5vw;
+    margin-top: 12vw;
+    margin-bottom: 5vw;
+    padding-top: 13vw;
 }
 
 .card_image {
   width: 100%;
-  height: 72%;
-  border-radius: 2vw 2vw 0 0;
+  height: 66%;
+  border-radius: 4vw 4vw 0 0;
 }
 
 .card {
@@ -198,7 +205,7 @@ li:before {
   flex-direction: column;
   align-items: center;
   width: 90%;
-  border-radius: 1.5vw;
+  border-radius: 4vw;
   box-shadow: 5px 5px 5px 1px #e3e3e3;
   height: 60vw;
   margin-left: 5vw;
@@ -223,24 +230,23 @@ li:before {
 .card_description > h3 {
   margin: 0;
   margin-top: 3vw;
-  font-size: 4.5vw;
+  font-size: 5.5vw;
 }
 
 .card_description > p {
   margin: 0;
   margin-top: 1vw;
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 .card_description > i {
-  font-size: 6vw;
+  font-size: 7vw;
   position: absolute;
   right: 1vw;
-  top: 50%;
+  top: 40%;
 }
 
 .card_description > i:hover {
-  transform: scale(1.1);
   font-weight: 800;
 }
 

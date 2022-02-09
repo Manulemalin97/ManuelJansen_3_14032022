@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "Projet 3 ",
   "main": "index.js",
+  "scripts": {
+    "style": "sass --watch ./sass/styles.scss:./css/styles.css",
+    "desktop": "sass --watch ./sass/style-desktop.scss:./css/style-desktop.css",
+    "tablette": "sass --watch ./sass/style-tablette.scss:./css/style-tablette.css",
+    "mobile": "sass --watch ./sass/style-mobile.scss:./css/style-mobile.css"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Manulemalin97/Projet_3.git"
