@@ -21,7 +21,7 @@ header > h1 {
   margin: 0;
   -webkit-box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
-  padding: 0.2vw;
+  padding: 3vw 0vw 1vw 0vw;
   position: relative;
 }
 
@@ -315,6 +315,25 @@ footer > a > .fa-hands-helping {
   height: 73vw;
 }
 
+header {
+  position: relative;
+}
+
+header > div > i {
+  position: absolute;
+}
+
+.back > h1 {
+  font-size: 8vw;
+  margin-bottom: 1vw;
+}
+
+.back > i {
+  font-size: 5vw;
+  margin-left: 5vw;
+  margin-top: 3vw;
+}
+
 /* Restaurants*/
 section > h3 {
   font-size: 5vw;
@@ -327,15 +346,14 @@ section > h3 {
 .titre_resto > i {
   position: absolute;
   left: 85vw;
-  top: 20%;
+  top: 42%;
   font-size: 6vw;
 }
 
 .titre_resto > h2 {
   font-size: 7.5vw;
   margin: 0;
-  margin-top: 4vw;
-  margin-left: 5vw;
+  padding: 3vw 0vw 0vw 5vw;
 }
 
 .bloc__menu {
@@ -344,28 +362,48 @@ section > h3 {
 
 .carte__plat {
   position: relative;
-  border: 1px solid;
-  padding: 2vw;
+  padding: 2vw 2vw 1vw 3vw;
   margin-bottom: 4vw;
   border-radius: 4vw;
 }
 
 .carte__plat > h4 {
   margin: 0;
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 .carte__plat > p {
   margin: 0;
-  font-size: 3vw;
+  font-size: 4vw;
+  margin-top: 2vw;
 }
 
 .prix {
   position: absolute;
   left: 76vw;
-  font-size: 3.2vw;
-  top: 50%;
+  font-size: 3.8vw;
+  top: 60%;
   font-weight: 600;
+}
+
+/* button*/
+.Button {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+section > button {
+  font-size: 4.3vw;
+  padding: 3vw 8vw;
+  margin-top: 2vw;
+  -webkit-box-shadow: 1px 1px 16px -6px #000000;
+  box-shadow: 1px 1px 16px -6px #000000;
+  border-radius: 6vw;
+  margin-bottom: 10vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 /* Footer*/

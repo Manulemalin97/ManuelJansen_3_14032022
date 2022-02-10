@@ -146,6 +146,13 @@ li:before {
 }
 
 /* Header & banner */
+.back > h1 {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  background-color: white;
+  font-weight: 300;
+}
+
 .banner {
   -o-object-fit: cover;
      object-fit: cover;
@@ -175,6 +182,21 @@ section > h3 {
 
 .carte__plat > p {
   color: #404040;
+}
+
+/* button*/
+section > button {
+  font-family: "Roboto", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e872da), to(#a65cdb));
+  background: linear-gradient(#e872da, #a65cdb);
+  color: white;
+  border: none;
+}
+
+section > button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  cursor: pointer;
 }
 
 /* Footer*/

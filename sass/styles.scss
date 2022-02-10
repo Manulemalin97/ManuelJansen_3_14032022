@@ -142,10 +142,16 @@ li:before {
   color: #bd64db;
 }
 /* Header & banner */
+.back > h1{
+    font-family: "Shrikhand", cursive;
+  text-align: center;
+  background-color: white;
+  font-weight: 300;
+}
+
 .banner {
   object-fit: cover;
 }
-
 /* Restaurants*/
 .main_resto {
   background-color: #f6f6f6;
@@ -162,12 +168,23 @@ section > h3 {
   font-family: "Roboto", sans-serif;
 }
 .carte__plat {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 .carte__plat > p {
   color: #404040;
 }
 
+/* button*/
+section > button{
+    font-family: "Roboto", sans-serif;
+  background: linear-gradient(#e872da, #a65cdb);
+  color: white;
+  border: none;
+}
+section > button:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
 /* Footer*/
 
 footer {
