@@ -19,7 +19,7 @@ header > h1 {
 /* Réservation, Explorer */
 .localisation {
     padding: 1vw 0vw 1vw 0vw;
-
+    font-size: 2vw;
 }
 
 .Réservez > h2 {
@@ -102,7 +102,9 @@ header > h1 {
   margin-top: 1.5vw;
 }
 /* Footer*/
-
+footer > h2 {
+    margin: 0;
+}
 footer > a {
   margin-top: 0.5vw;
 }

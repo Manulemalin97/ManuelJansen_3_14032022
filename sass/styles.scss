@@ -101,8 +101,8 @@ li:before {
 }
 
 .Nav > ol > li:hover {
-    background-color:#f5edff ;
-  }
+  background-color: #f5edff;
+}
 
 .Nav li i.fas {
   color: #8d8d8d;
@@ -141,6 +141,32 @@ li:before {
 .card_description > i:hover {
   color: #bd64db;
 }
+/* Header & banner */
+.banner {
+  object-fit: cover;
+}
+
+/* Restaurants*/
+.main_resto {
+  background-color: #f6f6f6;
+}
+section > h3 {
+  color: #7b7b7b;
+}
+.titre_resto > h2 {
+  font-weight: lighter;
+  font-family: "Shrikhand";
+}
+
+.bloc__menu {
+  font-family: "Roboto", sans-serif;
+}
+.carte__plat {
+  background-color: #ffffff;
+}
+.carte__plat > p {
+  color: #404040;
+}
 
 /* Footer*/
 
@@ -156,21 +182,4 @@ footer > h2 {
 footer > a {
   font-family: "Roboto", sans-serif;
   color: white;
-}
-
-/* Restaurants*/
-.resto_1{
-    max-width: 100%;
-}
-main{
-    position: relative;
-}
-main h2{
-    font-family: "Roboto", sans-serif;
-    font-size: 4vw;
-}
-main > i{
-    position: absolute;
-    left: 90vw;
-    top: 20%;
 }
