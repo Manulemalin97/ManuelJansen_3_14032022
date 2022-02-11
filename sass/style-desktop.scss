@@ -14,11 +14,11 @@
 
 /* Header */
 header > h1 {
-  font-size: 3vw;
+  font-size: 4vw;
 }
 /* Réservation, Explorer */
 .localisation {
-    padding: 1vw 0vw 1vw 0vw;
+    padding: 1vw 1vw 1vw 5vw;
     font-size: 2vw;
 }
 
@@ -35,9 +35,9 @@ header > h1 {
   margin-bottom: 1vw;
 }
 
-.localisation > i.fas {
-    margin-right: 1vw;
-  }
+  .localisation > i.fas {
+      margin-right: 19vw;
+    }
 /* Réservation, Button recherche */
 .Réservez > button {
     font-size: 1.5vw;

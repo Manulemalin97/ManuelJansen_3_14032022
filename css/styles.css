@@ -170,6 +170,7 @@ section > h3 {
 .titre_resto > h2 {
   font-weight: lighter;
   font-family: "Shrikhand";
+  background-color: #f6f6f6;
 }
 
 .bloc__menu {

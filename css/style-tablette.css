@@ -19,7 +19,11 @@ header > h1 {
 /* Réservation, Explorer */
 .localisation {
   font-size: 2.5vw;
-  padding: 2vw 3vw 2vw 0vw;
+  padding: 2vw 0vw 2vw 6vw;
+}
+
+.localisation > i.fas {
+  margin-right: 30vw;
 }
 
 .Réservez > h2 {
