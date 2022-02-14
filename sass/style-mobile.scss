@@ -396,6 +396,16 @@ section > button{
   section > h3 {
     font-size: 4.5vw;
     font-weight: 400;
+    position: relative;
+  }
+  h3::after{
+    content: "";
+    position: absolute;
+    height: 0.7vw;
+    width: 11.25vw;
+    bottom: -25%;
+    left: 1%;
+    background-color: #99e2d0;
   }
   .titre_resto {
     position: relative;
@@ -433,6 +443,7 @@ section > button{
   .carte__plat > h4 {
     margin: 0;
     font-size: 4.5vw;
+    padding: 0vw 18vw 0vw 0vw;
   }
 
   .carte__plat > h5 {
