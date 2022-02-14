@@ -12,194 +12,194 @@
  * définition des polices de caractères
  */
 
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-/*
- * définition des polices de caractères
- */
-
-@font-face {
-  font-family: "Shrikhand";
-  src: url(../fonts/Shrikhand-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url(../fonts/Roboto-Regular.ttf);
-}
-
-header {
-  background-color: #f6f6f6;
-}
-
-header > h1 {
-  font-family: "Shrikhand", cursive;
-  text-align: center;
-  background-color: white;
-  font-weight: 300;
-}
-
-.bloc header > div {
-  background-color: #eaeaea;
-}
-
-.bloc header > p {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-}
-.localisation {
-  background-color: #eaeaea;
-  font-family: "Roboto", sans-serif;
-}
-.localisation > i.fas {
-  color: #353535;
-}
-/* Réservation, Explorer */
-
-.Réservez > button {
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient(#e872da, #a65cdb);
-  color: white;
-  border: none;
-}
-
-/* Effet au survol du Button recherche */
-.Réservez > button:hover {
-  transform: scale(1.02);
-  cursor: pointer;
-}
-
-.Réservez > h2 {
-  font-family: "Roboto", sans-serif;
-}
-
-.Réservez > p {
-  font-family: "Roboto", sans-serif;
-  color: #656565;
-}
-
-/* NAV*/
-
-li:before {
-  color: white;
-  background-color: #9356dc;
-}
-
-.Nav > h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-}
-
-.Nav > ol > li {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-}
-
-.Nav > ol > li:hover {
-  background-color: #f5edff;
-}
-
-.Nav li i.fas {
-  color: #8d8d8d;
-}
-
-.Nav li i.fas:hover {
-  color: #9356dc;
-}
-
-/* Menus*/
-.card_new::before {
-  font-family: "Roboto", sans-serif;
-  color: #008766;
-}
-
-.menus {
-  background-color: #f6f6f6;
-}
-
-.menus > h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-}
-
-.card_image {
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
-}
-
-.card_description {
-  font-family: "Roboto", sans-serif;
-  color: black;
-}
-
-.card_description > i:hover {
-  color: #bd64db;
-}
-/* Header & banner */
-.back > h1 {
-  font-family: "Shrikhand", cursive;
-  text-align: center;
-  background-color: white;
-  font-weight: 300;
-}
-
-.banner {
-  object-fit: cover;
-}
-/* Restaurants*/
-.main_resto {
-  background-color: #f6f6f6;
-}
-section > h3 {
-  color: #7b7b7b;
-}
-.titre_resto > h2 {
-  font-weight: lighter;
-  font-family: "Shrikhand";
-  background-color: #f6f6f6;
-}
-
-.bloc__menu {
-  font-family: "Roboto", sans-serif;
-}
-.carte__plat {
-  background-color: #ffffff;
-}
-.carte__plat > p {
-  color: #404040;
-}
-.carte__plat > h5 {
-  color: #000000;
-}
-/* button*/
-section > button {
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient(#e872da, #a65cdb);
-  color: white;
-  border: none;
-}
-section > button:hover {
-  transform: scale(1.02);
-  cursor: pointer;
-}
-/* Footer*/
-
-footer {
-  background-color: #353535;
-}
-
-footer > h2 {
-  font-family: "Shrikhand", cursive;
-  color: white;
-}
-
-footer > a {
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
+ *,
+ ::before,
+ ::after {
+   box-sizing: border-box;
+   text-decoration: none;
+ }
+ 
+ /*
+  * définition des polices de caractères
+  */
+ 
+ @font-face {
+   font-family: "Shrikhand";
+   src: url(../fonts/Shrikhand-Regular.ttf);
+ }
+ 
+ @font-face {
+   font-family: "Roboto";
+   src: url(../fonts/Roboto-Regular.ttf);
+ }
+ 
+ header {
+   background-color: #f6f6f6;
+ }
+ 
+ header > h1 {
+   font-family: "Shrikhand", cursive;
+   text-align: center;
+   background-color: white;
+   font-weight: 300;
+ }
+ 
+ .bloc header > div {
+   background-color: #eaeaea;
+ }
+ 
+ .bloc header > p {
+   font-family: "Roboto", sans-serif;
+   text-align: center;
+ }
+ .localisation {
+   background-color: #eaeaea;
+   font-family: "Roboto", sans-serif;
+ }
+ .localisation > i.fas {
+   color: #353535;
+ }
+ /* Réservation, Explorer */
+ 
+ .Réservez > button {
+   font-family: "Roboto", sans-serif;
+   background: linear-gradient(#e872da, #a65cdb);
+   color: white;
+   border: none;
+ }
+ 
+ /* Effet au survol du Button recherche */
+ .Réservez > button:hover {
+   transform: scale(1.02);
+   cursor: pointer;
+ }
+ 
+ .Réservez > h2 {
+   font-family: "Roboto", sans-serif;
+ }
+ 
+ .Réservez > p {
+   font-family: "Roboto", sans-serif;
+   color: #656565;
+ }
+ 
+ /* NAV*/
+ 
+ li:before {
+   color: white;
+   background-color: #9356dc;
+ }
+ 
+ .Nav > h2 {
+   font-family: "Roboto", sans-serif;
+   font-weight: bold;
+ }
+ 
+ .Nav > ol > li {
+   font-family: "Roboto", sans-serif;
+   font-weight: bold;
+ }
+ 
+ .Nav > ol > li:hover {
+   background-color: #f5edff;
+ }
+ 
+ .Nav li i.fas {
+   color: #8d8d8d;
+ }
+ 
+ .Nav li i.fas:hover {
+   color: #9356dc;
+ }
+ 
+ /* Menus*/
+ .card_new::before {
+   font-family: "Roboto", sans-serif;
+   color: #008766;
+ }
+ 
+ .menus {
+   background-color: #f6f6f6;
+ }
+ 
+ .menus > h2 {
+   font-family: "Roboto", sans-serif;
+   font-weight: bold;
+ }
+ 
+ .card_image {
+   background-size: cover;
+   background-position: center;
+   object-fit: cover;
+ }
+ 
+ .card_description {
+   font-family: "Roboto", sans-serif;
+   color: black;
+ }
+ 
+ .card_description > i:hover {
+   color: #bd64db;
+ }
+ /* Header & banner */
+ .back > h1 {
+   font-family: "Shrikhand", cursive;
+   text-align: center;
+   background-color: white;
+   font-weight: 300;
+ }
+ 
+ .banner {
+   object-fit: cover;
+ }
+ /* Restaurants*/
+ .main_resto {
+   background-color: #f6f6f6;
+ }
+ section > h3 {
+   color: #7b7b7b;
+ }
+ .titre_resto > h2 {
+   font-weight: lighter;
+   font-family: "Shrikhand";
+   background-color: #f6f6f6;
+ }
+ 
+ .bloc__menu {
+   font-family: "Roboto", sans-serif;
+ }
+ .carte__plat {
+   background-color: #ffffff;
+ }
+ .carte__plat > p {
+   color: #404040;
+ }
+ .carte__plat > h5 {
+   color: #000000;
+ }
+ /* button*/
+ section > button {
+   font-family: "Roboto", sans-serif;
+   background: linear-gradient(#e872da, #a65cdb);
+   color: white;
+   border: none;
+ }
+ section > button:hover {
+   transform: scale(1.02);
+   cursor: pointer;
+ }
+ /* Footer*/
+ 
+ footer {
+   background-color: #353535;
+ }
+ 
+ footer > h2 {
+   font-family: "Shrikhand", cursive;
+   color: white;
+ }
+ 
+ footer > a {
+   font-family: "Roboto", sans-serif;
+   color: white;
+ }
