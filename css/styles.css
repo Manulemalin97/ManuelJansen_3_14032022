@@ -185,6 +185,10 @@ section > h3 {
   color: #404040;
 }
 
+.carte__plat > h5 {
+  color: #000000;
+}
+
 /* button*/
 section > button {
   font-family: "Roboto", sans-serif;

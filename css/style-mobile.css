@@ -470,7 +470,7 @@ section > h3 {
 }
 
 .bloc__menu {
-  padding: 5vw;
+  padding: 3vw 3vw 0vw 3vw;
 }
 
 .cube__plats {
@@ -489,6 +489,12 @@ section > h3 {
 .carte__plat > h4 {
   margin: 0;
   font-size: 4.5vw;
+}
+
+.carte__plat > h5 {
+  margin: 0;
+  font-size: 3.5vw;
+  margin-top: 1vw;
 }
 
 .carte__plat > p {
