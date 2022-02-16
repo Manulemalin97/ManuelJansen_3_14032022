@@ -13,134 +13,227 @@
  */
 /* Header */
 header > h1 {
-  font-size: 5vw;
+  font-size: 4vw;
+  padding: 0;
 }
 
 /* Réservation, Explorer */
 .localisation {
-  font-size: 2.5vw;
-  padding: 2vw 0vw 2vw 6vw;
-}
-
-.localisation > i.fas {
-  margin-right: 5vw;
-  margin-left: -5vw;
+  padding: 1vw 1vw 1vw 5vw;
+  font-size: 2vw;
 }
 
 .Réservez > h2 {
-  font-size: 3vw;
+  font-size: 2.5vw;
+  padding: 0vw 30vw 0vw 30vw;
+  margin-bottom: 1vw;
 }
 
 .Réservez > p {
-  font-size: 2vw;
+  font-size: 1.5vw;
+  padding: 0vw 30vw 0vw 30vw;
+  margin: 0;
+  margin-bottom: 1vw;
 }
 
 /* Réservation, Button recherche */
 .Réservez > button {
-  font-size: 2.5vw;
-  padding: 2vw 3vw;
+  font-size: 1.5vw;
+  padding: 1vw 1vw;
   margin-bottom: 4vw;
+  margin-top: 1vw;
 }
 
 /* NAV*/
-.Nav > h2 {
-  font-size: 2.5vw;
-  margin: 0;
-  margin-left: 3.5vw;
-  margin-bottom: 2vw;
-}
-
-.Nav > ol > li {
-  width: 30%;
-  height: 5vw;
-  font-size: 1.6vw;
-  padding: 1.5vw 0vw 0vw 0vw;
-}
-
-li:before {
-  font-size: 1vw;
-  margin-left: 1.3vw;
-  width: 2vw;
-  height: 2vw;
-}
-
 .Nav > ol {
-  width: 92%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: 4vw;
+  width: 80%;
+  margin-left: 10vw;
 }
 
 .fa-mobile-alt {
-  padding: 0vw 1vw 2vw 2vw;
-  font-size: large;
+  font-size: larger;
 }
 
-.fa-list-ul {
-  padding: 0vw 1vw 2vw 2vw;
-}
-
-.fa-store {
-  padding: 0vw 1vw 2vw 2vw;
+.Nav > h2 {
+  margin-left: 9.5vw;
 }
 
 /* Menus*/
 .menus > h2 {
-  margin-top: 1vw;
-  font-size: 5vw;
-  padding-top: 3vw;
+  margin: 0;
+  margin-top: 2vw;
+  padding: 2vw 2vw;
+  font-size: 3vw;
+  margin-left: 17vw;
 }
 
 .cards_menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 95%;
+}
+
+.card_image {
+  border-radius: 2vw 2vw 0 0;
 }
 
 .card {
-  width: 42%;
-  height: 30vw;
+  width: 30%;
+  height: 23vw;
+  border-radius: 2vw;
 }
 
 .card_new {
-  width: 42%;
-  height: 30vw;
+  width: 30%;
+  height: 23vw;
+  border-radius: 2vw;
 }
 
 .card_description > h3 {
-  font-size: 3.5vw;
-  margin-top: 0.2vw;
+  font-size: 2vw;
+  margin-top: 1vw;
 }
 
 .card_description > p {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .card_description > i {
-  font-size: 5vw;
+  font-size: 3vw;
   top: 30%;
+}
+
+.card_new::before {
+  margin-top: 1.5vw;
+}
+
+/* Footer*/
+footer > h2 {
+  margin: 0;
+}
+
+footer > a {
+  margin-top: 0.5vw;
+}
+
+footer > a > .fa-utensils {
+  margin-right: 1vw;
+}
+
+footer > a > .fa-hands-helping {
+  margin-right: 0.5vw;
+}
+
+/* Restaurant 1 */
+/* Header & banner restaurants */
+.banner {
+  height: 30vw;
+}
+
+header > h1 {
+  font-size: 5vw;
+  margin: 0;
+}
+
+header > i {
+  font-size: 3.5vw;
+  margin-left: 4vw;
+  margin-top: 0.6vw;
+}
+
+/* Restaurants*/
+section > h3 {
+  font-size: 4.5vw;
+  font-weight: 400;
+}
+
+.titre_resto > i {
+  left: 86vw;
+  top: 36%;
+  font-size: 3vw;
+}
+
+.titre_resto > h2 {
+  font-size: 3vw;
+  margin-bottom: 1vw;
+  padding: 2vw 0vw 0vw 10vw;
+  border-radius: 0;
+}
+
+.bloc__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1vw;
+}
+
+.cube__plats {
+  margin-bottom: 0;
+  width: auto;
+}
+
+.cube__plats > a {
+  width: 21%;
+  margin-bottom: 1vw;
+  border-bottom: 3px solid #99e2d0;
+  height: 2.5vw;
+  font-size: 1.5vw;
+}
+
+article {
+  padding: 0.7vw 2vw 1vw 2vw;
+  border-radius: 2vw;
+  height: 8vw;
+}
+
+article > h4 {
+  padding: 0;
+  font-size: 1.2vw;
+}
+
+article > p {
+  margin: 0;
+  font-size: 1vw;
+}
+
+.prix {
+  padding-left: 1vw;
+}
+
+/* button*/
+.Button {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+section > button {
+  font-size: 1.5vw;
+  padding: 0.8vw 2vw;
+  margin-bottom: 2vw;
 }
 
 /* Footer*/
 footer {
-  padding: 1vw 0vw 1vw 3vw;
-  height: auto;
+  padding: 6vw 0vw 0vw 0vw;
+  height: 12vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 footer > h2 {
-  font-size: 2.5vw;
+  font-size: 1.7vw;
 }
 
 footer > a {
-  font-size: 2vw;
+  font-size: 1.2vw;
   margin: 0;
-  margin-top: 2vw;
 }
 
 footer > a > .fa-utensils {

@@ -19,18 +19,22 @@
     margin: 0;
     box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
     padding: 3vw 0vw 1vw 0vw;
-    .bloc header > div {
+}
+
+    .bloc header > div{
+
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 4vw;
+    }
       .bloc header > p {
         font-size: 4vw;
         margin: 0;
         padding: 2.2vw;
       }
-    }
-  }
+    
+  
   .localisation {
     display: flex;
     align-items: center;
@@ -87,7 +91,7 @@
     counter-reset: steps;
     padding: 0;
     margin-left: 3vw;
-  }
+  } 
   li:before {
     display: grid;
     place-items: center;
@@ -298,7 +302,6 @@ footer {
     font-size: 5vw;
 }
   article {
-    position: relative;
     padding: 3vw 2vw 3vw 3vw;
     margin-bottom: 4vw;
     border-radius: 4vw;
@@ -313,12 +316,11 @@ footer {
       margin: 0;
       font-size: 3.5vw;
       margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vw;
   }
   .prix {
-    position: absolute;
-    left: 76vw;
-    font-size: 3.8vw;
-    top: 60%;
     font-weight: 600;
   }
   /* button*/

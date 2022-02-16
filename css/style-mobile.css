@@ -24,7 +24,7 @@ header > h1 {
   padding: 3vw 0vw 1vw 0vw;
 }
 
-header > h1 .bloc header > div {
+.bloc header > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,7 +37,7 @@ header > h1 .bloc header > div {
   font-size: 4vw;
 }
 
-header > h1 .bloc header > div .bloc header > p {
+.bloc header > p {
   font-size: 4vw;
   margin: 0;
   padding: 2.2vw;
@@ -383,7 +383,6 @@ section > h3 {
 }
 
 article {
-  position: relative;
   padding: 3vw 2vw 3vw 3vw;
   margin-bottom: 4vw;
   border-radius: 4vw;
@@ -401,13 +400,16 @@ article > p {
   margin: 0;
   font-size: 3.5vw;
   margin-top: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1vw;
 }
 
 .prix {
-  position: absolute;
-  left: 76vw;
-  font-size: 3.8vw;
-  top: 60%;
   font-weight: 600;
 }
 
