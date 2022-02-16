@@ -23,7 +23,8 @@ header > h1 {
 }
 
 .localisation > i.fas {
-  margin-right: 30vw;
+  margin-right: 5vw;
+  margin-left: -5vw;
 }
 
 .Réservez > h2 {

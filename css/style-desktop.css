@@ -36,10 +36,6 @@ header > h1 {
   margin-bottom: 1vw;
 }
 
-.localisation > i.fas {
-  margin-right: 19vw;
-}
-
 /* Réservation, Button recherche */
 .Réservez > button {
   font-size: 1.5vw;
@@ -135,15 +131,15 @@ footer > a > .fa-hands-helping {
   height: 30vw;
 }
 
-.back > h1 {
+header > h1 {
   font-size: 4vw;
   margin: 0;
 }
 
-.back > i {
+header > i {
   font-size: 2.5vw;
   margin-left: 4vw;
-  margin-top: 1.5vw;
+  margin-top: 0.8vw;
 }
 
 /* Restaurants*/
@@ -161,6 +157,7 @@ section > h3 {
 .titre_resto > h2 {
   font-size: 3vw;
   padding: 5vw 0vw 0vw 8vw;
+  border-radius: 0;
 }
 
 .bloc__menu {
@@ -177,17 +174,25 @@ section > h3 {
   width: auto;
 }
 
-.carte__plat {
+.cube__plats > a {
+  width: 17%;
+  margin-bottom: 2vw;
+  border-bottom: 3px solid #99e2d0;
+  height: 3vw;
+  font-size: 2vw;
+}
+
+article {
   padding: 2vw;
   border-radius: 2vw;
 }
 
-.carte__plat > h4 {
+article > h4 {
   padding: 0;
   font-size: 1.5vw;
 }
 
-.carte__plat > p {
+article > p {
   font-size: 1vw;
 }
 

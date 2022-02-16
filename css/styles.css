@@ -146,7 +146,7 @@ li:before {
 }
 
 /* Header & banner */
-.back > h1 {
+.header > h1 {
   font-family: "Shrikhand", cursive;
   text-align: center;
   background-color: white;
@@ -163,7 +163,7 @@ li:before {
   background-color: #f6f6f6;
 }
 
-section > h3 {
+section > a {
   color: #7b7b7b;
 }
 
@@ -177,11 +177,17 @@ section > h3 {
   font-family: "Roboto", sans-serif;
 }
 
-.carte__plat {
+.cube__plats > a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+article {
   background-color: #ffffff;
 }
 
-.carte__plat > p {
+article > p {
   color: #404040;
 }
 

@@ -19,7 +19,6 @@
     margin: 0;
     box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
     padding: 3vw 0vw 1vw 0vw;
-    position: relative;
     .bloc header > div {
       display: flex;
       align-items: center;
@@ -36,14 +35,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3.7vw;
+    font-size: 4vw;
     padding: 2vw 3vw 2vw 0vw;
   }
   .localisation > p {
     margin: 0;
   }
   .localisation > i.fas {
-    margin-right: 33vw;
+    margin-right: 5vw;
+    margin-left: 7vw;
   }
   /* Réservation, Explorer */
   .Réservez {
@@ -109,7 +109,7 @@
     text-align: start;
     width: 100%;
     height: 18vw;
-    margin-bottom: 2vw;
+    margin-bottom: 7vw;
     font-size: 5vw;
     list-style-type: none;
     position: relative;
@@ -242,20 +242,18 @@ footer {
     width: 100%;
     height: 73vw;
   }
-  header{
-      position: relative;
-  }
-  header > div > i{
-      position: absolute;
-  }
-  .back > h1{
+ header{
+    position: relative;
+ }
+  header > h1{
       font-size: 8vw;
-      margin-bottom: 1vw;
   }
-  .back > i{
-      font-size: 5vw;
-      margin-left: 5vw;
-      margin-top: 3vw;
+  header > i{
+    position: absolute;
+    font-size: 5vw;
+    margin-left: 5vw;
+    top: 22%;
+    margin-top: 3vw;
   }
   /* Restaurants*/
   section > h3 {
@@ -279,6 +277,9 @@ footer {
       border-radius: 6vw 6vw 0 0;
       margin-top: -6vw;
   }
+  .carte__plat > h5 {
+    margin: 0;
+}
   .bloc__menu {
     padding: 5vw;
   }
@@ -286,18 +287,29 @@ footer {
       margin-bottom: 10vw;
        position: relative;
   }
-  .carte__plat {
+  .cube__plats > a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    width: 12%;
+    margin-left: 0.5vw;
+    margin-bottom: 3vw;
+    border-bottom: 3px solid #99e2d0;
+    height: 8vw;
+    font-size: 5vw;
+}
+  article {
     position: relative;
     padding: 3vw 2vw 3vw 3vw;
     margin-bottom: 4vw;
     border-radius: 4vw;
     box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
   }
-  .carte__plat > h4 {
+  article > h4 {
     margin: 0;
     font-size: 4.5vw;
+    padding-right: 12vw;
   }
-  .carte__plat > p {
+  article > p {
       margin: 0;
       font-size: 3.5vw;
       margin-top: 1vw;
@@ -326,106 +338,3 @@ footer {
       display: grid;
       place-items: center;
   }
-  /* Restaurant 2 */
-  /* Header & banner restaurants */
-  .banner {
-      width: 100%;
-      height: 73vw;
-    }
-    header{
-        position: relative;
-    }
-    header > div > i{
-        position: absolute;
-    }
-    .back > h1{
-        font-size: 8vw;
-        margin-bottom: 1vw;
-    }
-    .back > i{
-        font-size: 5vw;
-        margin-left: 5vw;
-        margin-top: 3vw;
-    }
-    /* Restaurants*/
-    
-    
-    section > h3 {
-      font-size: 4.5vw;
-      font-weight: 400;
-    }
- 
-    .titre_resto {
-      position: relative;
-    }
-    
-    .titre_resto > i {
-      position: absolute;
-      left: 83vw;
-      top: 50%;
-      font-size: 6vw;
-    }
-    
-    .titre_resto > h2 {
-      font-size: 7.5vw;
-      margin: 0;
-      padding: 7vw 0vw 0vw 5vw;
-        width: 100%;
-        border-radius: 6vw 6vw 0 0;
-        margin-top: -6vw;
-    }
-    
-    .bloc__menu {
-      padding: 3vw 3vw 0vw 3vw;
-    }
-    .cube__plats{
-        margin-bottom: 10vw;
-    }
-    .carte__plat {
-      position: relative;
-      padding: 3vw 2vw 3vw 3vw;
-      margin-bottom: 4vw;
-      border-radius: 4vw;
-      box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
-    }
-    .carte__plat > h4 {
-      margin: 0;
-      font-size: 4.5vw;
-      padding: 0vw 18vw 0vw 0vw;
-    }
-  
-    .carte__plat > h5 {
-      margin: 0;
-        font-size: 3.5vw;
-        margin-top: 1vw;
-    }
-    .carte__plat > p {
-        margin: 0;
-        font-size: 3.5vw;
-        margin-top: 1vw;
-    }
-    .prix {
-      position: absolute;
-      left: 76vw;
-      font-size: 3.8vw;
-      top: 60%;
-      font-weight: 600;
-    }
-    /* button*/
-    .Button{
-        display: grid;
-        place-items: center;
-    }
-    
-    section > button{
-        font-size: 4.3vw;
-        padding: 3vw 8vw;
-        margin-top: 2vw;
-        -webkit-box-shadow: 1px 1px 16px -6px #000000;
-        box-shadow: 1px 1px 16px -6px #000000;
-        border-radius: 6vw;
-        margin-bottom: 10vw;
-        display: -ms-grid;
-        display: grid;
-        place-items: center;
-    }
