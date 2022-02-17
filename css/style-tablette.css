@@ -23,17 +23,21 @@ header > h1 {
   font-size: 2vw;
 }
 
+.localisation > i.fas {
+  margin-right: 4vw;
+  margin-left: -10vw;
+}
+
 .Réservez > h2 {
-  font-size: 2.5vw;
-  padding: 0vw 30vw 0vw 30vw;
-  margin-bottom: 1vw;
+  font-size: 3.5vw;
+  padding: 0vw 0vw 0vw 0vw;
+  margin-bottom: 2vw;
 }
 
 .Réservez > p {
-  font-size: 1.5vw;
-  padding: 0vw 30vw 0vw 30vw;
+  font-size: 1.7vw;
   margin: 0;
-  margin-bottom: 1vw;
+  margin-bottom: 2vw;
 }
 
 /* Réservation, Button recherche */
@@ -45,17 +49,48 @@ header > h1 {
 }
 
 /* NAV*/
+.Nav > h2 {
+  margin: 0;
+  margin-bottom: 2vw;
+  margin-left: 9vw;
+  font-size: 3vw;
+}
+
 .Nav > ol {
-  width: 80%;
-  margin-left: 10vw;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.Nav > ol > li {
+  padding: 1vw 0vw 0vw 0vw;
+  width: 23%;
+  height: auto;
+  font-size: 1.3vw;
+  margin-bottom: 2vw;
+}
+
+li:before {
+  display: -ms-grid;
+  display: grid;
+  font-size: 1vw;
+  width: 2vw;
+  height: 2vw;
+  left: -1vw;
+  top: 29%;
+}
+
+.Nav li i.fas {
+  padding: 0vw 2vw 1vw 2vw;
 }
 
 .fa-mobile-alt {
   font-size: larger;
-}
-
-.Nav > h2 {
-  margin-left: 9.5vw;
 }
 
 /* Menus*/
@@ -68,6 +103,11 @@ header > h1 {
 }
 
 .cards_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -128,7 +168,7 @@ footer > a > .fa-hands-helping {
 /* Restaurant 1 */
 /* Header & banner restaurants */
 .banner {
-  height: 30vw;
+  height: 40vw;
 }
 
 header > h1 {
@@ -167,7 +207,7 @@ section > h3 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 1vw;
+  padding: 6vw;
 }
 
 .cube__plats {
@@ -186,7 +226,6 @@ section > h3 {
 article {
   padding: 0.7vw 2vw 1vw 2vw;
   border-radius: 2vw;
-  height: 8vw;
 }
 
 article > h4 {
