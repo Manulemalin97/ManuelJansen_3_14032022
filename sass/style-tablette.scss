@@ -13,35 +13,39 @@
  */
 
 /* Header */
+
 header > h1 {
   font-size: 4vw;
   padding: 0;
 }
+
 /* Réservation, Explorer */
+
 .localisation {
-  padding: 1vw 1vw 1vw 5vw;
+  padding: 1vw 1vw 1vw 8vw;
   font-size: 2vw;
 }
+
 .localisation > i.fas {
-    margin-right: 4vw;
-    margin-left: -10vw;
+  margin-right: 4vw;
+  margin-left: -10vw;
 }
 
 .Réservez > h2 {
-    font-size: 3.5vw;
-    padding: 0vw 0vw 0vw 0vw;
-    margin-bottom: 2vw;
+  font-size: 2.5vw;
+  padding: 0vw 0vw 0vw 0vw;
+  margin-bottom: 2vw;
 }
 
 .Réservez > p {
-    font-size: 1.7vw;
-    margin: 0;
-    margin-bottom: 2vw;
+  font-size: 1vw;
+  margin: 0;
+  margin-bottom: 2vw;
 }
 
 /* Réservation, Button recherche */
 .Réservez > button {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   padding: 1vw 1vw;
   margin-bottom: 4vw;
   margin-top: 1vw;
@@ -50,42 +54,44 @@ header > h1 {
 /* NAV*/
 
 .Nav > h2 {
-    margin: 0;
-    margin-bottom: 2vw;
-    margin-left: 9vw;
-    font-size: 3vw;
+  margin: 0;
+  margin-bottom: 2vw;
+  margin-left: 9vw;
+  font-size: 2vw;
 }
 
 .Nav > ol {
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-.Nav > ol > li {
-    padding: 1vw 0vw 0vw 0vw;
-    width: 23%;
-    height: auto;
-    font-size: 1.3vw;
-    margin-bottom: 2vw;
-}
-li:before {
-    display: grid;
-    font-size: 1vw;
-    width: 2vw;
-    height: 2vw;
 
-    left: -1vw;
-    top: 29%;
+.Nav > ol > li {
+  padding: 1vw 0vw 0vw 0vw;
+  width: 23%;
+  height: auto;
+  font-size: 1.3vw;
+  margin-bottom: 0vw;
+}
+
+li:before {
+  display: grid;
+  font-size: 1vw;
+  width: 2vw;
+  height: 2vw;
+  left: -1vw;
+  top: 29%;
 }
 
 .Nav li i.fas {
-    padding: 0vw 2vw 1vw 2vw;
+  padding: 0vw 2vw 1vw 2vw;
 }
 
 .fa-mobile-alt {
   font-size: larger;
 }
+
 /* Menus*/
 .menus > h2 {
   margin: 0;
@@ -96,8 +102,8 @@ li:before {
 }
 
 .cards_menu {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 95%;
 }
@@ -111,6 +117,7 @@ li:before {
   height: 23vw;
   border-radius: 2vw;
 }
+
 .card_new {
   width: 30%;
   height: 23vw;
@@ -124,18 +131,24 @@ li:before {
 
 .card_description > p {
   font-size: 2vw;
+  margin-top: 0;
 }
+
 .card_description > i {
   font-size: 3vw;
   top: 30%;
 }
+
 .card_new::before {
   margin-top: 1.5vw;
 }
+
 /* Footer*/
+
 footer > h2 {
   margin: 0;
 }
+
 footer > a {
   margin-top: 0.5vw;
 }
@@ -147,20 +160,25 @@ footer > a > .fa-utensils {
 footer > a > .fa-hands-helping {
   margin-right: 0.5vw;
 }
+
 /* Restaurant 1 */
 /* Header & banner restaurants */
+
 .banner {
-  height: 40vw;
+  height: 50vw;
 }
+
 header > h1 {
-  font-size: 5vw;
+  font-size: 4vw;
   margin: 0;
 }
+
 header > i {
   font-size: 3.5vw;
   margin-left: 4vw;
   margin-top: 0.6vw;
 }
+
 /* Restaurants*/
 
 section > h3 {
@@ -176,22 +194,22 @@ section > h3 {
 
 .titre_resto > h2 {
   font-size: 3vw;
-  margin-bottom: 1vw;
-  padding: 2vw 0vw 0vw 10vw;
+  padding: 2vw 0vw 0vw 5vw;
   border-radius: 0;
+  margin-top: 0px;
 }
 
 .bloc__menu {
   display: flex;
   justify-content: space-around;
-  padding: 6vw;
-  
+  padding: 3vw 2vw 2vw 2vw;
 }
 
 .cube__plats {
   margin-bottom: 0;
   width: auto;
 }
+
 .cube__plats > a {
   width: 21%;
   margin-bottom: 1vw;
@@ -199,22 +217,34 @@ section > h3 {
   height: 2.5vw;
   font-size: 1.5vw;
 }
+
 article {
   padding: 0.7vw 2vw 1vw 2vw;
   border-radius: 2vw;
 }
+
+article:hover {
+  transform: scale(1.1);
+  background-color: #f5edff;
+  cursor: pointer;
+}
+
 article > h4 {
   padding: 0;
   font-size: 1.2vw;
 }
+
 article > p {
   margin: 0;
   font-size: 1vw;
 }
+
 .prix {
   padding-left: 1vw;
 }
+
 /* button*/
+
 .Button {
   display: grid;
   place-items: center;
@@ -223,13 +253,15 @@ article > p {
 section > button {
   font-size: 1.5vw;
   padding: 0.8vw 2vw;
-  margin-bottom: 2vw;
+  margin-bottom: 5vw;
 }
 
 /* Footer*/
+
 footer {
   padding: 6vw 0vw 0vw 0vw;
   height: 12vw;
+  margin-top: 0vw;
   display: flex;
   justify-content: space-around;
 }

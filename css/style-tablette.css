@@ -19,7 +19,7 @@ header > h1 {
 
 /* Réservation, Explorer */
 .localisation {
-  padding: 1vw 1vw 1vw 5vw;
+  padding: 1vw 1vw 1vw 8vw;
   font-size: 2vw;
 }
 
@@ -29,20 +29,20 @@ header > h1 {
 }
 
 .Réservez > h2 {
-  font-size: 3.5vw;
+  font-size: 2.5vw;
   padding: 0vw 0vw 0vw 0vw;
   margin-bottom: 2vw;
 }
 
 .Réservez > p {
-  font-size: 1.7vw;
+  font-size: 1vw;
   margin: 0;
   margin-bottom: 2vw;
 }
 
 /* Réservation, Button recherche */
 .Réservez > button {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   padding: 1vw 1vw;
   margin-bottom: 4vw;
   margin-top: 1vw;
@@ -53,7 +53,7 @@ header > h1 {
   margin: 0;
   margin-bottom: 2vw;
   margin-left: 9vw;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 .Nav > ol {
@@ -72,7 +72,7 @@ header > h1 {
   width: 23%;
   height: auto;
   font-size: 1.3vw;
-  margin-bottom: 2vw;
+  margin-bottom: 0vw;
 }
 
 li:before {
@@ -137,6 +137,7 @@ li:before {
 
 .card_description > p {
   font-size: 2vw;
+  margin-top: 0;
 }
 
 .card_description > i {
@@ -168,11 +169,11 @@ footer > a > .fa-hands-helping {
 /* Restaurant 1 */
 /* Header & banner restaurants */
 .banner {
-  height: 40vw;
+  height: 50vw;
 }
 
 header > h1 {
-  font-size: 5vw;
+  font-size: 4vw;
   margin: 0;
 }
 
@@ -196,9 +197,9 @@ section > h3 {
 
 .titre_resto > h2 {
   font-size: 3vw;
-  margin-bottom: 1vw;
-  padding: 2vw 0vw 0vw 10vw;
+  padding: 2vw 0vw 0vw 5vw;
   border-radius: 0;
+  margin-top: 0px;
 }
 
 .bloc__menu {
@@ -207,7 +208,7 @@ section > h3 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 6vw;
+  padding: 3vw 2vw 2vw 2vw;
 }
 
 .cube__plats {
@@ -226,6 +227,13 @@ section > h3 {
 article {
   padding: 0.7vw 2vw 1vw 2vw;
   border-radius: 2vw;
+}
+
+article:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #f5edff;
+  cursor: pointer;
 }
 
 article > h4 {
@@ -252,13 +260,14 @@ article > p {
 section > button {
   font-size: 1.5vw;
   padding: 0.8vw 2vw;
-  margin-bottom: 2vw;
+  margin-bottom: 5vw;
 }
 
 /* Footer*/
 footer {
   padding: 6vw 0vw 0vw 0vw;
   height: 12vw;
+  margin-top: 0vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

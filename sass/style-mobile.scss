@@ -10,333 +10,394 @@
 /*
  * définition des polices de caractères
  */
- body {
-    background-color: white;
-    margin: 0;
-  }
-  header > h1 {
-    font-size: 7vw;
-    margin: 0;
-    box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
-    padding: 3vw 0vw 1vw 0vw;
+body {
+  background-color: white;
+  margin: 0;
 }
 
-    .bloc header > div{
+header > h1 {
+  font-size: 7vw;
+  margin: 0;
+  box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.3);
+  padding: 1vw 0vw 1vw 0vw;
+  margin-bottom: 0.5vw;
+}
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 4vw;
-    }
-      .bloc header > p {
-        font-size: 4vw;
-        margin: 0;
-        padding: 2.2vw;
-      }
-    
-  
-  .localisation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4vw;
-    padding: 2vw 3vw 2vw 0vw;
-  }
-  .localisation > p {
-    margin: 0;
-  }
-  .localisation > i.fas {
-    margin-right: 5vw;
-    margin-left: 7vw;
-  }
-  /* Réservation, Explorer */
-  .Réservez {
-    text-align: center;
-  }
-  .Réservez > h2 {
-    font-size: 6vw;
-    margin-bottom: 0;
-    padding: 0vw 14vw 0vw 14vw;
-  }
-  .Réservez > p {
-    font-size: 4.5vw;
-    margin-top: 3vw;
-    margin-bottom: 2vw;
-  }
-  /* Réservation, Button recherche */
-  .Réservez > button {
-    font-size: 4.3vw;
-    padding: 4vw 4vw;
-    margin-top: 5vw;
-    -webkit-box-shadow: 1px 1px 16px -6px #000000;
-    box-shadow: 1px 1px 16px -6px #000000;
-    border-radius: 9vw;
-    margin-bottom: 15vw;
-  }
-  /* NAV*/
-  .Nav {
-    padding: 2vw;
-  }
-  .Nav > h2 {
-    font-size: 6vw;
-    margin: 0;
-    margin-left: 3vw;
-    margin-top: 10vw;
-    margin-bottom: 4vw;
-  }
-  .Nav > ol {
-    width: 93%;
-    margin: auto;
-    margin-right: 1vw;
-    counter-reset: steps;
-    padding: 0;
-    margin-left: 3vw;
-  } 
-  li:before {
-    display: grid;
-    place-items: center;
-    content: counter(steps);
-    counter-increment: steps;
-    font-size: 3vw;
-    width: 6vw;
-    height: 6vw;
-    border-radius: 50%;
-    left: -2vw;
-    position: absolute;
-  }
-  .Nav > ol > li {
-    background-color: #f6f6f6;
-    -webkit-box-shadow: 5px 5px 5px 1px #e3e3e3;
-    box-shadow: 5px 5px 5px 1px #e3e3e3;
-    padding: 6vw 0vw 0vw 0vw;
-    border-radius: 4vw;
-    text-align: start;
-    width: 100%;
-    height: 18vw;
-    margin-bottom: 7vw;
-    font-size: 5vw;
-    list-style-type: none;
-    position: relative;
-  }
-  .Nav > ol > li:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-  }
-  .fa-mobile-alt {
-    padding: 0vw 6vw 2vw 7vw;
-  }
-  .fa-list-ul {
-    padding: 0vw 6vw 2vw 6vw;
-  }
-  .fa-store {
-    padding: 0vw 6vw 2vw 6vw;
-  }
-  /* Menus*/
-  .card_new {
-    margin-bottom: 5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    border-radius: 4vw;
-    box-shadow: 5px 5px 5px 1px #e3e3e3;
-    height: 60vw;
-    margin-left: 5vw;
-    position: relative;
-  }
-  .card_new:hover {
-    transform: scale(1.02);
-  }
-  .card_new::before {
-    content: "Nouveau";
-    position: absolute;
-    background-color: #99e2d0;
-    right: 2vw;
-    padding: 1vw 3vw;
-    display: -ms-grid;
-    display: grid;
-    place-items: center;
-    margin-top: 3vw;
-    border-radius: 0.5vw;
-  }
-  .menus > h2 {
-    margin: 0;
-    font-size: 6vw;
-    margin-left: 5vw;
-    margin-top: 12vw;
-    margin-bottom: 5vw;
-    padding-top: 13vw;
-  }
-  .card_image {
-    width: 100%;
-    height: 66%;
-    border-radius: 4vw 4vw 0 0;
-  }
-  .card {
-    margin-bottom: 5vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    border-radius: 4vw;
-    box-shadow: 5px 5px 5px 1px #e3e3e3;
-    height: 60vw;
-    margin-left: 5vw;
-  }
-  .card:hover {
-    transform: scale(1.02);
-  }
-  .cards_menu {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  .card_description {
-    width: 90%;
-    margin: 0;
-    position: relative;
-  }
-  .card_description > h3 {
-    margin: 0;
-    margin-top: 3vw;
-    font-size: 5.5vw;
-  }
-  .card_description > p {
-    margin: 0;
-    margin-top: 1vw;
-    font-size: 5vw;
-  }
-  .card_description > i {
-    font-size: 7vw;
-    position: absolute;
-    right: 1vw;
-    top: 40%;
-  }
-  .card_description > i:hover {
-    font-weight: 800;
-  }
+.bloc header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4vw;
+}
+
+.bloc header > p {
+  font-size: 4vw;
+  margin: 0;
+  padding: 2.2vw;
+}
+
+.localisation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4vw;
+  padding: 2vw 14vw 2vw 0vw;
+}
+
+.localisation > p {
+  margin: 0;
+}
+
+.localisation > i.fas {
+  margin-right: 5vw;
+  margin-left: 7vw;
+}
+
+/* Réservation, Explorer */
+
+.Réservez {
+  text-align: center;
+}
+
+.Réservez > h2 {
+  font-size: 6vw;
+  margin-bottom: 0;
+  padding: 0vw 14vw 0vw 14vw;
+}
+
+.Réservez > p {
+  font-size: 4.5vw;
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+}
+
+/* Réservation, Button recherche */
+
+.Réservez > button {
+  font-size: 4.3vw;
+  padding: 4vw 4vw;
+  margin-top: 5vw;
+  -webkit-box-shadow: 1px 1px 16px -6px #000000;
+  box-shadow: 1px 1px 16px -6px #000000;
+  border-radius: 9vw;
+  margin-bottom: 15vw;
+}
+
+/* NAV*/
+
+.Nav {
+  padding: 2vw;
+}
+
+.Nav > h2 {
+  font-size: 6vw;
+  margin: 0;
+  margin-left: 3vw;
+  margin-top: 10vw;
+  margin-bottom: 4vw;
+}
+
+.Nav > ol {
+  width: 93%;
+  margin: auto;
+  margin-right: 1vw;
+  counter-reset: steps;
+  padding: 0;
+  margin-left: 3vw;
+}
+
+li:before {
+  display: grid;
+  place-items: center;
+  content: counter(steps);
+  counter-increment: steps;
+  font-size: 3vw;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  left: -2vw;
+  position: absolute;
+}
+
+.Nav > ol > li {
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 5px 5px 5px 1px #e3e3e3;
+  box-shadow: 5px 5px 5px 1px #e3e3e3;
+  padding: 6vw 0vw 0vw 0vw;
+  border-radius: 5vw;
+  text-align: start;
+  width: 100%;
+  height: 18vw;
+  margin-bottom: 6vw;
+  font-size: 5vw;
+  list-style-type: none;
+  position: relative;
+}
+
+.Nav > ol > li:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.fa-mobile-alt {
+  padding: 0vw 6vw 2vw 7vw;
+}
+
+.fa-list-ul {
+  padding: 0vw 6vw 2vw 6vw;
+}
+
+.fa-store {
+  padding: 0vw 6vw 2vw 6vw;
+}
+
+/* Menus*/
+
+.card_new {
+  margin-bottom: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border-radius: 4vw;
+  box-shadow: 5px 5px 5px 1px #e3e3e3;
+  height: 60vw;
+  margin-left: 5vw;
+  position: relative;
+}
+
+.card_new:hover {
+  transform: scale(1.02);
+}
+
+.card_new::before {
+  content: "Nouveau";
+  position: absolute;
+  background-color: #99e2d0;
+  right: 2vw;
+  padding: 1vw 3vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-top: 3vw;
+  border-radius: 0.5vw;
+}
+
+.menus > h2 {
+  margin: 0;
+  font-size: 6vw;
+  margin-left: 5vw;
+  margin-top: 12vw;
+  margin-bottom: 5vw;
+  padding-top: 13vw;
+}
+
+.card_image {
+  width: 100%;
+  height: 70%;
+  border-radius: 4vw 4vw 0 0;
+}
+
+.card {
+  margin-bottom: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border-radius: 4vw;
+  box-shadow: 5px 5px 5px 1px #e3e3e3;
+  height: 60vw;
+  margin-left: 5vw;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.cards_menu {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.card_description {
+  width: 90%;
+  margin: 0;
+  position: relative;
+}
+
+.card_description > h3 {
+  margin: 0;
+  margin-top: 3vw;
+  font-size: 5vw;
+}
+
+.card_description > p {
+  margin: 0;
+  margin-top: 1vw;
+  font-size: 4.5vw;
+}
+
+.card_description > i {
+  font-size: 7vw;
+  position: absolute;
+  right: 1vw;
+  top: 40%;
+}
+
+.card_description > i:hover {
+  font-weight: 800;
+}
 
 /* Footer*/
+
 footer {
-    padding: 1vw 0vw 1vw 6vw;
-    height: 50vw;
-  }
-  footer > h2 {
-      font-size: 5.5vw;
-      margin: 0;
-      margin-top: 5vw;
-      margin-bottom: 4vw;
-      font-weight: 400;
-  }
-  footer > a {
-    display: flex;
-    font-size: 4.5vw;
-    margin: 0;
-    margin-top: 2vw;
-  }
-  footer > a > .fa-utensils {
-    margin-right: 3vw;
-  }
-  footer > a > .fa-hands-helping {
-    margin-right: 1.5vw;
-  }
-  /* Restaurant 1 */
-  /* Header & banner restaurants */
-  .banner {
-    width: 100%;
-    height: 73vw;
-  }
- header{
-    position: relative;
- }
-  header > h1{
-      font-size: 8vw;
-  }
-  header > i{
-    position: absolute;
-    font-size: 5vw;
-    margin-left: 5vw;
-    top: 22%;
-    margin-top: 3vw;
-  }
-  /* Restaurants*/
-  section > h3 {
-    font-size: 4.5vw;
-    font-weight: 400;
-  }
-  .titre_resto {
-    position: relative;
-  }
-  .titre_resto > i {
-    position: absolute;
-    left: 83vw;
-    top: 50%;
-    font-size: 6vw;
-  }
-  .titre_resto > h2 {
-    font-size: 7.5vw;
-    margin: 0;
-    padding: 7vw 0vw 0vw 5vw;
-      width: 100%;
-      border-radius: 6vw 6vw 0 0;
-      margin-top: -6vw;
-  }
-  .carte__plat > h5 {
-    margin: 0;
+  padding: 1vw 0vw 1vw 6vw;
+  height: 50vw;
+  margin-top: 18vw;
 }
-  .bloc__menu {
-    padding: 5vw;
-  }
-  .cube__plats{
-      margin-bottom: 10vw;
-       position: relative;
-  }
-  .cube__plats > a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    width: 12%;
-    margin-left: 0.5vw;
-    margin-bottom: 3vw;
-    border-bottom: 3px solid #99e2d0;
-    height: 8vw;
-    font-size: 5vw;
+
+footer > h2 {
+  font-size: 5.5vw;
+  margin: 0;
+  margin-top: 5vw;
+  margin-bottom: 4vw;
+  font-weight: 400;
 }
-  article {
-    padding: 3vw 2vw 3vw 3vw;
-    margin-bottom: 4vw;
-    border-radius: 4vw;
-    box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
-  }
-  article > h4 {
-    margin: 0;
-    font-size: 4.5vw;
-    padding-right: 12vw;
-  }
-  article > p {
-      margin: 0;
-      font-size: 3.5vw;
-      margin-top: 1vw;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1vw;
-  }
-  .prix {
-    font-weight: 600;
-  }
-  /* button*/
-  .Button{
-      display: grid;
-      place-items: center;
-  }
-  section > button{
-      font-size: 4.3vw;
-      padding: 3vw 8vw;
-      margin-top: 2vw;
-      -webkit-box-shadow: 1px 1px 16px -6px #000000;
-      box-shadow: 1px 1px 16px -6px #000000;
-      border-radius: 6vw;
-      margin-bottom: 10vw;
-      display: -ms-grid;
-      display: grid;
-      place-items: center;
-  }
+
+footer > a {
+  display: flex;
+  font-size: 4.5vw;
+  margin: 0;
+  margin-top: 2vw;
+}
+
+footer > a > .fa-utensils {
+  margin-right: 3vw;
+}
+
+footer > a > .fa-hands-helping {
+  margin-right: 1.5vw;
+}
+
+/* Restaurant 1 */
+/* Header & banner restaurants */
+
+.banner {
+  width: 100%;
+  height: 73vw;
+}
+
+.header_resto {
+  position: relative;
+}
+
+.header_resto > h1 {
+  font-size: 7vw;
+  margin-bottom: 0;
+}
+
+header > i {
+  position: absolute;
+  font-size: 5vw;
+  margin-left: 5vw;
+  top: 22%;
+  margin-top: 3vw;
+}
+
+/* Restaurants*/
+
+section > h3 {
+  font-size: 4.5vw;
+  font-weight: 400;
+}
+
+.titre_resto {
+  position: relative;
+}
+
+.titre_resto > i {
+  position: absolute;
+  left: 83vw;
+  top: 50%;
+  font-size: 6vw;
+}
+
+.titre_resto > h2 {
+  font-size: 7.5vw;
+  margin: 0;
+  padding: 7vw 0vw 0vw 5vw;
+  width: 100%;
+  border-radius: 6vw 6vw 0 0;
+  margin-top: -6vw;
+}
+
+.carte__plat > h5 {
+  margin: 0;
+}
+
+.bloc__menu {
+  padding: 5vw;
+}
+
+.cube__plats {
+  margin-bottom: 10vw;
+  position: relative;
+}
+
+.cube__plats > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  width: 12%;
+  margin-left: 0.5vw;
+  margin-bottom: 3vw;
+  border-bottom: 3px solid #99e2d0;
+  height: 8vw;
+  font-size: 5vw;
+}
+
+article {
+  padding: 3vw 2vw 3vw 3vw;
+  margin-bottom: 4vw;
+  border-radius: 4vw;
+  box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
+}
+
+article > h4 {
+  margin: 0;
+  font-size: 4.5vw;
+  padding-right: 12vw;
+}
+
+article > p {
+  margin: 0;
+  font-size: 3.5vw;
+  margin-top: 1vw;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vw;
+}
+
+.prix {
+  font-weight: 600;
+}
+
+/* button*/
+
+.Button {
+  display: grid;
+  place-items: center;
+}
+
+section > button {
+  font-size: 4.3vw;
+  padding: 3vw 8vw;
+  margin-top: 2vw;
+  -webkit-box-shadow: 1px 1px 16px -6px #000000;
+  box-shadow: 1px 1px 16px -6px #000000;
+  border-radius: 6vw;
+  margin-bottom: 10vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
