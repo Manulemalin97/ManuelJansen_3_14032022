@@ -16,7 +16,7 @@
 /* Header & banner restaurants */
 
 .banner {
-  height: 40vw;
+  height: 20vw;
 }
 
 header > h1 {
@@ -55,7 +55,7 @@ header > i {
 .bloc__menu {
   display: flex;
   justify-content: space-between;
-  padding: 4vw 10vw 5vw 10vw;
+  padding: 4vw 10vw 0vw 10vw;
 }
 
 .cube__plats {
@@ -94,7 +94,6 @@ header > i {
 
 article {
   padding: 0.7vw 2vw 1vw 2vw;
-  border-radius: 2vw;
   height: auto;
 }
 

@@ -94,6 +94,10 @@ li:before {
 }
 
 /* Menus*/
+.menus {
+  padding-bottom: 1vw;
+}
+
 .menus > h2 {
   margin: 0;
   margin-top: 2vw;
@@ -170,9 +174,15 @@ footer > a > .fa-hands-helping {
 /* Header & banner restaurants */
 .banner {
   height: 50vw;
+  margin: 0;
 }
 
 header > h1 {
+  font-size: 4vw;
+  margin: 0;
+}
+
+.header_resto > h1 {
   font-size: 4vw;
   margin: 0;
 }
@@ -238,12 +248,12 @@ article:hover {
 
 article > h4 {
   padding: 0;
-  font-size: 1.2vw;
+  font-size: 1.7vw;
 }
 
 article > p {
   margin: 0;
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 
 .prix {
