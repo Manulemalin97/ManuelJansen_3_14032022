@@ -336,7 +336,7 @@ section > h3 {
 }
 
 .bloc__menu {
-    padding: 6vw 3vw 0vw 3vw;
+  padding: 6vw 3vw 0vw 3vw;
 }
 
 .cube__plats {
@@ -356,17 +356,17 @@ section > h3 {
 }
 
 article {
-display: flex;
-overflow: hidden;
+  display: flex;
+  overflow: hidden;
   margin-bottom: 4vw;
   border-radius: 4vw;
   box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
 }
 
-.cube_descritpion{
-display: block;
-width: 100%;
-padding: 2vw 0vw 2vw 2vw;
+.cube_descritpion {
+  display: block;
+  width: 100%;
+  padding: 2vw 0vw 2vw 2vw;
 }
 
 .cube_descritpion > h4 {
@@ -387,24 +387,33 @@ padding: 2vw 0vw 2vw 2vw;
 }
 
 .prix {
-    font-weight: 600;
-    margin-left: auto;
-    width: min-content;
-    margin-right: 2vw;
-
+  font-weight: 600;
+  margin-left: auto;
+  width: min-content;
+  margin-right: 2vw;
 }
-.check{
-    display: grid;
-    place-content: center;
-    width: 15vw;
-    margin-right: -15vw;
-    height: auto;
-    background-color: #99e2d0;
+.check {
+  display: grid;
+  place-content: center;
+  width: 15vw;
+  margin-right: -15vw;
+  height: auto;
+  background-color: #99e2d0;
 }
 article:hover .check {
-    margin-right: 0%;
-    transition: margin-right 1s;
-    }
+  margin-right: 0%;
+  transition: margin-right 1s;
+}
+
+.check > i {
+  background: white;
+  display: grid;
+  place-content: center;
+  color: #99e2d0;
+  border-radius: 3vw;
+  width: 6vw;
+  height: 6vw;
+}
 /* button*/
 
 .Button {
