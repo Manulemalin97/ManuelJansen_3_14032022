@@ -93,8 +93,8 @@ li:before {
 }
 
 /* Menus*/
-.menus{
-    padding-bottom: 1vw;
+.menus {
+  padding-bottom: 1vw;
 }
 
 .menus > h2 {
@@ -178,10 +178,9 @@ header > h1 {
   margin: 0;
 }
 .header_resto > h1 {
-    font-size: 4vw;
-    margin: 0;
-  }
-  
+  font-size: 4vw;
+  margin: 0;
+}
 
 header > i {
   font-size: 3.5vw;
@@ -211,8 +210,7 @@ section > h3 {
 
 .bloc__menu {
   display: flex;
-  justify-content: space-around;
-  padding: 3vw 2vw 2vw 2vw;
+  justify-content: space-evenly;
 }
 
 .cube__plats {
@@ -229,30 +227,40 @@ section > h3 {
 }
 
 article {
-  padding: 0.7vw 2vw 1vw 2vw;
   border-radius: 2vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-article:hover {
-  transform: scale(1.1);
-  background-color: #f5edff;
-  cursor: pointer;
+.cube_descritpion {
+  padding: 0vw 0vw 1vw 1vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-article > h4 {
+.cube_descritpion > h4 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   padding: 0;
   font-size: 1.7vw;
 }
 
-article > p {
+.cube_descritpion > p {
   margin: 0;
   font-size: 1.2vw;
 }
-
-.prix {
-  padding-left: 1vw;
+.check {
+    width: 5vw;
+    margin-right: -5vw;
 }
 
+article:hover .check {
+    margin-right: 0%;
+    transition: margin-right 1s;
+  }
 /* button*/
 
 .Button {

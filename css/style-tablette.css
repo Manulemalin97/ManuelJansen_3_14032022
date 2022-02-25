@@ -216,9 +216,9 @@ section > h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 3vw 2vw 2vw 2vw;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .cube__plats {
@@ -235,29 +235,41 @@ section > h3 {
 }
 
 article {
-  padding: 0.7vw 2vw 1vw 2vw;
   border-radius: 2vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-article:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  background-color: #f5edff;
-  cursor: pointer;
+.cube_descritpion {
+  padding: 0vw 0vw 1vw 1vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-article > h4 {
+.cube_descritpion > h4 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   padding: 0;
   font-size: 1.7vw;
 }
 
-article > p {
+.cube_descritpion > p {
   margin: 0;
   font-size: 1.2vw;
 }
 
-.prix {
-  padding-left: 1vw;
+.check {
+  width: 5vw;
+  margin-right: -5vw;
+}
+
+article:hover .check {
+  margin-right: 0%;
+  -webkit-transition: margin-right 1s;
+  transition: margin-right 1s;
 }
 
 /* button*/

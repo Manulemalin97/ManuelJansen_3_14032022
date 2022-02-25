@@ -55,7 +55,6 @@ header > i {
 .bloc__menu {
   display: flex;
   justify-content: space-between;
-  padding: 4vw 10vw 0vw 10vw;
 }
 
 .cube__plats {
@@ -93,7 +92,6 @@ header > i {
 }
 
 article {
-  padding: 0.7vw 2vw 1vw 2vw;
   height: auto;
 }
 
@@ -105,10 +103,6 @@ article > h4 {
 article > p {
   margin: 0;
   font-size: 1vw;
-}
-
-.prix {
-  padding-left: 1vw;
 }
 
 /* button*/

@@ -358,6 +358,9 @@ section > h3 {
 article {
   display: flex;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  justify-content: space-between;
   margin-bottom: 4vw;
   border-radius: 4vw;
   box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
@@ -367,9 +370,14 @@ article {
   display: block;
   width: 100%;
   padding: 2vw 0vw 2vw 2vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .cube_descritpion > h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
   margin: 0;
   font-size: 4.5vw;
   padding-right: 12vw;
@@ -393,16 +401,18 @@ article {
   margin-right: 2vw;
 }
 .check {
-  display: grid;
-  place-content: center;
-  width: 15vw;
-  margin-right: -15vw;
-  height: auto;
-  background-color: #99e2d0;
+    display: grid;
+    place-content: center;
+    width: 18vw;
+    margin-right: -18vw;
+    height: auto;
+    background-color: #99e2d0;
 }
+
 article:hover .check {
   margin-right: 0%;
   transition: margin-right 1s;
+  transform-origin: right;
 }
 
 .check > i {
