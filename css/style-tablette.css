@@ -219,6 +219,7 @@ section > h3 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding: 0;
 }
 
 .cube__plats {
@@ -236,22 +237,13 @@ section > h3 {
 
 article {
   border-radius: 2vw;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .cube_descritpion {
   padding: 0vw 0vw 1vw 1vw;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .cube_descritpion > h4 {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   padding: 0;
   font-size: 1.7vw;
 }
@@ -264,12 +256,6 @@ article {
 .check {
   width: 5vw;
   margin-right: -5vw;
-}
-
-article:hover .check {
-  margin-right: 0%;
-  -webkit-transition: margin-right 1s;
-  transition: margin-right 1s;
 }
 
 /* button*/

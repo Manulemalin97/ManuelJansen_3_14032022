@@ -301,7 +301,7 @@ header > i {
   font-size: 5vw;
   margin-left: 5vw;
   top: 22%;
-  margin-top: 3vw;
+  margin-top: 1.5vw;
 }
 
 /* Restaurants*/
@@ -323,7 +323,7 @@ section > h3 {
 }
 
 .titre_resto > h2 {
-  font-size: 6.5vw;
+  font-size: 7.5vw;
   margin: 0;
   padding: 7vw 0vw 0vw 5vw;
   width: 100%;
@@ -358,8 +358,6 @@ section > h3 {
 article {
   display: flex;
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   justify-content: space-between;
   margin-bottom: 4vw;
   border-radius: 4vw;
@@ -372,39 +370,47 @@ article {
   padding: 2vw 0vw 2vw 2vw;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .cube_descritpion > h4 {
     overflow: hidden;
     text-overflow: ellipsis;
   margin: 0;
-  font-size: 4.5vw;
-  padding-right: 12vw;
+  font-size: 5vw;
+  padding-right: 2vw;
   margin-top: 1vw;
 }
 
 .cube_descritpion > p {
   margin: 0;
-  font-size: 3.5vw;
+  font-size: 3.8vw;
+  padding-right: 8vw;
   margin-top: 1vw;
-  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
   justify-content: space-between;
   margin-top: 1vw;
   margin-bottom: 1vw;
+  color: #4e4e4e;
 }
 
+
 .prix {
-  font-weight: 600;
-  margin-left: auto;
-  width: min-content;
-  margin-right: 2vw;
+    display: grid;
+    align-content: flex-end;
+    padding-bottom: 3vw;
+    font-weight: 600;
+    margin-left: auto;
+    width: min-content;
+    font-size: 4vw;
+    margin-right: 6vw;
+    color: #4e4e4e;
 }
 .check {
     display: grid;
     place-content: center;
-    width: 18vw;
-    margin-right: -18vw;
+    width: 21vw;
+    margin-right: -21vw;
     height: auto;
     background-color: #99e2d0;
 }
