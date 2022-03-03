@@ -11,109 +11,155 @@
 /*
  * définition des polices de caractères
  */
+  /* Header */
 
-/* Restaurant 1 */
-/* Header & banner restaurants */
-
-.banner {
-  height: 20vw;
+ header > h1 {
+    font-size: 3vw;
+    margin: 0;
 }
 
-header > h1 {
+.localisation {
+    font-size: 1.2vw;
+}
+
+.Réservez > h2 {
+    font-size: 2vw;
+  }
+  
+  .Réservez > p {
+    font-size: 1.5vw;
+  }
+  
+  /* Réservation, Button recherche */
+  .Réservez > button {
+      font-size: 1vw;
+  }
+
+  /* NAV */
+
+.Nav > ol {
+    width: 80%;
+    margin-left: 10vw;
+}
+
+.Nav > h2 {
+    margin-left: 16vw;
+    font-size: 2vw;
+}
+
+ .Nav > ol > li {
+    padding: 0vw 0vw 0.4vw 1vw;
+    width: 21%;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+}
+
+.Nav li i.fas {
+    padding: 1vw 1vw 1vw 1vw;
+    font-size: 1.2vw;
+}
+
+li:before {
+    font-size: 1vw;
+    width: 2vw;
+    height: 2vw;
+}
+
+ /* restaurant */
+
+ .menus > h2 {
+    margin: 0;
+    margin-top: 2vw;
+    padding: 3vw 0vw;
+    font-size: 2.5vw;
+    margin-left: 18vw;
+}
+
+ .card_new {
+    width: 30%;
+    height: 20vw;
+    border-radius: 2vw;
+}
+
+.card{
+    width: 30%;
+    height: 20vw;
+    border-radius: 2vw;
+}
+
+.card_description {
+     margin-top: 0vw; 
+}
+
+.card_new::before {
+    font-size: 1.2vw;
+}
+
+.card_description > h3 {
+    font-size: 1.8vw;
+}
+
+.card_description > p {
+    font-size: 1.5vw;
+}
+
+/*restaurants*/
+
+.header_resto > h1 {
   font-size: 3vw;
 }
 
 header > i {
-  font-size: 2vw;
+    font-size: 2.2vw;
+    margin-left: 2vw;
+    margin-top: 0.35vw;
+}
+.banner {
+    height: 25vw;
 }
 
-.localisation {
-  padding: 1vw 1vw 1vw 10vw;
-  font-size: 1.5vw;
-}
-
-/* Restaurants*/
-
-.Réservez > h2 {
-  font-size: 2vw;
-  margin-bottom: 1vw;
-}
-
-.titre_resto > i {
-  left: 86vw;
-  top: 36%;
-  font-size: 3vw;
-}
+/*menus*/
 
 .titre_resto > h2 {
-  font-size: 3vw;
-  margin-bottom: 1vw;
-  padding: 2vw 0vw 0vw 10vw;
-  border-radius: 0;
-}
-
-.bloc__menu {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cube__plats {
-  margin-bottom: 0;
-  width: auto;
-}
-
-.cube__plats > a {
-  width: 21%;
-  margin-bottom: 1vw;
-  border-bottom: 3px solid #99e2d0;
-  height: 2.5vw;
-  font-size: 1.5vw;
-}
-
-.card_new {
-  width: 30%;
-  height: 21vw;
-  border-radius: 2vw;
-}
-
-.card {
-  width: 30%;
-  height: 21vw;
-  border-radius: 2vw;
-}
-
-.card_description > h3 {
-  font-size: 1.8vw;
-  margin-top: 1vw;
-}
-
-.card_description > p {
-  font-size: 1.5vw;
+    font-size: 3vw;
+    padding: 2vw 0vw 2vw 6vw;
+    margin-top: 0px;
 }
 
 article {
-  height: auto;
+    border-radius: 1.2vw;
 }
 
-article > h4 {
-  padding: 0;
-  font-size: 1.2vw;
+.cube__plats {
+    width: 26vw;
 }
 
-article > p {
-  margin: 0;
-  font-size: 1vw;
+.cube__plats > a {
+    width: 12%;
+    margin-bottom: 2vw;
+    height: 2.2vw;
+    font-size: 1.5vw;
 }
 
-/* button*/
-
-.Button {
-  display: grid;
-  place-items: center;
+.cube_descritpion {
+    padding: 0vw 0vw 1vw 1vw;
 }
 
-section > button {
-  font-size: 1.5vw;
-  padding: 1vw 2vw;
-  margin-bottom: 5vw;
+.cube_descritpion > h4 {
+    font-size: 1.3vw;
+  }
+  
+  .cube_descritpion > p {
+      font-size: 1vw;
+  }
+  
+  section > button {
+    font-size: 1.6vw;
+    padding: 1vw 3vw;
+    margin-bottom: 7vw;
 }
+
+footer {
+    height: 13vw;
+}
+  

@@ -15,7 +15,7 @@
 /* Header */
 
 header > h1 {
-  font-size: 4vw;
+  font-size: 5vw;
   padding: 0;
 }
 
@@ -38,59 +38,57 @@ header > h1 {
 }
 
 .Réservez > p {
-  font-size: 1vw;
+  font-size: 2vw;
   margin: 0;
   margin-bottom: 2vw;
 }
 
 /* Réservation, Button recherche */
 .Réservez > button {
-  font-size: 1.2vw;
-  padding: 1vw 1vw;
-  margin-bottom: 4vw;
-  margin-top: 1vw;
+    font-size: 1.5vw;
+    padding: 1.2vw 2.3vw;
+    margin-bottom: 4vw;
+    margin-top: 1vw;
 }
 
 /* NAV*/
 
 .Nav > h2 {
-  margin: 0;
-  margin-bottom: 2vw;
-  margin-left: 9vw;
-  font-size: 2vw;
+    margin: 0;
+    margin-bottom: 2vw;
+    margin-left: 7vw;
+    margin-top: 2vw;
+    font-size: 3vw;
 }
 
 .Nav > ol {
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 .Nav > ol > li {
-  padding: 1vw 0vw 0vw 0vw;
-  width: 23%;
-  height: auto;
-  font-size: 1.3vw;
-  margin-bottom: 0vw;
+    padding: 2vw 1vw 1vw 3vw;
+    width: 43%;
+    height: auto;
+    font-size: 2.2vw;
+    margin-bottom: 3vw;
 }
 
 li:before {
-  display: grid;
-  font-size: 1vw;
-  width: 2vw;
-  height: 2vw;
-  left: -1vw;
-  top: 29%;
+    display: grid;
+    font-size: 2vw;
+    width: 3vw;
+    height: 3vw;
+    left: -1.2vw;
+    top: 30%;
 }
 
 .Nav li i.fas {
-  padding: 0vw 2vw 1vw 2vw;
+  padding: 0vw 2vw 1vw 1vw;
+  font-size: 2.5vw;
 }
 
-.fa-mobile-alt {
-  font-size: larger;
-}
 
 /* Menus*/
 .menus {
@@ -98,11 +96,11 @@ li:before {
 }
 
 .menus > h2 {
-  margin: 0;
-  margin-top: 2vw;
-  padding: 2vw 2vw;
-  font-size: 3vw;
-  margin-left: 17vw;
+    margin: 0;
+    margin-top: 2vw;
+    padding: 3vw 0vw;
+    font-size: 3.5vw;
+    margin-left: 9vw;
 }
 
 .cards_menu {
@@ -110,6 +108,7 @@ li:before {
   flex-wrap: wrap;
   justify-content: center;
   width: 95%;
+  padding-bottom: 3vw;
 }
 
 .card_image {
@@ -117,17 +116,19 @@ li:before {
 }
 
 .card {
-  width: 30%;
-  height: 23vw;
-  border-radius: 2vw;
+    width: 40%;
+    height: 27vw;
+    border-radius: 2vw;
 }
 
 .card_new {
-  width: 30%;
-  height: 23vw;
-  border-radius: 2vw;
+    width: 40%;
+    height: 27vw;
+    border-radius: 2vw;
 }
-
+.card_description{
+    margin-top: 1vw;
+}
 .card_description > h3 {
   font-size: 2vw;
   margin-top: 1vw;
@@ -144,7 +145,10 @@ li:before {
 }
 
 .card_new::before {
-  margin-top: 1.5vw;
+    margin-top: 1vw;
+    right: 1vw;
+    padding: 0.5vw 1vw 0.5vw;
+    font-size: 1.8vw;
 }
 
 /* Footer*/
@@ -169,7 +173,7 @@ footer > a > .fa-hands-helping {
 /* Header & banner restaurants */
 
 .banner {
-  height: 50vw;
+  height: 35vw;
   margin: 0;
 }
 
@@ -178,7 +182,8 @@ header > h1 {
   margin: 0;
 }
 .header_resto > h1 {
-  font-size: 4vw;
+    padding: 0;
+  font-size: 5vw;
   margin: 0;
 }
 
@@ -196,35 +201,35 @@ section > h3 {
 }
 
 .titre_resto > i {
-  left: 86vw;
+  left: 91vw;
   top: 36%;
   font-size: 3vw;
 }
 
 .titre_resto > h2 {
-  font-size: 3vw;
-  padding: 2vw 0vw 0vw 5vw;
-  border-radius: 0;
-  margin-top: 0px;
+    font-size: 4vw;
+    padding: 3vw 0vw 3vw 2vw;
+
+    margin-top: 0px;
 }
 
 .bloc__menu {
   display: flex;
   justify-content: space-evenly;
-  padding: 0;
+  padding: 0vw 1vw 2vw 1vw;
 }
 
 .cube__plats {
-  margin-bottom: 0;
-  width: auto;
+    margin-bottom: 0;
+    width: 30vw;
 }
 
 .cube__plats > a {
-  width: 21%;
-  margin-bottom: 1vw;
-  border-bottom: 3px solid #99e2d0;
-  height: 2.5vw;
-  font-size: 1.5vw;
+    width: 17%;
+    margin-bottom: 1vw;
+    border-bottom: 3px solid #99e2d0;
+    height: 4vw;
+    font-size: 2.5vw;
 }
 
 article {
@@ -232,23 +237,38 @@ article {
 }
 
 .cube_descritpion {
-  padding: 0vw 0vw 1vw 1vw;
+    padding: 1vw 0vw 1vw 2vw;
 }
 
 .cube_descritpion > h4 {
   padding: 0;
-  font-size: 1.7vw;
+  font-size: 1.6vw;
 }
 
 .cube_descritpion > p {
-  margin: 0;
-  font-size: 1.2vw;
+    margin: 0;
+    font-size: 1.3vw;
+    padding-right: 1vw;
 }
 .check {
-    width: 5vw;
-    margin-right: -5vw;
+    width: 10vw;
+    margin-right: -10vw;
 }
-
+.check > i {
+    background: white;
+    display: grid;
+    place-content: center;
+    color: #99e2d0;
+    border-radius: 4vw;
+    width: 2.3vw;
+    height: 2.3vw;
+}
+.prix {
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0;
+    padding: 0vw 2vw 1.1vw 0vw;
+}
 /* button*/
 
 .Button {
@@ -257,28 +277,29 @@ article {
 }
 
 section > button {
-  font-size: 1.5vw;
-  padding: 0.8vw 2vw;
-  margin-bottom: 5vw;
+    font-size: 2.5vw;
+    padding: 1vw 2vw;
+    margin-bottom: 7vw;
 }
 
 /* Footer*/
 
 footer {
   padding: 6vw 0vw 0vw 0vw;
-  height: 12vw;
+  height: 16vw;
   margin-top: 0vw;
   display: flex;
   justify-content: space-around;
 }
 
 footer > h2 {
-  font-size: 1.7vw;
+  font-size: 2.5vw;
 }
 
 footer > a {
-  font-size: 1.2vw;
+  font-size: 1.6vw;
   margin: 0;
+  margin-top: 0.8vw;
 }
 
 footer > a > .fa-utensils {
