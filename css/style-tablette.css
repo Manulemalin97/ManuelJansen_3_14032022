@@ -252,6 +252,11 @@ article {
 .cube_descritpion > h4 {
   padding: 0;
   font-size: 1.6vw;
+  margin: 0;
+}
+
+.détail_h4 {
+  white-space: nowrap;
 }
 
 .cube_descritpion > p {
@@ -299,7 +304,7 @@ section > button {
 /* Footer*/
 footer {
   padding: 6vw 0vw 0vw 0vw;
-  height: 16vw;
+  height: 19vw;
   margin-top: 0vw;
   display: -webkit-box;
   display: -ms-flexbox;

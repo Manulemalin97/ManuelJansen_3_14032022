@@ -359,8 +359,11 @@ section > h3 {
   margin-top: -6vw;
 }
 
-.carte__plat > h5 {
+article > h5 {
   margin: 0;
+  font-size: 3.8vw;
+  padding-right: 8vw;
+  margin-top: 1vw;
 }
 
 .bloc__menu {
@@ -410,8 +413,12 @@ article {
   text-overflow: ellipsis;
   margin: 0;
   font-size: 5vw;
-  padding-right: 2vw;
+  padding-right: 3vw;
   margin-top: 1vw;
+}
+
+.détail_h4 {
+  white-space: normal;
 }
 
 .cube_descritpion > p {
