@@ -21,48 +21,50 @@
 .localisation {
     font-size: 1.2vw;
 }
-
-.Réservez > h2 {
-    font-size: 2vw;
-  }
-  
-  .Réservez > p {
-    font-size: 1.5vw;
-  }
-  
-  /* Réservation, Button recherche */
-  .Réservez > button {
-      font-size: 1vw;
+.Réservez {
+    text-align: center;
+    & h2 {
+        font-size: 2vw;
+    }
+    
+    & p {
+        font-size: 1.5vw;
+    }
+    & button {
+        font-size: 1vw;
+    }  
   }
 
   /* NAV */
+  .Nav {
+    padding: 2vw;
+    & ol {
+        width: 80%;
+        margin-left: 10vw;
+  }
+  & li {
+    padding: 0vw 0vw 0.4vw 1vw;
+    width: 21%;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+      &:before {
+        font-size: 1vw;
+    width: 2vw;
+    height: 2vw;
+        }
+    }
+  }
 
-.Nav > ol {
-    width: 80%;
-    margin-left: 10vw;
-}
 
 .Nav > h2 {
     margin-left: 16vw;
     font-size: 2vw;
 }
 
- .Nav > ol > li {
-    padding: 0vw 0vw 0.4vw 1vw;
-    width: 21%;
-    font-size: 1vw;
-    margin-bottom: 1vw;
-}
 
 .Nav li i.fas {
     padding: 1vw 1vw 1vw 1vw;
     font-size: 1.2vw;
-}
-
-li:before {
-    font-size: 1vw;
-    width: 2vw;
-    height: 2vw;
 }
 
  /* restaurant */

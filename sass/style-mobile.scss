@@ -56,36 +56,74 @@ header > h1 {
 
 .Réservez {
   text-align: center;
+  & h2 {
+    font-size: 6vw;
+    margin-bottom: 0;
+    padding: 5vw 14vw 0vw 14vw;
+  }
+  
+  & p {
+    font-size: 4.5vw;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+  }
+  & button {
+    font-size: 4.3vw;
+    padding: 4vw 5vw;
+    margin-top: 5vw;
+    -webkit-box-shadow: 1px 1px 16px -6px #000000;
+    box-shadow: 1px 1px 16px -6px #000000;
+    border-radius: 9vw;
+    margin-bottom: 15vw;
+  }
+  
 }
 
-.Réservez > h2 {
-  font-size: 6vw;
-  margin-bottom: 0;
-  padding: 5vw 14vw 0vw 14vw;
-}
-
-.Réservez > p {
-  font-size: 4.5vw;
-  margin-top: 3vw;
-  margin-bottom: 2vw;
-}
-
-/* Réservation, Button recherche */
-
-.Réservez > button {
-  font-size: 4.3vw;
-  padding: 4vw 5vw;
-  margin-top: 5vw;
-  -webkit-box-shadow: 1px 1px 16px -6px #000000;
-  box-shadow: 1px 1px 16px -6px #000000;
-  border-radius: 9vw;
-  margin-bottom: 15vw;
-}
 
 /* NAV*/
 
 .Nav {
   padding: 2vw;
+  & ol {
+    width: 90%;
+    margin: auto;
+    margin-right: 1vw;
+    counter-reset: steps;
+    padding: 0;
+    margin-left: 4vw;
+}
+& li {
+    background-color: #f6f6f6;
+    -webkit-box-shadow: 5px 5px 5px 1px #e3e3e3;
+    box-shadow: 5px 5px 5px 1px #e3e3e3;
+    padding: 7vw 0vw 0vw 0vw;
+    border-radius: 5vw;
+    text-align: start;
+    width: 100%;
+    height: 18vw;
+    margin-bottom: 6vw;
+    font-size: 4.2vw;
+    list-style-type: none;
+    position: relative;
+    &:before {
+        display: grid;
+        place-items: center;
+        content: counter(steps);
+        counter-increment: steps;
+        font-size: 3vw;
+        width: 6vw;
+        height: 6vw;
+        border-radius: 50%;
+        left: -2vw;
+        position: absolute;
+      }
+      
+      
+      &:hover {
+        transform: scale(1.02);
+        cursor: pointer;
+      }
+  }
 }
 
 .Nav > h2 {
@@ -96,47 +134,6 @@ header > h1 {
   margin-bottom: 7vw;
 }
 
-.Nav > ol {
-    width: 90%;
-    margin: auto;
-    margin-right: 1vw;
-    counter-reset: steps;
-    padding: 0;
-    margin-left: 4vw;
-}
-
-li:before {
-  display: grid;
-  place-items: center;
-  content: counter(steps);
-  counter-increment: steps;
-  font-size: 3vw;
-  width: 6vw;
-  height: 6vw;
-  border-radius: 50%;
-  left: -2vw;
-  position: absolute;
-}
-
-.Nav > ol > li {
-  background-color: #f6f6f6;
-  -webkit-box-shadow: 5px 5px 5px 1px #e3e3e3;
-  box-shadow: 5px 5px 5px 1px #e3e3e3;
-  padding: 7vw 0vw 0vw 0vw;
-  border-radius: 5vw;
-  text-align: start;
-  width: 100%;
-  height: 18vw;
-  margin-bottom: 6vw;
-  font-size: 4.2vw;
-  list-style-type: none;
-  position: relative;
-}
-
-.Nav > ol > li:hover {
-  transform: scale(1.02);
-  cursor: pointer;
-}
 
 .Nav li i.fas {
   padding: 0vw 6vw 2vw 8vw;
@@ -157,13 +154,10 @@ li:before {
   height: 65vw;
   margin-left: 5vw;
   position: relative;
-}
-
-.card_new:hover {
-  transform: scale(1.02);
-}
-
-.card_new::before {
+  &:hover {
+    transform: scale(1.02);
+  }
+  &:before {
     content: "Nouveau";
     position: absolute;
     background-color: #99e2d0;
@@ -177,6 +171,8 @@ li:before {
     margin-top: 3vw;
     border-radius: 0.5vw;
 }
+}
+
 
 .menus > h2 {
   margin: 0;
@@ -203,11 +199,11 @@ li:before {
   box-shadow: 5px 5px 5px 1px #e3e3e3;
   height: 65vw;
   margin-left: 5vw;
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
-.card:hover {
-  transform: scale(1.02);
-}
 
 .cards_menu {
   width: 100%;
@@ -220,62 +216,31 @@ li:before {
   width: 90%;
   margin: 0;
   position: relative;
-}
-
-.card_description > h3 {
-  margin: 0;
-  margin-top: 3vw;
-  font-size: 4.6vw;
-}
-
-.card_description > p {
-  margin: 0;
-  margin-top: 1vw;
-  font-size: 4.5vw;
-}
-
-.card_description > i {
-  font-size: 7vw;
-  position: absolute;
-  right: 1vw;
-  top: 40%;
-}
-
-.card_description > i:hover {
-  font-weight: 800;
-}
-
-/* Footer*/
-
-footer {
-  padding: 1vw 0vw 1vw 6vw;
-  height: 51vw;
-}
-
-footer > h2 {
-    font-size: 5vw;
+  & h3 {
     margin: 0;
-    margin-top: 4vw;
-    margin-bottom: 4vw;
-    font-weight: 400;
+    margin-top: 3vw;
+    font-size: 4.6vw;
+  }
+  & p {
+    margin: 0;
+    margin-top: 1vw;
+    font-size: 4.5vw;
+  }
+  & i {
+    font-size: 7vw;
+    position: absolute;
+    right: 1vw;
+    top: 40%;
+    &:hover {
+      font-weight: 800;
+    }
+  }
 }
 
-footer > a {
-  display: flex;
-  font-size: 4vw;
-  margin: 0;
-  margin-top: 2vw;
-}
 
-footer > a > .fa-utensils {
-  margin-right: 3vw;
-}
 
-footer > a > .fa-hands-helping {
-  margin-right: 1.5vw;
-}
 
-/* Restaurant 1 */
+/* Restaurant  */
 /* Header & banner restaurants */
 
 .banner {
@@ -361,6 +326,12 @@ article {
   margin-bottom: 4vw;
   border-radius: 4vw;
   box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
+
+  &:hover .check {
+    margin-right: 0%;
+    transition: margin-right 1s;
+    transform-origin: right;
+  }
 }
 
 .cube_descritpion {
@@ -409,6 +380,7 @@ article {
     margin-right: 6vw;
     color: #4e4e4e;
 }
+
 .check {
     display: grid;
     place-content: center;
@@ -418,11 +390,6 @@ article {
     background-color: #99e2d0;
 }
 
-article:hover .check {
-  margin-right: 0%;
-  transition: margin-right 1s;
-  transform-origin: right;
-}
 
 .check > i {
   background: white;
@@ -451,4 +418,33 @@ section > button {
   display: -ms-grid;
   display: grid;
   place-items: center;
+}
+/* Footer*/
+
+footer {
+  padding: 1vw 0vw 1vw 6vw;
+  height: 51vw;
+}
+
+footer > h2 {
+    font-size: 5vw;
+    margin: 0;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    font-weight: 400;
+}
+
+footer > a {
+  display: flex;
+  font-size: 4vw;
+  margin: 0;
+  margin-top: 2vw;
+}
+
+footer > a > .fa-utensils {
+  margin-right: 3vw;
+}
+
+footer > a > .fa-hands-helping {
+  margin-right: 1.5vw;
 }

@@ -20,7 +20,27 @@ header > h1 {
 }
 
 /* Réservation, Explorer */
-
+.Réservez {
+    text-align: center;
+    & h2 {
+        font-size: 2.5vw;
+        padding: 0vw 0vw 0vw 0vw;
+        margin-bottom: 2vw;
+    }
+    
+    & p {
+        font-size: 2vw;
+        margin: 0;
+        margin-bottom: 2vw;
+    }
+    & button {
+        font-size: 1.5vw;
+        padding: 1.2vw 2.3vw;
+        margin-bottom: 4vw;
+        margin-top: 1vw;
+    }  
+  }
+  
 .localisation {
   padding: 1vw 1vw 1vw 8vw;
   font-size: 2vw;
@@ -31,27 +51,31 @@ header > h1 {
   margin-left: -10vw;
 }
 
-.Réservez > h2 {
-  font-size: 2.5vw;
-  padding: 0vw 0vw 0vw 0vw;
-  margin-bottom: 2vw;
-}
-
-.Réservez > p {
-  font-size: 2vw;
-  margin: 0;
-  margin-bottom: 2vw;
-}
-
-/* Réservation, Button recherche */
-.Réservez > button {
-    font-size: 1.5vw;
-    padding: 1.2vw 2.3vw;
-    margin-bottom: 4vw;
-    margin-top: 1vw;
-}
 
 /* NAV*/
+.Nav {
+    padding: 2vw;
+    & ol {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+  }
+  & li {
+    padding: 2vw 1vw 1vw 3vw;
+    width: 43%;
+    height: auto;
+    font-size: 2.2vw;
+    margin-bottom: 3vw;
+      &:before {
+        display: grid;
+        font-size: 2vw;
+        width: 3vw;
+        height: 3vw;
+        left: -1.2vw;
+        top: 30%;
+        }
+    }
+  }
 
 .Nav > h2 {
     margin: 0;
@@ -61,28 +85,6 @@ header > h1 {
     font-size: 3vw;
 }
 
-.Nav > ol {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.Nav > ol > li {
-    padding: 2vw 1vw 1vw 3vw;
-    width: 43%;
-    height: auto;
-    font-size: 2.2vw;
-    margin-bottom: 3vw;
-}
-
-li:before {
-    display: grid;
-    font-size: 2vw;
-    width: 3vw;
-    height: 3vw;
-    left: -1.2vw;
-    top: 30%;
-}
 
 .Nav li i.fas {
   padding: 0vw 2vw 1vw 1vw;
@@ -256,8 +258,8 @@ article {
     padding-right: 1vw;
 }
 .check {
-    width: 10vw;
-    margin-right: -10vw;
+    width: 7vw;
+    margin-right: -7vw;
 }
 .check > i {
     background: white;
@@ -274,6 +276,7 @@ article {
     padding: 0;
     padding: 0vw 2vw 1.1vw 0vw;
 }
+
 /* button*/
 
 .Button {

@@ -18,6 +18,29 @@ header > h1 {
 }
 
 /* Réservation, Explorer */
+.Réservez {
+  text-align: center;
+}
+
+.Réservez h2 {
+  font-size: 2.5vw;
+  padding: 0vw 0vw 0vw 0vw;
+  margin-bottom: 2vw;
+}
+
+.Réservez p {
+  font-size: 2vw;
+  margin: 0;
+  margin-bottom: 2vw;
+}
+
+.Réservez button {
+  font-size: 1.5vw;
+  padding: 1.2vw 2.3vw;
+  margin-bottom: 4vw;
+  margin-top: 1vw;
+}
+
 .localisation {
   padding: 1vw 1vw 1vw 8vw;
   font-size: 2vw;
@@ -28,36 +51,12 @@ header > h1 {
   margin-left: -10vw;
 }
 
-.Réservez > h2 {
-  font-size: 2.5vw;
-  padding: 0vw 0vw 0vw 0vw;
-  margin-bottom: 2vw;
-}
-
-.Réservez > p {
-  font-size: 2vw;
-  margin: 0;
-  margin-bottom: 2vw;
-}
-
-/* Réservation, Button recherche */
-.Réservez > button {
-  font-size: 1.5vw;
-  padding: 1.2vw 2.3vw;
-  margin-bottom: 4vw;
-  margin-top: 1vw;
-}
-
 /* NAV*/
-.Nav > h2 {
-  margin: 0;
-  margin-bottom: 2vw;
-  margin-left: 7vw;
-  margin-top: 2vw;
-  font-size: 3vw;
+.Nav {
+  padding: 2vw;
 }
 
-.Nav > ol {
+.Nav ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +67,7 @@ header > h1 {
           justify-content: space-evenly;
 }
 
-.Nav > ol > li {
+.Nav li {
   padding: 2vw 1vw 1vw 3vw;
   width: 43%;
   height: auto;
@@ -76,7 +75,7 @@ header > h1 {
   margin-bottom: 3vw;
 }
 
-li:before {
+.Nav li:before {
   display: -ms-grid;
   display: grid;
   font-size: 2vw;
@@ -84,6 +83,14 @@ li:before {
   height: 3vw;
   left: -1.2vw;
   top: 30%;
+}
+
+.Nav > h2 {
+  margin: 0;
+  margin-bottom: 2vw;
+  margin-left: 7vw;
+  margin-top: 2vw;
+  font-size: 3vw;
 }
 
 .Nav li i.fas {
@@ -266,8 +273,8 @@ article {
 }
 
 .check {
-  width: 10vw;
-  margin-right: -10vw;
+  width: 7vw;
+  margin-right: -7vw;
 }
 
 .check > i {
