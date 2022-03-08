@@ -21,44 +21,49 @@ header > h1 {
 
 /* Réservation, Explorer */
 .Réservez {
-    text-align: center;
-    & h2 {
-        font-size: 2.5vw;
-        padding: 0vw 0vw 0vw 0vw;
-        margin-bottom: 2vw;
-    }
-    
-    & p {
-        font-size: 2vw;
-        margin: 0;
-        margin-bottom: 2vw;
-    }
-    & button {
-        font-size: 1.5vw;
-        padding: 1.2vw 2.3vw;
-        margin-bottom: 4vw;
-        margin-top: 1vw;
-    }  
+  text-align: center;
+  & h2 {
+    font-size: 2.5vw;
+    padding: 0vw 0vw 0vw 0vw;
+    margin-bottom: 2vw;
   }
-  
+
+  & p {
+    font-size: 2vw;
+    margin: 0;
+    margin-bottom: 2vw;
+  }
+  & button {
+    font-size: 1.5vw;
+    padding: 1.2vw 2.3vw;
+    margin-bottom: 4vw;
+    margin-top: 1vw;
+  }
+}
 .localisation {
   padding: 1vw 1vw 1vw 8vw;
   font-size: 2vw;
-}
 
-.localisation > i.fas {
-  margin-right: 4vw;
-  margin-left: -10vw;
+  & i.fas {
+    margin-right: 4vw;
+    margin-left: -10vw;
+  }
 }
-
 
 /* NAV*/
 .Nav {
-    padding: 2vw;
-    & ol {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+  padding: 2vw;
+  & h2 {
+    margin: 0;
+    margin-bottom: 2vw;
+    margin-left: 7vw;
+    margin-top: 2vw;
+    font-size: 3vw;
+  }
+  & ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   & li {
     padding: 2vw 1vw 1vw 3vw;
@@ -66,31 +71,20 @@ header > h1 {
     height: auto;
     font-size: 2.2vw;
     margin-bottom: 3vw;
-      &:before {
-        display: grid;
-        font-size: 2vw;
-        width: 3vw;
-        height: 3vw;
-        left: -1.2vw;
-        top: 30%;
-        }
+    & i.fas {
+      padding: 0vw 2vw 1vw 1vw;
+      font-size: 2.5vw;
+    }
+    &:before {
+      display: grid;
+      font-size: 2vw;
+      width: 3vw;
+      height: 3vw;
+      left: -1.2vw;
+      top: 30%;
     }
   }
-
-.Nav > h2 {
-    margin: 0;
-    margin-bottom: 2vw;
-    margin-left: 7vw;
-    margin-top: 2vw;
-    font-size: 3vw;
 }
-
-
-.Nav li i.fas {
-  padding: 0vw 2vw 1vw 1vw;
-  font-size: 2.5vw;
-}
-
 
 /* Menus*/
 .menus {
@@ -98,11 +92,11 @@ header > h1 {
 }
 
 .menus > h2 {
-    margin: 0;
-    margin-top: 2vw;
-    padding: 3vw 0vw;
-    font-size: 3.5vw;
-    margin-left: 9vw;
+  margin: 0;
+  margin-top: 2vw;
+  padding: 3vw 0vw;
+  font-size: 3.5vw;
+  margin-left: 9vw;
 }
 
 .cards_menu {
@@ -118,57 +112,41 @@ header > h1 {
 }
 
 .card {
-    width: 40%;
-    height: 27vw;
-    border-radius: 2vw;
+  width: 40%;
+  height: 27vw;
+  border-radius: 2vw;
 }
 
 .card_new {
-    width: 40%;
-    height: 27vw;
-    border-radius: 2vw;
-}
-.card_description{
-    margin-top: 1vw;
-}
-.card_description > h3 {
-  font-size: 2vw;
-  margin-top: 1vw;
-}
+  width: 40%;
+  height: 27vw;
+  border-radius: 2vw;
 
-.card_description > p {
-  font-size: 2vw;
-  margin-top: 0;
-}
-
-.card_description > i {
-  font-size: 3vw;
-  top: 30%;
-}
-
-.card_new::before {
+  &:before {
     margin-top: 1vw;
     right: 1vw;
     padding: 0.5vw 1vw 0.5vw;
     font-size: 1.8vw;
+  }
 }
 
-/* Footer*/
-
-footer > h2 {
-  margin: 0;
-}
-
-footer > a {
-  margin-top: 0.5vw;
-}
-
-footer > a > .fa-utensils {
-  margin-right: 1vw;
-}
-
-footer > a > .fa-hands-helping {
-  margin-right: 0.5vw;
+.card_description {
+  margin-top: 1vw;
+  & h3 {
+    font-size: 2vw;
+    margin-top: 1vw;
+  }
+  & p {
+    font-size: 2vw;
+    margin-top: 0;
+  }
+  & i {
+    font-size: 3vw;
+    top: 30%;
+    &:hover {
+      font-weight: 800;
+    }
+  }
 }
 
 /* Restaurant 1 */
@@ -184,7 +162,7 @@ header > h1 {
   margin: 0;
 }
 .header_resto > h1 {
-    padding: 0;
+  padding: 0;
   font-size: 5vw;
   margin: 0;
 }
@@ -202,17 +180,19 @@ section > h3 {
   font-weight: 400;
 }
 
-.titre_resto > i {
-  left: 91vw;
-  top: 36%;
-  font-size: 3vw;
-}
+.titre_resto {
+  position: relative;
+  & i {
+    left: 91vw;
+    top: 36%;
+    font-size: 3vw;
+  }
 
-.titre_resto > h2 {
+  & h2 {
     font-size: 4vw;
     padding: 3vw 0vw 3vw 2vw;
-
     margin-top: 0px;
+  }
 }
 
 .bloc__menu {
@@ -222,46 +202,47 @@ section > h3 {
 }
 
 .cube__plats {
-    margin-bottom: 0;
-    width: 30vw;
-}
-
-.cube__plats > a {
+  margin-bottom: 0;
+  width: 30vw;
+  & a {
     width: 17%;
     margin-bottom: 1vw;
     border-bottom: 3px solid #99e2d0;
     height: 4vw;
     font-size: 2.5vw;
+  }
 }
 
 article {
   border-radius: 2vw;
+  & h5{
+    font-size: 1.3vw;
 }
 
+}
 .cube_descritpion {
-    padding: 1vw 0vw 1vw 2vw;
-}
+  padding: 1vw 0vw 1vw 2vw;
+  & h4 {
+    padding: 0;
+    font-size: 1.6vw;
+    margin: 0;
+  }
 
-.cube_descritpion > h4 {
-  padding: 0;
-  font-size: 1.6vw;
-  margin: 0;
-}
-
-.détail_h4{
-    white-space: nowrap;
-}
-
-.cube_descritpion > p {
+  & p {
     margin: 0;
     font-size: 1.3vw;
     padding-right: 1vw;
+  }
 }
+
+.détail_h4 {
+  white-space: nowrap;
+}
+
 .check {
-    width: 7vw;
-    margin-right: -7vw;
-}
-.check > i {
+  width: 7vw;
+  margin-right: -7vw;
+  & i {
     background: white;
     display: grid;
     place-content: center;
@@ -269,12 +250,14 @@ article {
     border-radius: 4vw;
     width: 2.3vw;
     height: 2.3vw;
+  }
 }
+
 .prix {
-    font-size: 1.5vw;
-    margin: 0;
-    padding: 0;
-    padding: 0vw 2vw 1.1vw 0vw;
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 0;
+  padding: 0vw 2vw 1.1vw 0vw;
 }
 
 /* button*/
@@ -285,9 +268,9 @@ article {
 }
 
 section > button {
-    font-size: 2.5vw;
-    padding: 1vw 2vw;
-    margin-bottom: 7vw;
+  font-size: 2.5vw;
+  padding: 1vw 2vw;
+  margin-bottom: 7vw;
 }
 
 /* Footer*/
@@ -298,22 +281,21 @@ footer {
   margin-top: 0vw;
   display: flex;
   justify-content: space-around;
-}
+  & h2 {
+    margin: 0;
+    font-size: 2.5vw;
+  }
 
-footer > h2 {
-  font-size: 2.5vw;
-}
+  & a {
+    font-size: 1.6vw;
+    margin: 0;
+    margin-top: 0.5vw;
+    & .fa-utensils {
+      margin-right: 2vw;
+    }
 
-footer > a {
-  font-size: 1.6vw;
-  margin: 0;
-  margin-top: 0.8vw;
-}
-
-footer > a > .fa-utensils {
-  margin-right: 2vw;
-}
-
-footer > a > .fa-hands-helping {
-  margin-right: 1vw;
+    & .fa-hands-helping {
+      margin-right: 1vw;
+    }
+  }
 }

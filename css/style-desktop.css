@@ -42,6 +42,11 @@ header > h1 {
   padding: 2vw;
 }
 
+.Nav h2 {
+  margin-left: 16vw;
+  font-size: 2vw;
+}
+
 .Nav ol {
   width: 80%;
   margin-left: 10vw;
@@ -54,20 +59,15 @@ header > h1 {
   margin-bottom: 1vw;
 }
 
+.Nav li i.fas {
+  padding: 1vw 1vw 1vw 1vw;
+  font-size: 1.2vw;
+}
+
 .Nav li:before {
   font-size: 1vw;
   width: 2vw;
   height: 2vw;
-}
-
-.Nav > h2 {
-  margin-left: 16vw;
-  font-size: 2vw;
-}
-
-.Nav li i.fas {
-  padding: 1vw 1vw 1vw 1vw;
-  font-size: 1.2vw;
 }
 
 /* restaurant */
@@ -85,6 +85,10 @@ header > h1 {
   border-radius: 2vw;
 }
 
+.card_new:before {
+  font-size: 1.2vw;
+}
+
 .card {
   width: 30%;
   height: 20vw;
@@ -95,15 +99,11 @@ header > h1 {
   margin-top: 0vw;
 }
 
-.card_new::before {
-  font-size: 1.2vw;
-}
-
-.card_description > h3 {
+.card_description h3 {
   font-size: 1.8vw;
 }
 
-.card_description > p {
+.card_description p {
   font-size: 1.5vw;
 }
 
@@ -133,11 +133,15 @@ article {
   border-radius: 1.2vw;
 }
 
+article h5 {
+  margin: 0;
+}
+
 .cube__plats {
   width: 26vw;
 }
 
-.cube__plats > a {
+.cube__plats a {
   width: 12%;
   margin-bottom: 2vw;
   height: 2.2vw;
@@ -148,11 +152,11 @@ article {
   padding: 1vw 0vw 1vw 1vw;
 }
 
-.cube_descritpion > h4 {
+.cube_descritpion h4 {
   font-size: 1.3vw;
 }
 
-.cube_descritpion > p {
+.cube_descritpion p {
   font-size: 1vw;
 }
 

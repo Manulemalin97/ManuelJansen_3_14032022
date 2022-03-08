@@ -36,7 +36,7 @@ header {
   background-color: #f6f6f6;
 }
 
-header > h1 {
+header h1 {
   font-family: "Shrikhand", cursive;
   text-align: center;
   background-color: white;
@@ -47,7 +47,7 @@ header > h1 {
   background-color: #eaeaea;
 }
 
-.bloc header > p {
+.bloc header > div p {
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
@@ -57,7 +57,7 @@ header > h1 {
   font-family: "Roboto", sans-serif;
 }
 
-.localisation > i.fas {
+.localisation i.fas {
   color: #353535;
 }
 
@@ -87,11 +87,6 @@ header > h1 {
 }
 
 /* NAV*/
-li:before {
-  color: white;
-  background-color: #9356dc;
-}
-
 .Nav > h2 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -102,15 +97,20 @@ li:before {
   font-weight: bolder;
 }
 
+.Nav > ol > li:before {
+  color: white;
+  background-color: #9356dc;
+}
+
 .Nav > ol > li:hover {
   background-color: #f5edff;
 }
 
-.Nav li i.fas {
+.Nav > ol > li i.fas {
   color: #8d8d8d;
 }
 
-.Nav li i.fas:hover {
+.Nav > ol > li i.fas:hover {
   color: #9356dc;
 }
 
@@ -124,7 +124,7 @@ li:before {
   background-color: #f6f6f6;
 }
 
-.menus > h2 {
+.menus h2 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
@@ -141,7 +141,7 @@ li:before {
   color: black;
 }
 
-.card_description > i:hover {
+.card_description i:hover {
   color: #bd64db;
 }
 
@@ -187,10 +187,6 @@ article {
   background-color: #ffffff;
 }
 
-article > p {
-  color: #404040;
-}
-
 .carte__plat > h5 {
   color: #000000;
 }
@@ -215,12 +211,12 @@ footer {
   background-color: #353535;
 }
 
-footer > h2 {
+footer h2 {
   font-family: "Shrikhand", cursive;
   color: white;
 }
 
-footer > a {
+footer a {
   font-family: "Roboto", sans-serif;
   color: white;
 }

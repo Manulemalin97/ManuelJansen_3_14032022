@@ -46,7 +46,7 @@ header > h1 {
   font-size: 2vw;
 }
 
-.localisation > i.fas {
+.localisation i.fas {
   margin-right: 4vw;
   margin-left: -10vw;
 }
@@ -54,6 +54,14 @@ header > h1 {
 /* NAV*/
 .Nav {
   padding: 2vw;
+}
+
+.Nav h2 {
+  margin: 0;
+  margin-bottom: 2vw;
+  margin-left: 7vw;
+  margin-top: 2vw;
+  font-size: 3vw;
 }
 
 .Nav ol {
@@ -75,6 +83,11 @@ header > h1 {
   margin-bottom: 3vw;
 }
 
+.Nav li i.fas {
+  padding: 0vw 2vw 1vw 1vw;
+  font-size: 2.5vw;
+}
+
 .Nav li:before {
   display: -ms-grid;
   display: grid;
@@ -83,19 +96,6 @@ header > h1 {
   height: 3vw;
   left: -1.2vw;
   top: 30%;
-}
-
-.Nav > h2 {
-  margin: 0;
-  margin-bottom: 2vw;
-  margin-left: 7vw;
-  margin-top: 2vw;
-  font-size: 3vw;
-}
-
-.Nav li i.fas {
-  padding: 0vw 2vw 1vw 1vw;
-  font-size: 2.5vw;
 }
 
 /* Menus*/
@@ -140,47 +140,34 @@ header > h1 {
   border-radius: 2vw;
 }
 
-.card_description {
-  margin-top: 1vw;
-}
-
-.card_description > h3 {
-  font-size: 2vw;
-  margin-top: 1vw;
-}
-
-.card_description > p {
-  font-size: 2vw;
-  margin-top: 0;
-}
-
-.card_description > i {
-  font-size: 3vw;
-  top: 30%;
-}
-
-.card_new::before {
+.card_new:before {
   margin-top: 1vw;
   right: 1vw;
   padding: 0.5vw 1vw 0.5vw;
   font-size: 1.8vw;
 }
 
-/* Footer*/
-footer > h2 {
-  margin: 0;
+.card_description {
+  margin-top: 1vw;
 }
 
-footer > a {
-  margin-top: 0.5vw;
+.card_description h3 {
+  font-size: 2vw;
+  margin-top: 1vw;
 }
 
-footer > a > .fa-utensils {
-  margin-right: 1vw;
+.card_description p {
+  font-size: 2vw;
+  margin-top: 0;
 }
 
-footer > a > .fa-hands-helping {
-  margin-right: 0.5vw;
+.card_description i {
+  font-size: 3vw;
+  top: 30%;
+}
+
+.card_description i:hover {
+  font-weight: 800;
 }
 
 /* Restaurant 1 */
@@ -213,13 +200,17 @@ section > h3 {
   font-weight: 400;
 }
 
-.titre_resto > i {
+.titre_resto {
+  position: relative;
+}
+
+.titre_resto i {
   left: 91vw;
   top: 36%;
   font-size: 3vw;
 }
 
-.titre_resto > h2 {
+.titre_resto h2 {
   font-size: 4vw;
   padding: 3vw 0vw 3vw 2vw;
   margin-top: 0px;
@@ -240,7 +231,7 @@ section > h3 {
   width: 30vw;
 }
 
-.cube__plats > a {
+.cube__plats a {
   width: 17%;
   margin-bottom: 1vw;
   border-bottom: 3px solid #99e2d0;
@@ -252,24 +243,28 @@ article {
   border-radius: 2vw;
 }
 
+article h5 {
+  font-size: 1.3vw;
+}
+
 .cube_descritpion {
   padding: 1vw 0vw 1vw 2vw;
 }
 
-.cube_descritpion > h4 {
+.cube_descritpion h4 {
   padding: 0;
   font-size: 1.6vw;
   margin: 0;
 }
 
-.détail_h4 {
-  white-space: nowrap;
-}
-
-.cube_descritpion > p {
+.cube_descritpion p {
   margin: 0;
   font-size: 1.3vw;
   padding-right: 1vw;
+}
+
+.détail_h4 {
+  white-space: nowrap;
 }
 
 .check {
@@ -277,7 +272,7 @@ article {
   margin-right: -7vw;
 }
 
-.check > i {
+.check i {
   background: white;
   display: -ms-grid;
   display: grid;
@@ -320,21 +315,22 @@ footer {
       justify-content: space-around;
 }
 
-footer > h2 {
+footer h2 {
+  margin: 0;
   font-size: 2.5vw;
 }
 
-footer > a {
+footer a {
   font-size: 1.6vw;
   margin: 0;
-  margin-top: 0.8vw;
+  margin-top: 0.5vw;
 }
 
-footer > a > .fa-utensils {
+footer a .fa-utensils {
   margin-right: 2vw;
 }
 
-footer > a > .fa-hands-helping {
+footer a .fa-hands-helping {
   margin-right: 1vw;
 }
 /*# sourceMappingURL=style-tablette.css.map */

@@ -35,30 +35,30 @@
 
 header {
   background-color: #f6f6f6;
-}
-
-header > h1 {
-  font-family: "Shrikhand", cursive;
-  text-align: center;
-  background-color: white;
-  font-weight: 300;
+  & h1 {
+    font-family: "Shrikhand", cursive;
+    text-align: center;
+    background-color: white;
+    font-weight: 300;
+  }
 }
 
 .bloc header > div {
   background-color: #eaeaea;
+  & p {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
 }
 
-.bloc header > p {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-}
 .localisation {
   background-color: #eaeaea;
   font-family: "Roboto", sans-serif;
+  & i.fas {
+    color: #353535;
+  }
 }
-.localisation > i.fas {
-  color: #353535;
-}
+
 /* Réservation, Explorer */
 
 .Réservez > button {
@@ -85,11 +85,6 @@ header > h1 {
 
 /* NAV*/
 
-li:before {
-  color: white;
-  background-color: #9356dc;
-}
-
 .Nav > h2 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -98,18 +93,20 @@ li:before {
 .Nav > ol > li {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
-}
+  &:before {
+    color: white;
+    background-color: #9356dc;
+  }
+  &:hover {
+    background-color: #f5edff;
+  }
+  & i.fas {
+    color: #8d8d8d;
+  }
 
-.Nav > ol > li:hover {
-  background-color: #f5edff;
-}
-
-.Nav li i.fas {
-  color: #8d8d8d;
-}
-
-.Nav li i.fas:hover {
-  color: #9356dc;
+  & i.fas:hover {
+    color: #9356dc;
+  }
 }
 
 /* Menus*/
@@ -120,11 +117,10 @@ li:before {
 
 .menus {
   background-color: #f6f6f6;
-}
-
-.menus > h2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  & h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
 }
 
 .card_image {
@@ -136,11 +132,11 @@ li:before {
 .card_description {
   font-family: "Roboto", sans-serif;
   color: black;
+  & i:hover {
+    color: #bd64db;
+  }
 }
 
-.card_description > i:hover {
-  color: #bd64db;
-}
 /* Header & banner */
 .header > h1 {
   font-family: "Shrikhand", cursive;
@@ -152,13 +148,17 @@ li:before {
 .banner {
   object-fit: cover;
 }
+
 /* Restaurants*/
+
 .main_resto {
   background-color: #f6f6f6;
 }
+
 section > a {
   color: #7b7b7b;
 }
+
 .titre_resto > h2 {
   font-weight: lighter;
   font-family: "Shrikhand";
@@ -168,17 +168,17 @@ section > a {
 .bloc__menu {
   font-family: "Roboto", sans-serif;
 }
+
 .cube__plats > a {
   text-decoration: none;
   color: #7b7b7b;
   font-family: "Roboto", sans-serif;
 }
+
 article {
   background-color: #ffffff;
 }
-article > p {
-  color: #404040;
-}
+
 .carte__plat > h5 {
   color: #000000;
 }
@@ -188,23 +188,23 @@ section > button {
   background: linear-gradient(#e872da, #a65cdb);
   color: white;
   border: none;
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
 }
-section > button:hover {
-  transform: scale(1.02);
-  cursor: pointer;
-}
+
 /* Footer*/
 
 footer {
   background-color: #353535;
-}
+  & h2 {
+    font-family: "Shrikhand", cursive;
+    color: white;
+  }
 
-footer > h2 {
-  font-family: "Shrikhand", cursive;
-  color: white;
-}
-
-footer > a {
-  font-family: "Roboto", sans-serif;
-  color: white;
+  & a {
+    font-family: "Roboto", sans-serif;
+    color: white;
+  }
 }

@@ -22,34 +22,21 @@ header > h1 {
   padding: 2vw 0vw 1vw 0vw;
 }
 
-.bloc header > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4vw;
-}
-
-.bloc header > p {
-  font-size: 4vw;
-  margin: 0;
-  padding: 2.2vw;
-}
-
 .localisation {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 4vw;
   padding: 5vw 14vw 3vw 0vw;
-}
 
-.localisation > p {
-  margin: 0;
-}
+  & p {
+    margin: 0;
+  }
 
-.localisation > i.fas {
-  margin-right: 5vw;
-  margin-left: 7vw;
+  & i.fas {
+    margin-right: 5vw;
+    margin-left: 7vw;
+  }
 }
 
 /* Réservation, Explorer */
@@ -61,7 +48,7 @@ header > h1 {
     margin-bottom: 0;
     padding: 5vw 14vw 0vw 14vw;
   }
-  
+
   & p {
     font-size: 4.5vw;
     margin-top: 3vw;
@@ -76,14 +63,21 @@ header > h1 {
     border-radius: 9vw;
     margin-bottom: 15vw;
   }
-  
 }
-
 
 /* NAV*/
 
 .Nav {
   padding: 2vw;
+
+  & h2 {
+    font-size: 6vw;
+    margin: 0;
+    margin-left: 3vw;
+    margin-top: 10vw;
+    margin-bottom: 7vw;
+  }
+
   & ol {
     width: 90%;
     margin: auto;
@@ -91,8 +85,9 @@ header > h1 {
     counter-reset: steps;
     padding: 0;
     margin-left: 4vw;
-}
-& li {
+  }
+
+  & li {
     background-color: #f6f6f6;
     -webkit-box-shadow: 5px 5px 5px 1px #e3e3e3;
     box-shadow: 5px 5px 5px 1px #e3e3e3;
@@ -105,41 +100,31 @@ header > h1 {
     font-size: 4.2vw;
     list-style-type: none;
     position: relative;
+
+    & i.fas {
+      padding: 0vw 6vw 2vw 8vw;
+      font-size: 4.9vw;
+    }
+
     &:before {
-        display: grid;
-        place-items: center;
-        content: counter(steps);
-        counter-increment: steps;
-        font-size: 3vw;
-        width: 6vw;
-        height: 6vw;
-        border-radius: 50%;
-        left: -2vw;
-        position: absolute;
-      }
-      
-      
-      &:hover {
-        transform: scale(1.02);
-        cursor: pointer;
-      }
+      display: grid;
+      place-items: center;
+      content: counter(steps);
+      counter-increment: steps;
+      font-size: 3vw;
+      width: 6vw;
+      height: 6vw;
+      border-radius: 50%;
+      left: -2vw;
+      position: absolute;
+    }
+
+    &:hover {
+      transform: scale(1.02);
+      cursor: pointer;
+    }
   }
 }
-
-.Nav > h2 {
-  font-size: 6vw;
-  margin: 0;
-  margin-left: 3vw;
-  margin-top: 10vw;
-  margin-bottom: 7vw;
-}
-
-
-.Nav li i.fas {
-  padding: 0vw 6vw 2vw 8vw;
-  font-size: 4.9vw;
-}
-
 
 /* Menus*/
 
@@ -170,23 +155,7 @@ header > h1 {
     text-size-adjust: 2vw;
     margin-top: 3vw;
     border-radius: 0.5vw;
-}
-}
-
-
-.menus > h2 {
-  margin: 0;
-  font-size: 6vw;
-  margin-left: 5vw;
-  margin-top: 12vw;
-  margin-bottom: 5vw;
-  padding-top: 13vw;
-}
-
-.card_image {
-  width: 100%;
-  height: 70%;
-  border-radius: 4vw 4vw 0 0;
+  }
 }
 
 .card {
@@ -204,12 +173,26 @@ header > h1 {
   }
 }
 
+.card_image {
+  width: 100%;
+  height: 70%;
+  border-radius: 4vw 4vw 0 0;
+}
 
 .cards_menu {
   width: 100%;
   padding: 0;
   margin: 0;
   padding-bottom: 10vw;
+}
+
+.menus > h2 {
+  margin: 0;
+  font-size: 6vw;
+  margin-left: 5vw;
+  margin-top: 12vw;
+  margin-bottom: 5vw;
+  padding-top: 13vw;
 }
 
 .card_description {
@@ -237,9 +220,6 @@ header > h1 {
   }
 }
 
-
-
-
 /* Restaurant  */
 /* Header & banner restaurants */
 
@@ -250,11 +230,10 @@ header > h1 {
 
 .header_resto {
   position: relative;
-}
-
-.header_resto > h1 {
+  & h1 {
     font-size: 8vw;
     padding-bottom: 2vw;
+  }
 }
 
 header > i {
@@ -274,29 +253,21 @@ section > h3 {
 
 .titre_resto {
   position: relative;
-}
+  & i {
+    position: absolute;
+    left: 83vw;
+    top: 50%;
+    font-size: 6vw;
+  }
 
-.titre_resto > i {
-  position: absolute;
-  left: 83vw;
-  top: 50%;
-  font-size: 6vw;
-}
-
-.titre_resto > h2 {
-  font-size: 7.5vw;
-  margin: 0;
-  padding: 7vw 0vw 0vw 5vw;
-  width: 100%;
-  border-radius: 6vw 6vw 0 0;
-  margin-top: -6vw;
-}
-
-article > h5 {
-  margin: 0;
-  font-size: 3.8vw;
-  padding-right: 8vw;
-  margin-top: 1vw;
+  & h2 {
+    font-size: 7.5vw;
+    margin: 0;
+    padding: 7vw 0vw 0vw 5vw;
+    width: 100%;
+    border-radius: 6vw 6vw 0 0;
+    margin-top: -6vw;
+  }
 }
 
 .bloc__menu {
@@ -306,17 +277,16 @@ article > h5 {
 .cube__plats {
   margin-bottom: 10vw;
   position: relative;
-}
-
-.cube__plats > a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  width: 12%;
-  margin-left: 0.5vw;
-  margin-bottom: 3vw;
-  border-bottom: 3px solid #99e2d0;
-  height: 8vw;
-  font-size: 5vw;
+  & a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    width: 12%;
+    margin-left: 0.5vw;
+    margin-bottom: 3vw;
+    border-bottom: 3px solid #99e2d0;
+    height: 8vw;
+    font-size: 5vw;
+  }
 }
 
 article {
@@ -326,6 +296,12 @@ article {
   margin-bottom: 4vw;
   border-radius: 4vw;
   box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
+  & h5 {
+    margin: 0;
+    font-size: 3.8vw;
+    padding-right: 8vw;
+    margin-top: 1vw;
+  }
 
   &:hover .check {
     margin-right: 0%;
@@ -334,72 +310,71 @@ article {
   }
 }
 
+
+
 .cube_descritpion {
   display: block;
   width: 100%;
   padding: 2vw 0vw 2vw 2vw;
   overflow: hidden;
   white-space: nowrap;
-}
-
-.cube_descritpion > h4 {
+  & h4 {
     overflow: hidden;
     text-overflow: ellipsis;
-  margin: 0;
-  font-size: 5vw;
-  padding-right: 3vw;
-  margin-top: 1vw;
+    margin: 0;
+    font-size: 5vw;
+    padding-right: 3vw;
+    margin-top: 1vw;
+  }
+
+  & p {
+    margin: 0;
+    font-size: 3.8vw;
+    padding-right: 8vw;
+    margin-top: 1vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    justify-content: space-between;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    color: #4e4e4e;
+  }
 }
 
-.détail_h4{
-    white-space: normal;
+.détail_h4 {
+  white-space: normal;
 }
 
-.cube_descritpion > p {
-  margin: 0;
-  font-size: 3.8vw;
-  padding-right: 8vw;
-  margin-top: 1vw;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  justify-content: space-between;
-  margin-top: 1vw;
-  margin-bottom: 1vw;
+.prix {
+  display: grid;
+  align-content: flex-end;
+  padding-bottom: 3vw;
+  font-weight: 600;
+  margin-left: auto;
+  width: min-content;
+  font-size: 4vw;
+  margin-right: 6vw;
   color: #4e4e4e;
 }
 
-
-.prix {
-    display: grid;
-    align-content: flex-end;
-    padding-bottom: 3vw;
-    font-weight: 600;
-    margin-left: auto;
-    width: min-content;
-    font-size: 4vw;
-    margin-right: 6vw;
-    color: #4e4e4e;
-}
-
 .check {
-    display: grid;
-    place-content: center;
-    width: 21vw;
-    margin-right: -21vw;
-    height: auto;
-    background-color: #99e2d0;
-}
-
-
-.check > i {
-  background: white;
   display: grid;
   place-content: center;
-  color: #99e2d0;
-  border-radius: 3vw;
-  width: 6vw;
-  height: 6vw;
+  width: 21vw;
+  margin-right: -21vw;
+  height: auto;
+  background-color: #99e2d0;
+  & i {
+    background: white;
+    display: grid;
+    place-content: center;
+    color: #99e2d0;
+    border-radius: 3vw;
+    width: 6vw;
+    height: 6vw;
+  }
 }
+
 /* button*/
 
 .Button {
@@ -424,27 +399,25 @@ section > button {
 footer {
   padding: 1vw 0vw 1vw 6vw;
   height: 51vw;
-}
-
-footer > h2 {
+  & h2 {
     font-size: 5vw;
     margin: 0;
     margin-top: 4vw;
     margin-bottom: 4vw;
     font-weight: 400;
-}
+  }
 
-footer > a {
-  display: flex;
-  font-size: 4vw;
-  margin: 0;
-  margin-top: 2vw;
-}
+  & a {
+    display: flex;
+    font-size: 4vw;
+    margin: 0;
+    margin-top: 2vw;
+    & .fa-utensils {
+      margin-right: 3vw;
+    }
 
-footer > a > .fa-utensils {
-  margin-right: 3vw;
-}
-
-footer > a > .fa-hands-helping {
-  margin-right: 1.5vw;
+    & .fa-hands-helping {
+      margin-right: 1.5vw;
+    }
+  }
 }
