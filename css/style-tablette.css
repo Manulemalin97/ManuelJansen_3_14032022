@@ -188,7 +188,7 @@ header > h1 {
   margin: 0;
 }
 
-header > i {
+header > a {
   font-size: 3.5vw;
   margin-left: 4vw;
   margin-top: 0.6vw;
@@ -212,8 +212,8 @@ section > h3 {
 
 .titre_resto h2 {
   font-size: 4vw;
-  padding: 3vw 0vw 3vw 2vw;
-  margin-top: 0px;
+  padding: 5vw 0vw 6vw 2vw;
+  margin-top: -4px;
 }
 
 .bloc__menu {
@@ -233,22 +233,25 @@ section > h3 {
 
 .cube__plats a {
   width: 17%;
-  margin-bottom: 1vw;
+  margin-bottom: 2vw;
   border-bottom: 3px solid #99e2d0;
-  height: 4vw;
-  font-size: 2.5vw;
+  height: 3.5vw;
+  font-size: 2vw;
 }
 
 article {
-  border-radius: 2vw;
+  border-radius: 1.5vw;
 }
 
 article h5 {
+  margin-top: 0;
   font-size: 1.3vw;
+  font-weight: normal;
+  color: #656565;
 }
 
 .cube_descritpion {
-  padding: 1vw 0vw 1vw 2vw;
+  padding: 1vw 1vw 1vw 1vw;
 }
 
 .cube_descritpion h4 {
@@ -279,8 +282,12 @@ article h5 {
   place-content: center;
   color: #99e2d0;
   border-radius: 4vw;
-  width: 2.3vw;
-  height: 2.3vw;
+  width: 2vw;
+  height: 2vw;
+}
+
+.check i:before {
+  font-size: 1.3vw;
 }
 
 .prix {
@@ -306,7 +313,7 @@ section > button {
 /* Footer*/
 footer {
   padding: 6vw 0vw 0vw 0vw;
-  height: 19vw;
+  height: 16vw;
   margin-top: 0vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,7 +330,7 @@ footer h2 {
 footer a {
   font-size: 1.6vw;
   margin: 0;
-  margin-top: 0.5vw;
+  margin-top: 1.5vw;
 }
 
 footer a .fa-utensils {

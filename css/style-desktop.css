@@ -118,6 +118,12 @@ header > i {
   margin-top: 0.35vw;
 }
 
+header > a {
+  font-size: 2.3vw;
+  margin-left: 3vw;
+  margin-top: 0.3vw;
+}
+
 .banner {
   height: 25vw;
 }
@@ -126,7 +132,6 @@ header > i {
 .titre_resto > h2 {
   font-size: 3vw;
   padding: 2vw 0vw 2vw 6vw;
-  margin-top: 0px;
 }
 
 article {
@@ -149,7 +154,7 @@ article h5 {
 }
 
 .cube_descritpion {
-  padding: 1vw 0vw 1vw 1vw;
+  padding: 1vw 1vw 1vw 1vw;
 }
 
 .cube_descritpion h4 {
@@ -168,5 +173,24 @@ section > button {
 
 footer {
   height: 13vw;
+}
+
+footer h2 {
+  margin: 0;
+  font-size: 2.5vw;
+}
+
+footer a {
+  font-size: 1.6vw;
+  margin: 0;
+  margin-top: 0.5vw;
+}
+
+footer a .fa-utensils {
+  margin-right: 2vw;
+}
+
+footer a .fa-hands-helping {
+  margin-right: 1vw;
 }
 /*# sourceMappingURL=style-desktop.css.map */

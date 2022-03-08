@@ -10,6 +10,15 @@
 /*
  * définition des polices de caractères
  */
+ @keyframes spinner {
+    0%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        rotate: (0);
+    }
+}
+
 body {
   background-color: white;
   margin: 0;
@@ -236,7 +245,7 @@ header > h1 {
   }
 }
 
-header > i {
+header > a {
   position: absolute;
   font-size: 5vw;
   margin-left: 5vw;
@@ -258,6 +267,7 @@ section > h3 {
     left: 83vw;
     top: 50%;
     font-size: 6vw;
+    
   }
 
   & h2 {
@@ -268,6 +278,11 @@ section > h3 {
     border-radius: 6vw 6vw 0 0;
     margin-top: -6vw;
   }
+  & i:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: #bd64db;
+}
 }
 
 .bloc__menu {
@@ -284,8 +299,8 @@ section > h3 {
     margin-left: 0.5vw;
     margin-bottom: 3vw;
     border-bottom: 3px solid #99e2d0;
-    height: 8vw;
-    font-size: 5vw;
+    height: 7vw;
+    font-size: 4.5vw;
   }
 }
 
@@ -296,16 +311,26 @@ article {
   margin-bottom: 4vw;
   border-radius: 4vw;
   box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
+  &:hover{
+      transform: scale(1);
+      cursor: pointer;
+      i{
+          &:active{
+              & > .spinner{
+                  animation: spinner 1s timing-function delay iteration-count direction fill-mode;
+              }
+          }
+      }
+  }
   & h5 {
     margin: 0;
     font-size: 3.8vw;
-    padding-right: 8vw;
     margin-top: 1vw;
   }
 
   &:hover .check {
     margin-right: 0%;
-    transition: margin-right 1s;
+    transition: margin-right 1.6s;
     transform-origin: right;
   }
 }
@@ -322,8 +347,8 @@ article {
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 0;
-    font-size: 5vw;
-    padding-right: 3vw;
+    font-size: 4.8vw;
+    padding-right: 4.5vw;
     margin-top: 1vw;
   }
 
@@ -354,14 +379,13 @@ article {
   width: min-content;
   font-size: 4vw;
   margin-right: 6vw;
-  color: #4e4e4e;
 }
 
 .check {
   display: grid;
   place-content: center;
-  width: 21vw;
-  margin-right: -21vw;
+  width: 23vw;
+  margin-right: -23vw;
   height: auto;
   background-color: #99e2d0;
   & i {
@@ -369,9 +393,13 @@ article {
     display: grid;
     place-content: center;
     color: #99e2d0;
-    border-radius: 3vw;
-    width: 6vw;
-    height: 6vw;
+    border-radius: 4vw;
+    width: 5vw;
+    height: 5vw;
+
+    &:before{
+        font-size: 3vw;
+    }
   }
 }
 

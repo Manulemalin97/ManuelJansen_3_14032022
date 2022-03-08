@@ -32,6 +32,7 @@
   src: url(../fonts/Roboto-Regular.ttf);
 }
 
+@use "../sass/animations";
 header {
   background-color: #f6f6f6;
 }
@@ -41,6 +42,10 @@ header h1 {
   text-align: center;
   background-color: white;
   font-weight: 300;
+}
+
+header a {
+  color: black;
 }
 
 .bloc header > div {
@@ -173,6 +178,10 @@ section > a {
   background-color: #f6f6f6;
 }
 
+.titre_resto > h2 i {
+  color: #e872da, #a65cdb;
+}
+
 .bloc__menu {
   font-family: "Roboto", sans-serif;
 }
@@ -185,6 +194,10 @@ section > a {
 
 article {
   background-color: #ffffff;
+}
+
+article h5 {
+  font-family: "Roboto", sans-serif;
 }
 
 .carte__plat > h5 {
