@@ -67,9 +67,8 @@ header > h1 {
 .Réservez button {
   font-size: 4.3vw;
   padding: 4vw 5vw;
-  margin-top: 5vw;
   -webkit-box-shadow: 1px 1px 16px -6px #000000;
-  box-shadow: 1px 1px 16px -6px #000000;
+          box-shadow: 1px 1px 16px -6px #000000;
   border-radius: 9vw;
   margin-bottom: 15vw;
 }
@@ -97,9 +96,8 @@ header > h1 {
 }
 
 .Nav li {
-  background-color: #f6f6f6;
   -webkit-box-shadow: 5px 5px 5px 1px #e3e3e3;
-  box-shadow: 5px 5px 5px 1px #e3e3e3;
+          box-shadow: 5px 5px 5px 1px #e3e3e3;
   padding: 7vw 0vw 0vw 0vw;
   border-radius: 5vw;
   text-align: start;
@@ -166,7 +164,6 @@ header > h1 {
 .card_new:before {
   content: "Nouveau";
   position: absolute;
-  background-color: #99e2d0;
   right: 2vw;
   padding: 1.4vw 4vw;
   display: -ms-grid;
@@ -282,7 +279,6 @@ header > a {
   margin-top: 1.5vw;
 }
 
-/* Restaurants*/
 section > h3 {
   font-size: 4.5vw;
   font-weight: 400;
@@ -312,6 +308,47 @@ section > h3 {
   cursor: pointer;
   font-weight: bold;
   color: #bd64db;
+}
+
+/*
+ * Animation Fadein
+ */
+.cube__plats {
+  -webkit-animation: fadeIn linear 3s;
+          animation: fadeIn linear 3s;
+}
+
+.cube__plats article:nth-child(1) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.cube__plats article:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.cube__plats article:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .bloc__menu {
@@ -346,12 +383,17 @@ article {
   border-radius: 4vw;
   -webkit-box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
-  -webkit-animation: spin 2s linear paused;
-          animation: spin 2s linear paused;
 }
 
 article:hover {
   cursor: pointer;
+}
+
+article:hover i {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 article h5 {
@@ -419,6 +461,9 @@ article:hover .check {
   margin-right: 6vw;
 }
 
+/*
+ * Animation Spinner
+ */
 .check {
   display: -ms-grid;
   display: grid;
@@ -438,15 +483,20 @@ article:hover .check {
   border-radius: 4vw;
   width: 5vw;
   height: 5vw;
-  -webkit-animation: spin 2s linear paused;
-          animation: spin 2s linear paused;
-}
-
-.check i:hover {
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .check i:before {
@@ -459,8 +509,8 @@ article:hover .check {
             transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
 
@@ -470,8 +520,8 @@ article:hover .check {
             transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
 

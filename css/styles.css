@@ -20,8 +20,8 @@
 }
 
 /*
-  * définition des polices de caractères
-  */
+ * définition des polices de caractères
+ */
 @font-face {
   font-family: "Shrikhand";
   src: url(../fonts/Shrikhand-Regular.ttf);
@@ -100,6 +100,7 @@ header a {
 .Nav > ol > li {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
+  background-color: #f6f6f6;
 }
 
 .Nav > ol > li:before {
@@ -123,6 +124,7 @@ header a {
 .card_new::before {
   font-family: "Roboto", sans-serif;
   color: #008766;
+  background-color: #99e2d0;
 }
 
 .menus {
