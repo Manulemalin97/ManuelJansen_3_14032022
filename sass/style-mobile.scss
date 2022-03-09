@@ -10,14 +10,6 @@
 /*
  * définition des polices de caractères
  */
- @keyframes spinner {
-    0%{
-        transform: rotate(-270deg);
-    }
-    100%{
-        rotate: (0);
-    }
-}
 
 body {
   background-color: white;
@@ -267,7 +259,6 @@ section > h3 {
     left: 83vw;
     top: 50%;
     font-size: 6vw;
-    
   }
 
   & h2 {
@@ -278,11 +269,11 @@ section > h3 {
     border-radius: 6vw 6vw 0 0;
     margin-top: -6vw;
   }
-  & i:hover{
+  & i:hover {
     cursor: pointer;
     font-weight: bold;
     color: #bd64db;
-}
+  }
 }
 
 .bloc__menu {
@@ -311,16 +302,9 @@ article {
   margin-bottom: 4vw;
   border-radius: 4vw;
   box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
-  &:hover{
-      transform: scale(1);
-      cursor: pointer;
-      i{
-          &:active{
-              & > .spinner{
-                  animation: spinner 1s timing-function delay iteration-count direction fill-mode;
-              }
-          }
-      }
+  animation: spin 2s linear paused ;
+  &:hover {
+    cursor: pointer;
   }
   & h5 {
     margin: 0;
@@ -332,10 +316,9 @@ article {
     margin-right: 0%;
     transition: margin-right 1.6s;
     transform-origin: right;
+    
   }
 }
-
-
 
 .cube_descritpion {
   display: block;
@@ -396,10 +379,24 @@ article {
     border-radius: 4vw;
     width: 5vw;
     height: 5vw;
-
-    &:before{
-        font-size: 3vw;
+    animation: spin 2s linear paused ;
+    &:hover {
+      animation-play-state: running;
+      animation-delay: 0s;
     }
+
+    &:before {
+      font-size: 3vw;
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
