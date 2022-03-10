@@ -207,7 +207,7 @@ article h5 {
 }
 
 /* button*/
-section > button {
+h6 > button {
   font-family: "Roboto", sans-serif;
   background: -webkit-gradient(linear, left top, left bottom, from(#e872da), to(#a65cdb));
   background: linear-gradient(#e872da, #a65cdb);
@@ -215,7 +215,7 @@ section > button {
   border: none;
 }
 
-section > button:hover {
+h6 > button:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   cursor: pointer;

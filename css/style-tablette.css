@@ -298,13 +298,7 @@ article h5 {
 }
 
 /* button*/
-.Button {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-
-section > button {
+h6 > button {
   font-size: 2.5vw;
   padding: 1vw 2vw;
   margin-bottom: 7vw;

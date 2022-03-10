@@ -61,7 +61,7 @@ header > h1 {
 .Réservez p {
   font-size: 4.5vw;
   margin-top: 3vw;
-  margin-bottom: 2vw;
+  margin-bottom: 7vw;
 }
 
 .Réservez button {
@@ -313,40 +313,78 @@ section > h3 {
 /*
  * Animation Fadein
  */
-.cube__plats {
-  -webkit-animation: fadeIn linear 3s;
-          animation: fadeIn linear 3s;
+.down1 {
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-.cube__plats article:nth-child(1) {
+.down2 {
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.down3 {
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.down4 {
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-.cube__plats article:nth-child(2) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+.down5 {
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-.cube__plats article:nth-child(3) {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-
-@keyframes fadeIn {
-  0% {
+@-webkit-keyframes fadein {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
     opacity: 0;
   }
-  100% {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
+@keyframes fadein {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
     opacity: 0;
   }
-  100% {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
@@ -532,7 +570,7 @@ article:hover .check {
   place-items: center;
 }
 
-section > button {
+h6 > button {
   font-size: 4.3vw;
   padding: 3vw 8vw;
   margin-top: 2vw;
