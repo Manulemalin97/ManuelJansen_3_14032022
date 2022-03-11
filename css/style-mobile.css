@@ -11,6 +11,99 @@
 /*
  * définition des polices de caractères
  */
+.loading_spinner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.spinner-sector {
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 15px solid transparent;
+}
+
+.spinner-text {
+  font-size: 8vw;
+  -webkit-animation: loading-opacity 2s ease-in-out;
+          animation: loading-opacity 2s ease-in-out;
+}
+
+.spinner-sector-blue {
+  border-top: 15px solid blue;
+  -webkit-animation: rotate 2s ease infinite;
+          animation: rotate 2s ease infinite;
+}
+
+.spinner-sector-purple {
+  border-top: 15px solid purple;
+  -webkit-animation: rotate 2s ease-in infinite;
+          animation: rotate 2s ease-in infinite;
+}
+
+.spinner-sector-green {
+  border-top: 15px solid green;
+  -webkit-animation: rotate 1.5s ease-out infinite;
+          animation: rotate 1.5s ease-out infinite;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate();
+            transform: rotate();
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate();
+            transform: rotate();
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loading-opacity {
+  0%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: .5;
+  }
+  50% {
+    opacity: .1;
+  }
+}
+
+@keyframes loading-opacity {
+  0%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: .5;
+  }
+  50% {
+    opacity: .1;
+  }
+}
+
 body {
   background-color: white;
   margin: 0;
@@ -253,6 +346,8 @@ header > h1 {
 
 .card_description i:hover {
   font-weight: 800;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 /* Restaurant  */
