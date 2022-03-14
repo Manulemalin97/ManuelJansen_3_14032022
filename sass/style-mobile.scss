@@ -10,52 +10,19 @@
 /*
  * définition des polices de caractères
  */
- 
-.loading_spinner{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 300px;
-}
-.spinner-sector{
-    border-radius: 50%;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 15px solid transparent;
-}
-.spinner-text {
-    font-size: 8vw;
-    animation: loading-opacity 2s ease-in-out
-}
-.spinner-sector-blue{
-  border-top: 15px solid blue; 
-  animation: rotate 2s ease infinite; 
-}
-.spinner-sector-purple{
-    border-top: 15px solid purple; 
-    animation: rotate 2s ease-in infinite;  
-  }
-  .spinner-sector-green{
-    border-top: 15px solid green;
-    animation: rotate 1.5s ease-out infinite;   
-  }
 
-  @keyframes rotate {
-      from { transform : rotate();}
-      to{ transform: rotate(360deg);}
-  }
-@keyframes loading-opacity{
-    0%, 100% {opacity: 1;}
-    25%, 75% {opacity: .5;}
-    50%{opacity: .1;}
-}
+@import "../sass/layouts/keyframes.scss";
+@import "../sass/buttons.scss";
 
 body {
   background-color: white;
   margin: 0;
+}
+
+.loadingHomePage {
+  padding: 0;
+  margin: 0;
+  animation: loadingHomePage 2.5s linear;
 }
 
 header > h1 {
@@ -103,6 +70,7 @@ header > h1 {
     box-shadow: 1px 1px 16px -6px #000000;
     border-radius: 9vw;
     margin-bottom: 15vw;
+    cursor: pointer;
   }
 }
 
@@ -159,13 +127,11 @@ header > h1 {
     }
 
     &:hover {
-      transform: scale(1.02);
       cursor: pointer;
     }
   }
 }
 
-  
 /* Menus*/
 
 .card_new {
@@ -253,9 +219,8 @@ header > h1 {
     position: absolute;
     right: 1vw;
     top: 40%;
-    &:hover {
+    & i:hover {
       font-weight: 800;
-          transition: 2s;
     }
   }
 }
@@ -310,53 +275,43 @@ section > h3 {
     cursor: pointer;
     font-weight: bold;
     color: #bd64db;
+    transition: 2s;
   }
 }
 /*
  * Animation Fadein
  */
- 
-  .down1 {
-    animation: fadein 1s;
-            animation-delay: 200ms;
-            animation-fill-mode: forwards;
-    opacity: 0;
-  }
-  .down2 {
-    animation: fadein 1s;
-            animation-delay: 400ms;
-            animation-fill-mode: forwards;
-    opacity: 0;
-  }
-  .down3 {
-    animation: fadein 1s;
-            animation-delay: 800ms;
-            animation-fill-mode: forwards;
-    opacity: 0;
-  }
-  .down4 {
-       animation: fadein 1s;
-            animation-delay: 1s;
-            animation-fill-mode: forwards;
-    opacity: 0;
-  }
-  .down5 {
-    animation: fadein 1s;
-         animation-delay: 1s;
-         animation-fill-mode: forwards;
- opacity: 0;
-}
 
-  @keyframes fadein {
-    from {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+.down1 {
+  animation: fadein 1s;
+  animation-delay: 200ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.down2 {
+  animation: fadein 1s;
+  animation-delay: 400ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.down3 {
+  animation: fadein 1s;
+  animation-delay: 800ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.down4 {
+  animation: fadein 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.down5 {
+  animation: fadein 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
 
 .bloc__menu {
   padding: 6vw 3vw 0vw 3vw;
@@ -384,12 +339,11 @@ article {
   margin-bottom: 4vw;
   border-radius: 4vw;
   box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
-
   &:hover {
     cursor: pointer;
-    & i {      
-            animation-play-state: running;
-            animation-delay: 0s;        
+    & i {
+      animation-play-state: running;
+      animation-delay: 0s;
     }
   }
   & h5 {
@@ -403,7 +357,6 @@ article {
     transition: margin-right 1.6s;
     transform-origin: right;
   }
-  
 }
 
 .cube_descritpion {
@@ -450,10 +403,6 @@ article {
   margin-right: 6vw;
 }
 
-/*
- * Animation Spinner
- */
-
 .check {
   display: grid;
   place-content: center;
@@ -470,7 +419,7 @@ article {
     width: 5vw;
     height: 5vw;
     animation-name: spin;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-delay: 1.6s;
     animation-direction: normal;
@@ -483,34 +432,8 @@ article {
   }
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
 /* button*/
 
-.Button {
-  display: grid;
-  place-items: center;
-}
-
-h6 > button {
-  font-size: 4.3vw;
-  padding: 3vw 8vw;
-  margin-top: 2vw;
-  -webkit-box-shadow: 1px 1px 16px -6px #000000;
-  box-shadow: 1px 1px 16px -6px #000000;
-  border-radius: 6vw;
-  margin-bottom: 10vw;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
 /* Footer*/
 
 footer {

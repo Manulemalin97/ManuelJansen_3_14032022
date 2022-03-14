@@ -1,5 +1,5 @@
 /*
- * style.css-mobile
+ * style.scss-desktop
  * 
  * définition des styles généraux à la page
  * 
@@ -110,10 +110,10 @@ header > i {
   margin-left: 2vw;
   margin-top: 0.35vw;
 }
-header > a{
-    font-size: 2.3vw;
-    margin-left: 3vw;
-    margin-top: 0.3vw;
+header > a {
+  font-size: 2.3vw;
+  margin-left: 3vw;
+  margin-top: 0.3vw;
 }
 .banner {
   height: 25vw;
@@ -128,11 +128,10 @@ header > a{
 
 article {
   border-radius: 1.2vw;
-  & h5{
-      margin: 0;
+  & h5 {
+    margin: 0;
   }
 }
-
 
 .cube__plats {
   width: 26vw;
@@ -161,23 +160,22 @@ h6 > button {
   margin-bottom: 7vw;
 }
 footer {
-    height: 13vw;
-    & h2 {
-      margin: 0;
-      font-size: 2.5vw;
-    }
-  
-    & a {
-      font-size: 1.6vw;
-      margin: 0;
-      margin-top: 0.5vw;
-      & .fa-utensils {
-        margin-right: 2vw;
-      }
-  
-      & .fa-hands-helping {
-        margin-right: 1vw;
-      }
-    }
+  height: 13vw;
+  & h2 {
+    margin: 0;
+    font-size: 2.5vw;
   }
 
+  & a {
+    font-size: 1.6vw;
+    margin: 0;
+    margin-top: 0.5vw;
+    & .fa-utensils {
+      margin-right: 2vw;
+    }
+
+    & .fa-hands-helping {
+      margin-right: 1vw;
+    }
+  }
+}

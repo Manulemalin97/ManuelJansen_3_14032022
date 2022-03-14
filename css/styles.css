@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
- * style.css-desktop
+ * styles.scss
  * 
  * définition des styles généraux à la page
  * 
@@ -32,7 +32,28 @@
   src: url(../fonts/Roboto-Regular.ttf);
 }
 
-@use "../sass/animations";
+.blocSpinner {
+  height: 100%;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  border: 2vw solid #9356dc;
+  border-color: #9356dc transparent;
+  -webkit-animation: lds-dual-ring 2s linear;
+          animation: lds-dual-ring 2s linear;
+  opacity: 0;
+}
+
 header {
   background-color: #f6f6f6;
 }
@@ -67,21 +88,6 @@ header a {
 }
 
 /* Réservation, Explorer */
-.Réservez > button {
-  font-family: "Roboto", sans-serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e872da), to(#a65cdb));
-  background: linear-gradient(#e872da, #a65cdb);
-  color: white;
-  border: none;
-}
-
-/* Effet au survol du Button recherche */
-.Réservez > button:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  cursor: pointer;
-}
-
 .Réservez > h2 {
   font-family: "Roboto", sans-serif;
 }
@@ -103,13 +109,13 @@ header a {
   background-color: #f6f6f6;
 }
 
+.Nav > ol > li:hover {
+  background-color: #f5edff;
+}
+
 .Nav > ol > li:before {
   color: white;
   background-color: #9356dc;
-}
-
-.Nav > ol > li:hover {
-  background-color: #f5edff;
 }
 
 .Nav > ol > li i.fas {
@@ -149,7 +155,10 @@ header a {
 }
 
 .card_description i:hover {
-  color: #bd64db;
+  color: #9356dc;
+  font-weight: bold;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 /* Header & banner */
@@ -181,7 +190,7 @@ section > a {
 }
 
 .titre_resto > h2 i {
-  color: #e872da, #a65cdb;
+  color: #9356dc;
 }
 
 .bloc__menu {
@@ -209,8 +218,8 @@ article h5 {
 /* button*/
 h6 > button {
   font-family: "Roboto", sans-serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e872da), to(#a65cdb));
-  background: linear-gradient(#e872da, #a65cdb);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#a65cdb));
+  background: linear-gradient(#FF79DA, #a65cdb);
   color: white;
   border: none;
 }
@@ -219,6 +228,10 @@ h6 > button:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#FF79DA));
+  background: linear-gradient(#a878db, #FF79DA);
+  -webkit-box-shadow: 0 1px 7px -1px #31262f;
+          box-shadow: 0 1px 7px -1px #31262f;
 }
 
 /* Footer*/

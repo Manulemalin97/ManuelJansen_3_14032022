@@ -1,0 +1,41 @@
+$color-primary: #9356dc;
+$color-secondary:#FF79DA;
+
+.Réservez > button {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient($color-secondary, $color-primary);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Effet au survol du Button recherche */
+
+.Réservez > button:hover {
+    background: linear-gradient(#a878db, #ec9bd7);
+  box-shadow: 0 1px 7px -1px #31262f; 
+  h6 > .Button:hover {
+    background: linear-gradient(#a878db, #ec9bd7,);
+    box-shadow: 0 1px 7px -1px #31262f;
+  }
+}
+
+.Button {
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+
+/* Effet au survol du Button commander */
+h6 > button {
+  font-size: 4.3vw;
+  padding: 3vw 8vw;
+  margin-top: 2vw;
+  -webkit-box-shadow: 1px 1px 16px -6px #000000;
+  box-shadow: 1px 1px 16px -6px #000000;
+  border-radius: 6vw;
+  margin-bottom: 10vw;
+  display: grid;
+  place-items: center;
+}

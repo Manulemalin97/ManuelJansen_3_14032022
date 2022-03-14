@@ -1,5 +1,5 @@
 /*
- * style.css-desktop
+ * styles.scss
  * 
  * définition des styles généraux à la page
  * 
@@ -11,6 +11,9 @@
 /*
  * définition des polices de caractères
  */
+
+$color-primary: #9356dc;
+$color-secondary:#FF79DA;
 
 *,
 ::before,
@@ -32,8 +35,26 @@
   font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.ttf);
 }
+.blocSpinner {
+  height: 100%;
+}
 
-@use "../sass/animations";
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  border: 2vw solid $color-primary;
+  border-color: $color-primary transparent;
+  animation: lds-dual-ring 2s linear;
+  opacity: 0;
+}
 
 header {
   background-color: #f6f6f6;
@@ -43,8 +64,8 @@ header {
     background-color: white;
     font-weight: 300;
   }
-  & a{
-      color: black;
+  & a {
+    color: black;
   }
 }
 
@@ -66,19 +87,6 @@ header {
 
 /* Réservation, Explorer */
 
-.Réservez > button {
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient(#e872da, #a65cdb);
-  color: white;
-  border: none;
-}
-
-/* Effet au survol du Button recherche */
-.Réservez > button:hover {
-  transform: scale(1.02);
-  cursor: pointer;
-}
-
 .Réservez > h2 {
   font-family: "Roboto", sans-serif;
 }
@@ -99,19 +107,20 @@ header {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   background-color: #f6f6f6;
-  &:before {
-    color: white;
-    background-color: #9356dc;
-  }
   &:hover {
     background-color: #f5edff;
   }
+  &:before {
+    color: white;
+    background-color: $color-primary;
+  }
+
   & i.fas {
     color: #8d8d8d;
   }
 
   & i.fas:hover {
-    color: #9356dc;
+    color: $color-primary;
   }
 }
 
@@ -119,7 +128,7 @@ header {
 .card_new::before {
   font-family: "Roboto", sans-serif;
   color: #008766;
-      background-color: #99e2d0;
+  background-color: #99e2d0;
 }
 
 .menus {
@@ -140,7 +149,9 @@ header {
   font-family: "Roboto", sans-serif;
   color: black;
   & i:hover {
-    color: #bd64db;
+    color: $color-primary;
+    font-weight: bold;
+    transition: 2s;
   }
 }
 
@@ -170,8 +181,8 @@ section > a {
   font-weight: lighter;
   font-family: "Shrikhand";
   background-color: #f6f6f6;
-  & i{
-    color: #e872da, #a65cdb
+  & i {
+    color: $color-primary;
   }
 }
 
@@ -198,12 +209,14 @@ article {
 /* button*/
 h6 > button {
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(#e872da, #a65cdb);
+  background: linear-gradient($color-secondary, #a65cdb);
   color: white;
   border: none;
   &:hover {
     transform: scale(1.02);
     cursor: pointer;
+    background: linear-gradient(#a878db, $color-secondary);
+    box-shadow: 0 1px 7px -1px #31262f;
   }
 }
 

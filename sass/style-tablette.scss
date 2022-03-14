@@ -1,5 +1,5 @@
 /*
- * style.css-mobile
+ * style.scss-tablette
  * 
  * définition des styles généraux à la page
  * 
@@ -215,13 +215,12 @@ section > h3 {
 
 article {
   border-radius: 1.5vw;
-  & h5{
-      margin-top: 0;
+  & h5 {
+    margin-top: 0;
     font-size: 1.3vw;
     font-weight: normal;
     color: #656565;
-}
-
+  }
 }
 .cube_descritpion {
   padding: 1vw 1vw 1vw 1vw;
@@ -254,8 +253,8 @@ article {
     width: 2vw;
     height: 2vw;
 
-    &:before{
-        font-size: 1.3vw;
+    &:before {
+      font-size: 1.3vw;
     }
   }
 }

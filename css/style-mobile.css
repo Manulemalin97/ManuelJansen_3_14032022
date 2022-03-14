@@ -11,102 +11,160 @@
 /*
  * définition des polices de caractères
  */
-.loading_spinner {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 300px;
-  height: 300px;
-}
-
-.spinner-sector {
-  border-radius: 50%;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 15px solid transparent;
-}
-
-.spinner-text {
-  font-size: 8vw;
-  -webkit-animation: loading-opacity 2s ease-in-out;
-          animation: loading-opacity 2s ease-in-out;
-}
-
-.spinner-sector-blue {
-  border-top: 15px solid blue;
-  -webkit-animation: rotate 2s ease infinite;
-          animation: rotate 2s ease infinite;
-}
-
-.spinner-sector-purple {
-  border-top: 15px solid purple;
-  -webkit-animation: rotate 2s ease-in infinite;
-          animation: rotate 2s ease-in infinite;
-}
-
-.spinner-sector-green {
-  border-top: 15px solid green;
-  -webkit-animation: rotate 1.5s ease-out infinite;
-          animation: rotate 1.5s ease-out infinite;
-}
-
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate();
-            transform: rotate();
+/* Loading icon Animation */
+@-webkit-keyframes lds-dual-ring {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
-  to {
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes lds-dual-ring {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    opacity: 0;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
 
-@keyframes rotate {
+/* LoadingHomePage Animation */
+@-webkit-keyframes loadingHomePage {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loadingHomePage {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade in, article */
+@-webkit-keyframes fadein {
   from {
-    -webkit-transform: rotate();
-            transform: rotate();
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
   }
 }
 
-@-webkit-keyframes loading-opacity {
-  0%, 100% {
-    opacity: 1;
+/* Spin Animation */
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
-  25%, 75% {
-    opacity: .5;
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
   }
-  50% {
-    opacity: .1;
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
   }
 }
 
-@keyframes loading-opacity {
-  0%, 100% {
-    opacity: 1;
-  }
-  25%, 75% {
-    opacity: .5;
-  }
-  50% {
-    opacity: .1;
-  }
+.Réservez > button {
+  font-family: "Roboto", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356dc));
+  background: linear-gradient(#FF79DA, #9356dc);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Effet au survol du Button recherche */
+.Réservez > button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
+  background: linear-gradient(#9356dc, #FF79DA);
+  -webkit-box-shadow: 0 1px 7px -1px #31262f;
+          box-shadow: 0 1px 7px -1px #31262f;
+}
+
+.Réservez > button:hover h6 > .Button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
+  background: linear-gradient(#9356dc, #FF79DA);
+  -webkit-box-shadow: 0 1px 7px -1px #31262f;
+          box-shadow: 0 1px 7px -1px #31262f;
+  cursor: pointer;
+}
+
+.Button {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+/* Effet au survol du Button commander */
+h6 > button {
+  font-size: 4.3vw;
+  padding: 3vw 8vw;
+  margin-top: 2vw;
+  -webkit-box-shadow: 1px 1px 16px -6px #000000;
+  box-shadow: 1px 1px 16px -6px #000000;
+  border-radius: 6vw;
+  margin-bottom: 10vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 body {
   background-color: white;
   margin: 0;
+}
+
+.loadingHomePage {
+  padding: 0;
+  margin: 0;
+  -webkit-animation: loadingHomePage 2.5s linear;
+          animation: loadingHomePage 2.5s linear;
 }
 
 header > h1 {
@@ -164,6 +222,7 @@ header > h1 {
           box-shadow: 1px 1px 16px -6px #000000;
   border-radius: 9vw;
   margin-bottom: 15vw;
+  cursor: pointer;
 }
 
 /* NAV*/
@@ -222,8 +281,6 @@ header > h1 {
 }
 
 .Nav li:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
   cursor: pointer;
 }
 
@@ -344,10 +401,8 @@ header > h1 {
   top: 40%;
 }
 
-.card_description i:hover {
+.card_description i i:hover {
   font-weight: 800;
-  -webkit-transition: 2s;
-  transition: 2s;
 }
 
 /* Restaurant  */
@@ -403,6 +458,8 @@ section > h3 {
   cursor: pointer;
   font-weight: bold;
   color: #bd64db;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 /*
@@ -456,32 +513,6 @@ section > h3 {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   opacity: 0;
-}
-
-@-webkit-keyframes fadein {
-  from {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 .bloc__menu {
@@ -594,9 +625,6 @@ article:hover .check {
   margin-right: 6vw;
 }
 
-/*
- * Animation Spinner
- */
 .check {
   display: -ms-grid;
   display: grid;
@@ -618,8 +646,8 @@ article:hover .check {
   height: 5vw;
   -webkit-animation-name: spin;
           animation-name: spin;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-delay: 1.6s;
@@ -636,48 +664,7 @@ article:hover .check {
   font-size: 3vw;
 }
 
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
-}
-
-@keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
-}
-
 /* button*/
-.Button {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-
-h6 > button {
-  font-size: 4.3vw;
-  padding: 3vw 8vw;
-  margin-top: 2vw;
-  -webkit-box-shadow: 1px 1px 16px -6px #000000;
-  box-shadow: 1px 1px 16px -6px #000000;
-  border-radius: 6vw;
-  margin-bottom: 10vw;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-
 /* Footer*/
 footer {
   padding: 1vw 0vw 1vw 6vw;
