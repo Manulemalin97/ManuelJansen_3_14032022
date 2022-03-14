@@ -109,19 +109,19 @@ header {
   background-color: #f6f6f6;
   &:hover {
     background-color: #f5edff;
+    & i.fas{
+        color: $color-primary;
+    }
   }
   &:before {
     color: white;
     background-color: $color-primary;
   }
-
   & i.fas {
     color: #8d8d8d;
   }
 
-  & i.fas:hover {
-    color: $color-primary;
-  }
+  
 }
 
 /* Menus*/
