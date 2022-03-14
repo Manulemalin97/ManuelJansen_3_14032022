@@ -14,6 +14,8 @@
 
 $color-primary: #9356dc;
 $color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
+
 
 *,
 ::before,
@@ -205,19 +207,6 @@ article {
 
 .carte__plat > h5 {
   color: #000000;
-}
-/* button*/
-h6 > button {
-  font-family: "Roboto", sans-serif;
-  background: linear-gradient($color-secondary, #a65cdb);
-  color: white;
-  border: none;
-  &:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-    background: linear-gradient(#a878db, $color-secondary);
-    box-shadow: 0 1px 7px -1px #31262f;
-  }
 }
 
 /* Footer*/

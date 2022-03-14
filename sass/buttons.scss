@@ -27,7 +27,7 @@ $color-secondary:#FF79DA;
 }
 
 
-/* Effet au survol du Button commander */
+/* button*/
 h6 > button {
   font-size: 4.3vw;
   padding: 3vw 8vw;
@@ -39,3 +39,17 @@ h6 > button {
   display: grid;
   place-items: center;
 }
+/* Effet au survol du Button commander */
+
+h6 > button {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient($color-secondary, #a65cdb);
+    color: white;
+    border: none;
+    &:hover {
+      transform: scale(1.02);
+      cursor: pointer;
+      background: linear-gradient(#a878db, $color-secondary);
+      box-shadow: 0 1px 7px -1px #31262f;
+    }
+  }

@@ -11,33 +11,31 @@
 /*
  * définition des polices de caractères
  */
-/* Loading icon Animation */
 @-webkit-keyframes lds-dual-ring {
   0% {
     opacity: 1;
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     opacity: 0;
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes lds-dual-ring {
   0% {
     opacity: 1;
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     opacity: 0;
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
-/* LoadingHomePage Animation */
 @-webkit-keyframes loadingHomePage {
   0% {
     opacity: 0;
@@ -49,6 +47,7 @@
     opacity: 1;
   }
 }
+
 @keyframes loadingHomePage {
   0% {
     opacity: 0;
@@ -61,51 +60,51 @@
   }
 }
 
-/* Fade in, article */
 @-webkit-keyframes fadein {
   from {
     -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    transform: translateY(50px);
     opacity: 0;
   }
   to {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes fadein {
-  from {
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
-/* Spin Animation */
+@keyframes fadein {
+  from {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
+
 @keyframes spin {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
 
@@ -120,18 +119,17 @@
 
 /* Effet au survol du Button recherche */
 .Réservez > button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
-  background: linear-gradient(#9356dc, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#ec9bd7));
+  background: linear-gradient(#a878db, #ec9bd7);
   -webkit-box-shadow: 0 1px 7px -1px #31262f;
           box-shadow: 0 1px 7px -1px #31262f;
 }
 
 .Réservez > button:hover h6 > .Button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
-  background: linear-gradient(#9356dc, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#ec9bd7));
+  background: linear-gradient(#a878db, #ec9bd7);
   -webkit-box-shadow: 0 1px 7px -1px #31262f;
           box-shadow: 0 1px 7px -1px #31262f;
-  cursor: pointer;
 }
 
 .Button {
@@ -141,7 +139,7 @@
   margin: 0;
 }
 
-/* Effet au survol du Button commander */
+/* button*/
 h6 > button {
   font-size: 4.3vw;
   padding: 3vw 8vw;
@@ -153,6 +151,25 @@ h6 > button {
   display: -ms-grid;
   display: grid;
   place-items: center;
+}
+
+/* Effet au survol du Button commander */
+h6 > button {
+  font-family: "Roboto", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#a65cdb));
+  background: linear-gradient(#FF79DA, #a65cdb);
+  color: white;
+  border: none;
+}
+
+h6 > button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#FF79DA));
+  background: linear-gradient(#a878db, #FF79DA);
+  -webkit-box-shadow: 0 1px 7px -1px #31262f;
+          box-shadow: 0 1px 7px -1px #31262f;
 }
 
 body {

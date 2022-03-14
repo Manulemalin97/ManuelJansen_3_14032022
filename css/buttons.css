@@ -30,7 +30,7 @@
   margin: 0;
 }
 
-/* Effet au survol du Button commander */
+/* button*/
 h6 > button {
   font-size: 4.3vw;
   padding: 3vw 8vw;
@@ -42,5 +42,24 @@ h6 > button {
   display: -ms-grid;
   display: grid;
   place-items: center;
+}
+
+/* Effet au survol du Button commander */
+h6 > button {
+  font-family: "Roboto", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#a65cdb));
+  background: linear-gradient(#FF79DA, #a65cdb);
+  color: white;
+  border: none;
+}
+
+h6 > button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#FF79DA));
+  background: linear-gradient(#a878db, #FF79DA);
+  -webkit-box-shadow: 0 1px 7px -1px #31262f;
+          box-shadow: 0 1px 7px -1px #31262f;
 }
 /*# sourceMappingURL=buttons.css.map */
