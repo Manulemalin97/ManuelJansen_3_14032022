@@ -1,5 +1,7 @@
 $color-primary: #9356dc;
 $color-secondary:#FF79DA;
+$color-tertiary: #99E2D0;
+
 
 .Réservez > button {
   font-family: "Roboto", sans-serif;
@@ -10,38 +12,33 @@ $color-secondary:#FF79DA;
 }
 
 /* Effet au survol du Button recherche */
-
+.Button {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    .Button:hover {
+        background: linear-gradient(#a878db, #ec9bd7,);
+        box-shadow: 0 1px 7px -1px #31262f;
+      }
+  }
 .Réservez > button:hover {
     background: linear-gradient(#a878db, #ec9bd7);
   box-shadow: 0 1px 7px -1px #31262f; 
-  h6 > .Button:hover {
-    background: linear-gradient(#a878db, #ec9bd7,);
-    box-shadow: 0 1px 7px -1px #31262f;
-  }
-}
-
-.Button {
-  display: grid;
-  place-items: center;
-  margin: 0;
 }
 
 
+/* Effet au survol du Button commander */
 /* button*/
 h6 > button {
-  font-size: 4.3vw;
-  padding: 3vw 8vw;
-  margin-top: 2vw;
-  -webkit-box-shadow: 1px 1px 16px -6px #000000;
-  box-shadow: 1px 1px 16px -6px #000000;
-  border-radius: 6vw;
-  margin-bottom: 10vw;
-  display: grid;
-  place-items: center;
-}
-/* Effet au survol du Button commander */
-
-h6 > button {
+    font-size: 4.3vw;
+    padding: 3vw 8vw;
+    margin-top: 2vw;
+    -webkit-box-shadow: 1px 1px 16px -6px #000000;
+    box-shadow: 1px 1px 16px -6px #000000;
+    border-radius: 6vw;
+    margin-bottom: 10vw;
+    display: grid;
+    place-items: center;
     font-family: "Roboto", sans-serif;
     background: linear-gradient($color-secondary, #a65cdb);
     color: white;
@@ -49,7 +46,7 @@ h6 > button {
     &:hover {
       transform: scale(1.02);
       cursor: pointer;
-      background: linear-gradient(#a878db, $color-secondary);
+      background: linear-gradient(#a878db, #ec9bd7);
       box-shadow: 0 1px 7px -1px #31262f;
     }
   }

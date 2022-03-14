@@ -37,7 +37,7 @@ header > h1 {
   align-items: center;
   justify-content: center;
   font-size: 4vw;
-  padding: 5vw 14vw 3vw 0vw;
+  padding: 2vw 12vw 2vw 0vw;
 
   & p {
     margin: 0;
@@ -45,8 +45,16 @@ header > h1 {
 
   & i.fas {
     margin-right: 5vw;
-    margin-left: 7vw;
+    margin-left: 12vw;
   }
+  & input {
+    height: 7vw;
+ width: 41%;
+ font-size: 4vw;
+ background-color: #eaeaea;
+ padding-left: 1vw;
+ border: 0;
+}
 }
 
 /* Réservation, Explorer */
@@ -73,7 +81,6 @@ header > h1 {
     cursor: pointer;
   }
 }
-
 /* NAV*/
 
 .Nav {
@@ -274,7 +281,7 @@ section > h3 {
   & i:hover {
     cursor: pointer;
     font-weight: bold;
-    color: #bd64db;
+    color: $color-primary;
     transition: 2s;
   }
 }
@@ -339,6 +346,7 @@ article {
   margin-bottom: 4vw;
   border-radius: 4vw;
   box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.1);
+
   &:hover {
     cursor: pointer;
     & i {
@@ -409,12 +417,12 @@ article {
   width: 23vw;
   margin-right: -23vw;
   height: auto;
-  background-color: #99e2d0;
+  background-color: $color-tertiary;
   & i {
     background: white;
     display: grid;
     place-content: center;
-    color: #99e2d0;
+    color: $color-tertiary;
     border-radius: 4vw;
     width: 5vw;
     height: 5vw;
@@ -432,7 +440,6 @@ article {
   }
 }
 
-/* button*/
 
 /* Footer*/
 

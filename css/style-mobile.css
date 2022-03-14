@@ -118,20 +118,6 @@
 }
 
 /* Effet au survol du Button recherche */
-.Réservez > button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#ec9bd7));
-  background: linear-gradient(#a878db, #ec9bd7);
-  -webkit-box-shadow: 0 1px 7px -1px #31262f;
-          box-shadow: 0 1px 7px -1px #31262f;
-}
-
-.Réservez > button:hover h6 > .Button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#ec9bd7));
-  background: linear-gradient(#a878db, #ec9bd7);
-  -webkit-box-shadow: 0 1px 7px -1px #31262f;
-          box-shadow: 0 1px 7px -1px #31262f;
-}
-
 .Button {
   display: -ms-grid;
   display: grid;
@@ -139,6 +125,21 @@
   margin: 0;
 }
 
+.Button .Button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#ec9bd7));
+  background: linear-gradient(#a878db, #ec9bd7);
+  -webkit-box-shadow: 0 1px 7px -1px #31262f;
+          box-shadow: 0 1px 7px -1px #31262f;
+}
+
+.Réservez > button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#ec9bd7));
+  background: linear-gradient(#a878db, #ec9bd7);
+  -webkit-box-shadow: 0 1px 7px -1px #31262f;
+          box-shadow: 0 1px 7px -1px #31262f;
+}
+
+/* Effet au survol du Button commander */
 /* button*/
 h6 > button {
   font-size: 4.3vw;
@@ -151,10 +152,6 @@ h6 > button {
   display: -ms-grid;
   display: grid;
   place-items: center;
-}
-
-/* Effet au survol du Button commander */
-h6 > button {
   font-family: "Roboto", sans-serif;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#a65cdb));
   background: linear-gradient(#FF79DA, #a65cdb);
@@ -166,8 +163,8 @@ h6 > button:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   cursor: pointer;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#FF79DA));
-  background: linear-gradient(#a878db, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#ec9bd7));
+  background: linear-gradient(#a878db, #ec9bd7);
   -webkit-box-shadow: 0 1px 7px -1px #31262f;
           box-shadow: 0 1px 7px -1px #31262f;
 }
@@ -203,7 +200,7 @@ header > h1 {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 4vw;
-  padding: 5vw 14vw 3vw 0vw;
+  padding: 2vw 12vw 2vw 0vw;
 }
 
 .localisation p {
@@ -212,7 +209,16 @@ header > h1 {
 
 .localisation i.fas {
   margin-right: 5vw;
-  margin-left: 7vw;
+  margin-left: 12vw;
+}
+
+.localisation input {
+  height: 7vw;
+  width: 41%;
+  font-size: 4vw;
+  background-color: #eaeaea;
+  padding-left: 1vw;
+  border: 0;
 }
 
 /* Réservation, Explorer */
@@ -474,7 +480,7 @@ section > h3 {
 .titre_resto i:hover {
   cursor: pointer;
   font-weight: bold;
-  color: #bd64db;
+  color: #9356dc;
   -webkit-transition: 2s;
   transition: 2s;
 }
@@ -649,7 +655,7 @@ article:hover .check {
   width: 23vw;
   margin-right: -23vw;
   height: auto;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
 }
 
 .check i {
@@ -657,7 +663,7 @@ article:hover .check {
   display: -ms-grid;
   display: grid;
   place-content: center;
-  color: #99e2d0;
+  color: #99E2D0;
   border-radius: 4vw;
   width: 5vw;
   height: 5vw;
@@ -681,7 +687,6 @@ article:hover .check {
   font-size: 3vw;
 }
 
-/* button*/
 /* Footer*/
 footer {
   padding: 1vw 0vw 1vw 6vw;

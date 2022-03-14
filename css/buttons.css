@@ -9,20 +9,6 @@
 }
 
 /* Effet au survol du Button recherche */
-.Réservez > button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#ec9bd7));
-  background: linear-gradient(#a878db, #ec9bd7);
-  -webkit-box-shadow: 0 1px 7px -1px #31262f;
-          box-shadow: 0 1px 7px -1px #31262f;
-}
-
-.Réservez > button:hover h6 > .Button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#ec9bd7));
-  background: linear-gradient(#a878db, #ec9bd7);
-  -webkit-box-shadow: 0 1px 7px -1px #31262f;
-          box-shadow: 0 1px 7px -1px #31262f;
-}
-
 .Button {
   display: -ms-grid;
   display: grid;
@@ -30,6 +16,21 @@
   margin: 0;
 }
 
+.Button .Button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#ec9bd7));
+  background: linear-gradient(#a878db, #ec9bd7);
+  -webkit-box-shadow: 0 1px 7px -1px #31262f;
+          box-shadow: 0 1px 7px -1px #31262f;
+}
+
+.Réservez > button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#ec9bd7));
+  background: linear-gradient(#a878db, #ec9bd7);
+  -webkit-box-shadow: 0 1px 7px -1px #31262f;
+          box-shadow: 0 1px 7px -1px #31262f;
+}
+
+/* Effet au survol du Button commander */
 /* button*/
 h6 > button {
   font-size: 4.3vw;
@@ -42,10 +43,6 @@ h6 > button {
   display: -ms-grid;
   display: grid;
   place-items: center;
-}
-
-/* Effet au survol du Button commander */
-h6 > button {
   font-family: "Roboto", sans-serif;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#a65cdb));
   background: linear-gradient(#FF79DA, #a65cdb);
@@ -57,8 +54,8 @@ h6 > button:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   cursor: pointer;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#FF79DA));
-  background: linear-gradient(#a878db, #FF79DA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a878db), to(#ec9bd7));
+  background: linear-gradient(#a878db, #ec9bd7);
   -webkit-box-shadow: 0 1px 7px -1px #31262f;
           box-shadow: 0 1px 7px -1px #31262f;
 }

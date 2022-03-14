@@ -21,6 +21,12 @@ header > h1 {
   font-size: 1.2vw;
 }
 
+.localisation input {
+  height: 3vw;
+  width: 14%;
+  font-size: 1.5vw;
+}
+
 .Réservez {
   text-align: center;
 }

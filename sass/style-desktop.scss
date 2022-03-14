@@ -20,6 +20,11 @@ header > h1 {
 
 .localisation {
   font-size: 1.2vw;
+  & input {
+    height: 3vw;
+    width: 14%;
+    font-size: 1.5vw;
+}
 }
 .Réservez {
   text-align: center;
@@ -33,6 +38,7 @@ header > h1 {
   & button {
     font-size: 1vw;
   }
+  
 }
 
 /* NAV */

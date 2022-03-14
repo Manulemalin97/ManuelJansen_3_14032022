@@ -47,8 +47,14 @@ header > h1 {
 }
 
 .localisation i.fas {
-  margin-right: 4vw;
-  margin-left: -10vw;
+  margin-right: 2vw;
+  margin-left: -7vw;
+}
+
+.localisation input {
+  height: 5vw;
+  width: 20%;
+  font-size: 2vw;
 }
 
 /* NAV*/
