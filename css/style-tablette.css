@@ -42,7 +42,7 @@ header > h1 {
 }
 
 .localisation {
-  padding: 1vw 1vw 1vw 8vw;
+  padding: 0vw 1vw 1vw 8vw;
   font-size: 2vw;
 }
 
@@ -238,10 +238,10 @@ section > h3 {
 }
 
 .cube__plats a {
-  width: 17%;
-  margin-bottom: 2vw;
+  width: 13%;
+  margin-bottom: 1.5vw;
   border-bottom: 3px solid #99e2d0;
-  height: 3.5vw;
+  height: 3.2vw;
   font-size: 2vw;
 }
 
@@ -270,6 +270,10 @@ article h5 {
   margin: 0;
   font-size: 1.3vw;
   padding-right: 1vw;
+}
+
+.down1 {
+  margin-top: 1vw;
 }
 
 .détail_h4 {
@@ -312,25 +316,19 @@ h6 > button {
 
 /* Footer*/
 footer {
-  padding: 6vw 0vw 0vw 0vw;
-  height: 16vw;
-  margin-top: 0vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding: 1vw 0vw 1vw 2vw;
+  height: 29vw;
 }
 
 footer h2 {
-  margin: 0;
-  font-size: 2.5vw;
+  font-size: 3vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 
 footer a {
-  font-size: 1.6vw;
-  margin: 0;
-  margin-top: 1.5vw;
+  font-size: 2vw;
+  margin-top: 2vw;
 }
 
 footer a .fa-utensils {

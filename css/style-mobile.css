@@ -508,9 +508,6 @@ section > h3 {
   transition: 2s;
 }
 
-/*
- * Animation Fadein
- */
 .bloc__menu {
   padding: 6vw 3vw 0vw 3vw;
 }
@@ -523,6 +520,7 @@ section > h3 {
 .cube__plats a {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
   width: 12%;
   margin-left: 0.5vw;
   margin-bottom: 3vw;
@@ -554,6 +552,8 @@ article:hover i {
           animation-play-state: running;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
+  -webkit-transform: rotate(0turn);
+          transform: rotate(0turn);
 }
 
 article h5 {
@@ -712,7 +712,7 @@ article:hover .check {
 
 /* Footer*/
 footer {
-  padding: 1vw 0vw 1vw 6vw;
+  padding: 1vw 0vw 1vw 4vw;
   height: 51vw;
 }
 

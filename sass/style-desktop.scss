@@ -142,9 +142,9 @@ article {
 .cube__plats {
   width: 26vw;
   & a {
-    width: 12%;
-    margin-bottom: 2vw;
-    height: 2.2vw;
+    width: 11%;
+    margin-bottom: 1vw;
+    height: 2.5vw;
     font-size: 1.5vw;
   }
 }
@@ -165,23 +165,19 @@ h6 > button {
   padding: 1vw 3vw;
   margin-bottom: 7vw;
 }
+/* Footer*/
+
 footer {
-  height: 13vw;
-  & h2 {
-    margin: 0;
-    font-size: 2.5vw;
-  }
-
-  & a {
-    font-size: 1.6vw;
-    margin: 0;
-    margin-top: 0.5vw;
-    & .fa-utensils {
-      margin-right: 2vw;
+    padding: 1vw 0vw 1vw 3vw;
+    height: 18vw;
+    & h2 {
+        font-size: 2vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
     }
-
-    & .fa-hands-helping {
-      margin-right: 1vw;
+  
+    & a {
+        font-size: 1.5vw;
+        margin-top: 1vw;
     }
   }
-}

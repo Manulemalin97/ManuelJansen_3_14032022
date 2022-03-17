@@ -308,9 +308,6 @@ section > h3 {
     transition: 2s;
   }
 }
-/*
- * Animation Fadein
- */
 
 .bloc__menu {
   padding: 6vw 3vw 0vw 3vw;
@@ -320,8 +317,7 @@ section > h3 {
   margin-bottom: 10vw;
   position: relative;
   & a {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  display: flex;
     width: 12%;
     margin-left: 0.5vw;
     margin-bottom: 3vw;
@@ -330,7 +326,6 @@ section > h3 {
     font-size: 4.5vw;
   }
 }
-
 article {
   display: flex;
   overflow: hidden;
@@ -344,6 +339,7 @@ article {
     & i {
       animation-play-state: running;
       animation-delay: 0s;
+      transform: rotate(0turn);
     }
   }
   & h5 {
@@ -467,7 +463,7 @@ article {
 /* Footer*/
 
 footer {
-  padding: 1vw 0vw 1vw 6vw;
+  padding: 1vw 0vw 1vw 4vw;
   height: 51vw;
   & h2 {
     font-size: 5vw;
